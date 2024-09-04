@@ -4,6 +4,150 @@
 
 ---
 
+## Q0X:
+
+---
+
+### Antwort:
+
+---
+
+### Verweisungen
+
+---
+
+## Q05:
+
+Ein Unternehmen möchte eine Anmeldeumgebung für externe Benutzer erstellen, 
+die auf seine Apps zugreifen möchten. 
+
+Welche Optionen können sie als Teil des Registrierungs-Flows bereitstellen? 
+
+- Das Sammeln von Informationen über den Benutzer ist in einem Self-Service-Flow zur Registrierung von Benutzern nicht möglich.
+
+- API-Connectors können nicht zum Integrieren des Self-Service-Flows zur Registrierung von Benutzern in externen Cloudsystemen verwendet werden.
+
+- Bereitstellen von Optionen für verschiedene Identitätsanbieter für soziale Netzwerke oder Unternehmen.
+
+---
+
+### Antwort:
+
+- Bereitstellen von Optionen für verschiedene Identitätsanbieter für soziale Netzwerke oder Unternehmen.
+
+Im Rahmen des Registrierungs-Flows kann ein Unternehmen Optionen für verschiedene Identitätsanbieter für soziale Netzwerke oder Unternehmen bereitstellen.
+
+---
+
+### Verweisungen
+
+[Empfehlen von Anwendungsfällen für externe Identitäten](https://learn.microsoft.com/de-de/training/modules/manage-identities-microsoft-entra-id/6-recommend-when-to-use-external-identities)  
+
+> Self-Service-Registrierung zulassen
+
+Sie können Optionen für verschiedene Identitätsanbieter für soziale Netzwerke oder Unternehmen bereitstellen und Informationen über den Benutzer sammeln. 
+
+[Self-Service-Registrierung](https://learn.microsoft.com/de-de/entra/external-id/self-service-sign-up-overview)  
+
+---
+
+## Q04:
+
+Eine Firma will die Identitätsverwaltung für externer Benutzer*innen bedarfsgerecht verwalten, indem Zugriffsanforderungsworkflows, Zugriffszuweisungen, Überprüfungen und Ablauf automatisiert werden. Welches Feature sollte verwendet werden? 
+
+- Direkte B2B-Verbindung
+- Microsoft Entra B2C
+- Microsoft Entra-Berechtigungsverwaltung
+
+---
+
+### Antwort:
+
+- Microsoft Entra-Berechtigungsverwaltung
+
+Die Microsoft Entra-Berechtigungsverwaltung ist ein **Identitätsgovernancefeature**, mit dem Sie Identitäten und Zugriff für externe Benutzer **bedarfsgerecht** verwalten können, indem Sie **Workflows für**:
+
+- Zugriffsanforderungen
+- Zugriffszuweisungen
+- Überprüfungen 
+- den Ablauf von Berechtigungen automatisieren
+
+
+---
+
+### Verweisungen
+
+[Empfehlen von Anwendungsfällen für externe Identitäten](https://learn.microsoft.com/de-de/training/modules/manage-identities-microsoft-entra-id/6-recommend-when-to-use-external-identities)  
+
+> Anpassen des Onboardings für B2B-Gastbenutzer
+
+Integrieren Sie Ihre externen Partner entsprechend den Anforderungen Ihrer Organisation.
+
+- Konfigurieren Sie mit der Microsoft Entra-Berechtigungsverwaltung Richtlinien, mit denen der Zugriff für externer Benutzer verwaltet wird.
+- Verwenden Sie die Einladungs-API für die B2B-Zusammenarbeit, um das Onboarding anzupassen.
+
+[Was ist Berechtigungsverwaltung?](https://learn.microsoft.com/de-de/entra/id-governance/entitlement-management-overview)
+
+---
+
+## Q03:
+
+Ein Benutzeradministrator möchte einen neuen Benutzer zu seiner Microsoft Entra ID-Organisation hinzufügen. 
+
+Welche Schritte müssen befolgt werden?
+
+- Im Menü „Externen Benutzer einladen“ auswählen und die E-Mail-Adresse des Benutzers oder der Benutzerin angeben
+- Zu „Microsoft Office-Benutzer“ navigieren und „Neuer Benutzer“ im Menü auswählen
+
+- Beim Azure-Portal mit der Rolle „Benutzeradministrator“ anmelden, zu „Microsoft Entra ID-Benutzer“ navigieren und im Menü „Neuen Benutzer erstellen“ oder „Externen Benutzer einladen“ auswählen
+
+
+---
+
+### Antwort:
+
+- Beim Azure-Portal mit der Rolle „Benutzeradministrator“ anmelden, zu „Microsoft Entra ID-Benutzer“ navigieren und im Menü „Neuen Benutzer erstellen“ oder „Externen Benutzer einladen“ auswählen
+
+Ein Benutzeradministrator muss sich beim Azure-Portal mit der Rolle „Benutzeradministrator“ anmelden, zu „Microsoft Entra-ID-Benutzer“ navigieren und entweder `Neuen Benutzer erstellen` **oder** `Externen Benutzer einladen` im Menü auswählen, um einen neuen Benutzer zur Microsoft Entra ID-Organisation hinzuzufügen.
+
+---
+
+### Verweisungen
+
+[Erstellen von neuen Benutzer*innen in Microsoft Entra ID](https://learn.microsoft.com/de-de/training/modules/manage-identities-microsoft-entra-id/4-create-a-new-user)  
+
+---
+
+## Q02:
+
+Eine Organisation möchte die **automatische Behebung für identitätsbasierte Risiken** aktivieren, 
+die von Microsoft Entra ID Protection erkannt werden. 
+
+Welche **Zugriffssteuerungen** können basierend auf der erkannten Risikostufe vorgeschrieben werden?
+
+- Benutzerkonto blockieren
+- Benutzer auffordern, ihren Benutzernamen zu ändern
+- Sichere Authentifizierungsmethode bereitstellen, Multi-Faktor-Authentifizierung durchführen oder sichere Kennwortzurücksetzung durchführen
+
+---
+
+### Antwort:
+
+- Sichere Authentifizierungsmethode bereitstellen, Multi-Faktor-Authentifizierung durchführen oder sichere Kennwortzurücksetzung durchführen
+
+Risikobasierte Richtlinien für bedingten Zugriff können aktiviert werden, um basierend auf der Risikostufe Zugriffssteuerungen vorzuschreiben, z.B. die Bereitstellung einer starken Authentifizierungsmethode, die Multi-Faktor-Authentifizierung oder die Durchführung einer sicheren Kennwortzurücksetzung.
+
+---
+
+### Verweisungen
+
+[Implementieren und Verwalten von Microsoft Entra Identity Protection](https://learn.microsoft.com/de-de/training/modules/manage-identities-microsoft-entra-id/8-microsoft-entra-identity-protection)  
+
+[Was ist bedingter Zugriff?](https://learn.microsoft.com/de-de/entra/identity/conditional-access/overview)  
+[What is Conditional Access?](https://learn.microsoft.com/en-us/entra/identity/conditional-access/overview)   
+
+---
+
 [Verwalten von Identitäten in Microsoft Entra ID](https://learn.microsoft.com/de-de/training/modules/manage-identities-microsoft-entra-id/)  
 [Wissensbeurteilung](https://learn.microsoft.com/de-de/training/modules/manage-identities-microsoft-entra-id/9-knowledge-check)
 
@@ -29,30 +173,44 @@ Registrierung von Benutzern in externen Cloudsystemen zu integrieren.
 
 [Empfehlen von Anwendungsfällen für externe Identitäten](https://learn.microsoft.com/de-de/training/modules/manage-identities-microsoft-entra-id/6-recommend-when-to-use-external-identities)  
 
+> B2B-Zusammenarbeit
+
+- Verwalten Sie eingehende und ausgehende B2B-Zusammenarbeit
+- beschränken Sie den Zugriff auf bestimmte Benutzer, Gruppen und Anwendungen
+- Legen Sie eine Standardkonfiguration fest, die für alle externen Organisationen gilt
+- erstellen Sie dann nach Bedarf individuelle organisationsspezifische Einstellungen
+- mithilfe mandantenübergreifender Zugriffseinstellungen den MFA-Ansprüche und Geräteansprüchen von anderen Microsoft Entra-Organisationen vertrauen
+- Mithilfe der Einstellungen für externe Zusammenarbeit definieren Sie, wer externe Benutzer einladen
+- B2B-spezifische Domänen zulassen oder blockieren
+- Einschränkungen für den Gastbenutzerzugriff auf Ihr Verzeichnis festlegen
+- Microsoft Cloud-Einstellungen um eine gegenseitige B2B-Zusammenarbeit zwischen der globalen Microsoft Azure-Cloud und Microsoft Azure Government oder Microsoft Azure
+
+
 > Self-Service-Registrierung zulassen
 
 Informieren Sie sich ausführlicher über die Self-Service-Registrierung und ihre Einrichtung:
 [Self-Service-Registrierung](https://learn.microsoft.com/de-de/entra/external-id/self-service-sign-up-overview)  
-
-> Benutzerflow im Self-Service-Registrierung
-
-Mit einem **Benutzerflow** für die **Self-Service-Registrierung** können Sie eine **Registrierungsbenutzeroberfläche** 
-für **externe Benutzer** erstellen, die auf Ihre Apps zugreifen möchten. 
-Im Rahmen des Registrierungsflows können Sie **Optionen für verschiedene Identitätsanbieter** für **soziale Netzwerke** oder 
-**Unternehmen** bereitstellen und **Informationen über den Benutzer sammeln**. 
-
-> API-Connectors mit Benutzerflows
-
-Sie können **auch API-Connectors verwenden**, um Ihre Benutzerflows für die Self-Service-Registrierung 
-in **externe Cloudsysteme zu integrieren**. Sie können **eine Verbindung** mit 
-**benutzerdefinierten Genehmigungsworkflows** herstellen, die **Identitätsüberprüfung durchführen** und 
-von Benutzer bereitgestellte Informationen **überprüfen**.
 
 > Die Self-Service-Registrierung 
 
 Es ist ein grundlegendes Feature bei Szenarien für **Mitarbeiter und Kunden** mit **externer ID**. 
 Sie bietet Ihren **Partnern, Consumern und anderen externen Benutzer** eine reibungslose Möglichkeit, 
 sich zu registrieren und Zugriff auf Ihre Apps zu erhalten, ohne dass Sie selbst eingreifen müssen.
+
+
+> 1- Benutzerflow im Self-Service-Registrierung
+
+Mit einem **Benutzerflow** für die **Self-Service-Registrierung** können Sie eine **Registrierungsbenutzeroberfläche** 
+für **externe Benutzer** erstellen, die auf Ihre Apps zugreifen möchten. 
+Im Rahmen des Registrierungsflows können Sie **Optionen für verschiedene Identitätsanbieter** für **soziale Netzwerke** oder 
+**Unternehmen** bereitstellen und **Informationen über den Benutzer sammeln**. 
+
+> 2- API-Connectors mit Benutzerflows
+
+Sie können **auch API-Connectors verwenden**, um Ihre Benutzerflows für die Self-Service-Registrierung 
+in **externe Cloudsysteme zu integrieren**. 
+Sie können **eine Verbindung** mit **benutzerdefinierten Genehmigungsworkflows** herstellen, 
+die **Identitätsüberprüfung durchführen** und von Benutzer bereitgestellte Informationen **überprüfen**.
 
 > Szenarien für **Mitarbeiter und Kunden** mit **externer ID**
 
@@ -63,15 +221,29 @@ sich zu registrieren und Zugriff auf Ihre Apps zu erhalten, ohne dass Sie selbst
 Sie möglicherweise wissen nicht immer im Voraus, wer Zugriff auf eine Anwendung benötigt, die Sie freigeben möchten. 
 **Statt Einladungen direkt an Einzelpersonen zu senden**, können Sie es externen Benutzer ermöglichen, sich selbst 
 **für bestimmte Anwendungen** zu registrieren. 
-Erfahren Sie, wie Sie einen Self-Service-Registrierungsbenutzerflow für die B2B-Zusammenarbeit erstellen.
 
-2. CIAM-Szenario (Customer Identity and Access Management, Kundenidentitäts- und Zugriffsverwaltung) 
+2. CIAM-Szenario (Customer Identity and Access Management, Kundenidentitäts- und Zugriffsverwaltung) - externen Mandanten 
 
 [Planen von Kundenidentitäts- und Zugriffsverwaltung](https://learn.microsoft.com/de-de/entra/external-id/customers/concept-planning-your-solution)  
 
 [Erstellen von Self-Service-Registrierungsbenutzerabläufen für Apps in externen Mandanten](https://learn.microsoft.com/de-de/entra/external-id/customers/how-to-user-flow-sign-up-sign-in-customers)  
 
 In diesem Szenario st es wichtig, den Apps, die Sie für Consumer erstellen, eine Self-Service-Registrierungsfunktion hinzuzufügen. Dazu **können Sie Benutzerflows für die Self-Service-Registrierung konfigurieren**. 
-Erfahren Sie mehr über die Planung der Kundenumgebung oder das Erstellen eines Registrierungs- und Anmeldebenutzerflows für Kund*innen.
+
+> Richtlinien zum sicheren Freigeben von Anwendungen und Diensten
+
+[Was ist Berechtigungsverwaltung?](https://learn.microsoft.com/de-de/entra/id-governance/entitlement-management-overview)  
+
+Richtlinien für bedingten Zugriff, beispielsweise MFA Authentication, können erzwungen werden um Anwendungen und Daten des Unternehmens schützen:
+
+- Auf Mandantenebene
+- Auf Anwendungsebene
+- Für bestimmte Gastbenutzer 
+
+> Das Delegieren von die Verwaltung
+
+Sie können die **Gastbenutzerverwaltung an Anwendungsbesitzer** delegieren, sodass sie Gastbenutzer direkt zu jeder Anwendung hinzufügen können, die sie freigeben möchten, unabhängig davon, ob es sich um eine Microsoft-Anwendung handelt oder nicht.
+
+
 
 ---
