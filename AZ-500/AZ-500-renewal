@@ -244,6 +244,16 @@ Richtlinien für bedingten Zugriff, beispielsweise MFA Authentication, können e
 
 Sie können die **Gastbenutzerverwaltung an Anwendungsbesitzer** delegieren, sodass sie Gastbenutzer direkt zu jeder Anwendung hinzufügen können, die sie freigeben möchten, unabhängig davon, ob es sich um eine Microsoft-Anwendung handelt oder nicht.
 
+---
 
+# Architekturdiagramme
+
+![image info](./AD01.password-hash-synchronization.PNG)
+
+![image info](./AD02.pass-through-authentication.PNG)
+
+![image info](./AD03.federation-authentication.PNG)
 
 ---
+
+
