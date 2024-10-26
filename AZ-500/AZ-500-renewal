@@ -2,6 +2,8 @@
 
 # AZ-500-Renewal-20240807-20241114
 
+[AZ-500-Renewal-20240807-20241114 ](https://learn.microsoft.com/en-us/collections/jwqksn22nkwy24)
+
 ---
 
 ## Q0X:
@@ -13,6 +15,631 @@
 ---
 
 ### Verweisungen
+
+---
+
+## Q23:
+
+You plan to deploy the following app service web apps:
+
+- WebApp1, which will be using Standard pricing plan.
+- WebApp2, which will be using Premium pricing plan.
+- WebApp3, which will be using Isolated pricing plan.
+
+Which web apps can use network security groups to control inbound traffic?
+
+Select only one answer.
+
+1. WebApp2 only
+2. WebApp3 only
+3. WebApp2 and WebApp3 only
+4. WebApp1, WebApp2 and WebApp3
+
+---
+
+
+### Antwort:
+
+
+---
+
+## Q22:
+
+Which Azure resources can use an application security group?
+
+Select only one answer.
+
+1. a network security group (NSG)
+2. a virtual machine
+3. a virtual network subnet
+4. an enterprise application
+
+---
+
+### Antwort:
+2. a virtual machine
+
+
+---
+
+## Q21:
+
+You have an Azure subscription that contains the following resources:
+
+- A network interface named NIC1
+- A virtual machine named VM1
+- A virtual network named VNET1
+- A virtual subnet named Subnet1
+
+You create a network security group (NSG) named NSG1.
+
+To which resources can you assign NSG1?
+
+Select only one answer.
+
+1. NIC1 and Subnet1 only
+2. NIC1 only
+3. NIC1, VM1, VNET1, and Subnet1
+4. VM1 and VNET1 only
+
+---
+
+### Antwort:
+1. NIC1 and Subnet1 only
+
+---
+
+## Q20:
+
+Your company is evaluating role-based access control (RBAC) in Azure.
+
+All roles are identical on all Azure resources.
+
+Select Yes if the statement is true. Otherwise, select No.
+
+Select only one answer.
+- Yes
+- NO
+
+---
+
+### Antwort:
+- NO
+
+---
+
+## Q19:
+
+---
+
+### Antwort:
+
+You have a Microsoft Entra tenant that contains a user named Admin1.
+
+You need to provide Admin1 with Just in time (JIT) access to the User Administrator role.
+
+What should you use?
+
+Select only one answer.
+
+1. a Microsoft Entra Authentication Method policy
+2. a Microsoft Entra conditional access policy
+3. Microsoft Entra ID Protection
+4. Microsoft Entra Privileged Identity Management
+
+---
+
+### Antwort:
+
+4. Microsoft Entra Privileged Identity Management
+
+---
+
+## Q18:
+
+You have an Azure subscription that is linked to a Microsoft Entra tenant.
+
+You plan to implement passwordless sign in for users in the Finance department.
+
+Which Microsoft Entra feature should you configure?
+
+Select only one answer.
+
+1. Authentication method policy
+2. Authentication strength
+3. ID Protection
+4. Privileged Identity Management
+
+---
+
+### Antwort:
+
+1. Authentication method policy
+
+To implement passwordless sign-in in Microsoft Entra ID, you primarily need to configure 
+
+Microsoft Authenticator and Windows Hello for Business. 1    
+
+The correct answer is Authentication method policy.
+
+By configuring authentication method policies, you can define which authentication methods are required for different users and scenarios. You can enforce passwordless authentication by requiring users to sign in using biometrics, security keys, or phone-based authentication.
+
+Here's a brief overview of how to use authentication method policies to implement passwordless sign-in:
+
+Create an authentication method policy: Define the policy's scope (e.g., all users, specific groups) and the required authentication methods (e.g., FIDO2 security key, biometric authentication, phone-based authentication).
+Assign the policy to users and groups: Apply the policy to the desired users and groups to enforce the specified authentication methods.
+By effectively configuring authentication method policies, you can ensure that your organization adopts a secure and convenient passwordless authentication strategy.
+
+---
+
+## Q17:
+
+You have an Azure subscription that is linked to a Microsoft Entra tenant.
+
+You need to recommend the most secure authentication for the company.
+What authentication should you recommend?
+
+Select only one answer.
+
+1. Complex passwords
+2. Passphrases
+3. Password and push notification in Microsoft Authenticator app
+4. Passwordless
+
+---
+
+### Antwort:
+4. Passwordless
+
+Yes, passwordless authentication is generally considered the strongest form of authentication available in Microsoft Entra ID compared to the alternatives you listed.
+
+ 1  Here's why: https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-methods   
+
+Passwordless Authentication:
+
+Eliminates password-related risks: No passwords mean no risk of password breaches, phishing attacks, or credential stuffing.   
+Stronger security: Relies on multi-factor authentication (MFA) using methods like biometrics, security keys, or push notifications, which are harder to compromise.   
+Improved user experience: Faster and more convenient login process without the need to remember complex passwords.
+
+   
+Alternatives:
+
+Complex passwords: While complex passwords can be more secure than simple ones, they are still vulnerable to phishing attacks and can be difficult to remember.   
+
+Passphrases: Passphrases can be more memorable than complex passwords, but they can still be susceptible to phishing and brute-force attacks.
+
+Password and push notifications in Microsoft Authenticator app: This method adds an extra layer of security, but it still relies on passwords, which can be a point of vulnerability.
+
+By eliminating the weakest link (passwords), passwordless authentication provides a significantly higher level of security and a better user experience. 1    
+
+How adopting a passwordless: https://keyless.io/blog/post/how-adopting-a-passwordless-strategy-can-transform-user-experience
+
+---
+
+## Q16:
+
+Your company purchases an Azure subscription.
+
+You plan to publish an application named App1 to the Microsoft Entra tenant.
+
+You need to be able to implement single sign-on for App1.
+
+Which Microsoft Entra ID plan is required?
+
+Select only one answer.
+
+1. Microsoft Entra ID P2 only
+2. Microsoft Entra ID P2 or Microsoft Entra ID P1 only
+3. Microsoft Entra ID P2, Microsoft Entra ID P1 or Microsoft Entra ID Governance only
+4. Microsoft Entra ID P2, Microsoft Entra ID P1 or Microsoft Entra ID Free only
+5. Microsoft Entra ID P2, Microsoft Entra ID P1, Microsoft Entra ID Governance or Microsoft Entra ID free
+
+---
+
+### Antwort:
+
+To implement single sign-on (SSO) in Microsoft Entra ID, you'll need a Microsoft Entra ID plan that supports enterprise features. This typically includes the Microsoft Entra ID P1 or higher plan.
+
+Can  I implement single sign-on in MicRorsoft Entra ID with the plan Microsoft Entra ID Governance?
+No, you cannot implement single sign-on (SSO) with the Microsoft Entra ID Governance plan.
+
+---
+
+## Q15:
+
+You have an Azure subscription.
+
+Users use devices that contain the following platforms:
+
+- Windows
+- Android
+- iOS
+
+You plan to implement Microsoft Entra Verified ID.
+
+On which devices can users prove their identity by using verifiable credentials?
+
+Select only one answer.
+
+1. Windows only
+2. Windows and Android only
+3. Android and iOS only
+4. Windows, Android and iOS
+
+---
+
+### Antwort:
+
+Windows, Android and iOS
+
+As long as the device has a compatible browser and internet connection, you can use Microsoft Entra Verified ID to manage your digital identity and access services that support verifiable credentials.
+
+---
+
+---
+
+## Q14:
+
+You have a Microsoft Entra tenant that contains a user named User1.
+
+User1 uses the following devices:
+
+Device1: Microsoft Entra registered Windows 11 device
+Device2: Microsoft Entra joined Windows 10 device
+Device3: Microsoft Entra registered Android device
+Device4: Microsoft Entra registered iOS device
+
+From which devices can User1 reset his password by using self-service password reset?
+
+Select only one answer.
+
+1. Device2 only
+2. Device1 and Device2 only
+3. Device1, Device2 and Device3 only
+4. Device1, Device2 and Device4 only
+5. Device1, Device2, Device3 and Device4
+
+---
+
+### Antwort:
+5. Device1, Device2, Device3 and Device4
+
+---
+
+## Q13:
+
+Your company uses Microsoft Entra conditional access policies.
+
+You plan to use a sign-in risk condition in a conditional access policy.
+
+Which service is required to use a sign-in risk condition in a conditional access policy?
+
+Select only one answer.
+
+1. Microsoft Entra ID Protection
+2. Microsoft Entra Privileged Identity Management
+3. Microsoft Defender for Endpoint
+4. Microsoft Intune
+
+---
+
+### Antwort:
+1. Microsoft Entra ID Protection
+
+
+---
+
+## Q13:
+
+
+Your company plans to use Microsoft Entra ID Protection.
+
+You need to require multi-factor authentication (MFA) if a user attempts to access a Microsoft Entra enterprise application from an anonymous IP address.
+
+What should you configure?
+
+Select only one answer.
+
+1. a sign-in risk policy
+2. a user risk policy
+3. an Azure security policy
+4. an MFA registration policy
+
+
+---
+
+### Antwort:
+1. a sign-in risk policy
+
+---
+
+## Q12:
+
+[ Plan and implement security for private access to Azure resources](https://learn.microsoft.com/en-us/training/modules/security-private-access-azure-resources/8-knowledge-check)  
+
+A company wants to securely connect to an Azure service using a private IP address. 
+Which of the following options should they use? 
+
+1. Virtual network interface
+2. Public endpoint
+3. Private endpoint
+
+---
+
+### Antwort:
+3. Private endpoint
+
+
+---
+
+## Q12:
+
+[ Plan and implement security for private access to Azure resources](https://learn.microsoft.com/en-us/training/modules/security-private-access-azure-resources/8-knowledge-check)  
+
+A company wants to create a Private Link service in Azure. 
+What is the purpose of an alias in a Private Link service? 
+
+1. To restrict access to the service to a limited set of trusted subscriptions.
+2. To provide a globally unique name for the service that can be shared with customers and used to request a connection to the service.
+3. To restrict access to the service based on role-based access control only.
+
+---
+
+### Antwort:
+
+2. To provide a globally unique name for the service that can be shared with customers and used to request a connection to the service.
+
+
+---
+
+## Q11:
+
+[ Plan and implement security for private access to Azure resources](https://learn.microsoft.com/en-us/training/modules/security-private-access-azure-resources/8-knowledge-check)  
+
+A company wants to deploy a web application on Azure. 
+They want to ensure that the application is highly available and can handle sudden spikes in traffic. 
+
+Which of the following Azure services should they use? 
+
+1. Azure App Service
+2. Azure Virtual Machines
+3. Azure Functions
+
+---
+
+### Antwort:
+
+1. Azure App Service
+
+---
+
+## Q10:
+
+[ Plan and implement security for private access to Azure resources](https://learn.microsoft.com/en-us/training/modules/security-private-access-azure-resources/8-knowledge-check)  
+
+A company wants to route traffic for their custom containers through virtual network integration. 
+What must they ensure is configured in addition to the routing setting? 
+
+1. Any firewall or Network Security Group configured on traffic from the subnet allow traffic to port 443 and 445.
+2. Database backup is supported over the virtual network integration.
+3. Firewall or Network Security Group configured on traffic from the subnet allow traffic to port 80 and 443.
+
+---
+
+### Antwort:
+
+1. Any firewall or Network Security Group configured on traffic from the subnet allow traffic to port 443 and **445**.
+
+**Correct.** 
+
+In addition to configuring the routing, the company must also ensure that any firewall or Network Security Group configured on traffic from the subnet allow traffic to port 443 and 445 in order to route traffic for their custom containers through virtual network integration.
+
+3. Firewall or Network Security Group configured on traffic from the subnet allow traffic to port 80 and 443.
+
+**Incorrect!** 
+
+This answer refers to allowing traffic to ports 80 and 443, 
+which is not relevant to routing traffic for custom containers through virtual network integration.
+
+---
+
+## Q10:
+
+[ Plan and implement security for private access to Azure resources](https://learn.microsoft.com/en-us/training/modules/security-private-access-azure-resources/8-knowledge-check)  
+
+What is the purpose of Azure App Service? 
+
+1. To host web and mobile applications
+2. To provide additional storage for virtual machines
+3. To enable automatic scaling of virtual networks
+
+---
+
+### Antwort:
+
+1. To host web and mobile applications
+
+
+---
+
+## Q09:
+
+[Plan and implement security for virtual networks ](https://learn.microsoft.com/en-us/training/modules/security-virtual-networks/12-knowledge-check)  
+
+What is the primary purpose of Network Security Groups (NSGs) in Azure Virtual Networks? 
+
+1. To provide DNS resolution services for virtual networks
+2. To filter network traffic to and from Azure resources within an Azure Virtual Network
+3. To automate the deployment of virtual machines
+
+---
+
+### Antwort:
+
+2. To filter network traffic to and from Azure resources within an Azure Virtual Network
+
+Correct. 
+
+Because NSGs allow or deny network traffic to resources within a virtual network. They can be associated with either subnets or individual VM instances, providing a way to enforce and control access policies at a granular level.
+
+---
+
+## Q09:
+
+[Plan and implement security for virtual networks ](https://learn.microsoft.com/en-us/training/modules/security-virtual-networks/12-knowledge-check)  
+
+How does Network Watcher help monitor network security in Azure? 
+
+1. By providing real-time threat detection and prevention
+2. By enabling monitoring of network traffic flow and identifying security rule violations.
+3. By encrypting all traffic within Azure virtual networks
+
+---
+
+### Antwort:
+
+2. By enabling monitoring of network traffic flow and identifying security rule violations.
+
+Network Watcher helps identify and diagnose network issues, including security rule violations, by providing insights into network traffic flow and connectivity.
+
+---
+
+## Q08:
+
+[Plan and implement security for virtual networks ](https://learn.microsoft.com/en-us/training/modules/security-virtual-networks/12-knowledge-check)  
+
+A company wants to establish network topologies that combine cross premises connectivity 
+with inter virtual network connectivity. 
+
+Which Azure feature allows them to do this? 
+
+1. Azure Virtual Network Gateway
+2. VNet peering
+3. Azure Resource Manager
+
+---
+
+### Antwort:
+
+2. VNet peering
+
+**Correct.**
+
+VNet peering allows the establishment of network topologies that combine cross premises connectivity with inter virtual network connectivity **without using a virtual network gateway**.
+
+
+1. [Azure Virtual Network Gateway](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways)
+
+**Incorrect!**
+
+Azure Virtual Network Gateway is used to establish secure, cross-premises connectivity between an on-premises network and Azure.
+
+
+Azure VPN Gateway is a service that can be used to either: 
+
+1. send encrypted traffic between an Azure virtual network and on-premises locations over the public Internet
+2. to send encrypted traffic between Azure virtual networks over the Microsoft network 
+
+**VPN Gateway** uses a specific type of **Azure virtual network gateway** called a VPN gateway. 
+
+Multiple connections can be created to the same VPN gateway. 
+When you create multiple connections, all VPN tunnels share the available gateway bandwidth.
+
+[Why use VPN Gateway?](https://learn.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpngateways#why-use-vpn-gateway) 
+
+> Scenario 1: 
+
+Send encrypted traffic between an Azure virtual network and on-premises locations over the public Internet. 
+
+You can do this by using the following types of connections:
+
+- Site-to-site connection: A cross-premises IPsec/IKE VPN tunnel connection between the VPN gateway and an on-premises VPN device.
+- Point-to-site connection: VPN over OpenVPN, IKEv2, or SSTP. This type of connection lets you connect to your virtual network from a remote location, such as from a conference or from home.
+
+> Scenario 2: 
+
+Send encrypted traffic between virtual networks. 
+
+You can do this by using the following types of connections:
+
+1. VNet-to-VNet: An IPsec/IKE VPN tunnel connection between the VPN gateway and another Azure VPN gateway that uses a VNet-to-VNet connection type. This connection type is designed specifically for VNet-to-VNet connections.
+
+2. Site-to-site connection: An IPsec/IKE VPN tunnel connection between the VPN gateway and another Azure VPN gateway. This type of connection, when used in the VNet-to-VNet architecture, uses the Site-to-site (IPsec) connection type, which allows cross-premises connections to the gateway in addition connections between VPN gateways.
+
+> Scenario 3: 
+
+Configure a site-to-site VPN as a secure failover path for ExpressRoute. 
+
+You can do this by using:
+ExpressRoute + VPN Gateway: A combination of ExpressRoute + VPN Gateway connections (coexisting connections).
+
+> Scenario 4: 
+
+Use site-to-site VPNs to connect to sites that aren't connected through ExpressRoute. 
+
+You can do this with:
+ExpressRoute + VPN Gateway: A combination of ExpressRoute + VPN Gateway connections (coexisting connections).
+
+---
+
+## Q07:
+
+[Plan and implement security for virtual networks ](https://learn.microsoft.com/en-us/training/modules/security-virtual-networks/12-knowledge-check)  
+
+A company needs to connect two virtual networks in Azure so that traffic can be routed between them. 
+Which virtual network connection type should they use? 
+
+1. Virtual network peering
+2. Global peering
+3. VPN gateway
+
+---
+
+### Antwort:
+
+1. Virtual network peering
+
+Correct. 
+
+Virtual network peering connects two Azure virtual networks so that they appear as one for connectivity purposes. 
+
+Traffic between virtual machines in the peered virtual networks is routed through the Microsoft backbone infrastructure, 
+through private IP addresses only. 
+
+No public internet is involved. 
+
+This provides: 
+
+- a low latency 
+- high bandwidth connection 
+
+and is useful in scenarios such as: 
+
+- cross-region data replication 
+- database failover
+
+---
+
+## Q06:
+
+[Plan and implement security for virtual networks ](https://learn.microsoft.com/en-us/training/modules/security-virtual-networks/12-knowledge-check)  
+
+A company wants to configure network security as a natural extension of an application's structure. 
+They want to group virtual machines and define network security policies based on those groups. 
+
+Which Azure feature should they use? 
+
+1. Network Security Group (NSG)
+2. Virtual Network Service Endpoints
+3. Application Security Groups (ASGs)
+
+---
+
+### Antwort:
+3. Application Security Groups (ASGs)
+
+Correct. ASGs enable you to configure network security as a natural extension of an application's structure, 
+allowing you to group virtual machines and define network security policies based on those groups.
 
 ---
 
