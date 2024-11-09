@@ -16,6 +16,383 @@
 
 ### Verweisungen
 
+
+---
+
+## Q37:
+
+Your company is monitoring Azure virtual machines by using Microsoft Defender for Cloud.
+
+What should you use to configure which applications can run on virtual machines?
+
+Select only one answer.
+
+1. adaptive application controls
+2. application control policies
+3. Azure security policies
+4. software restriction policies
+
+---
+
+### Antwort:
+4. software restriction policies
+
+---
+
+## Q36:
+
+Your company uses Microsoft Sentinel.
+
+You need to create an analytics rule in Microsoft Sentinel.
+
+Which language can you use to write the analytics rule logic?
+
+Select only one answer.
+
+1. Azure PowerShell
+2. Kusto Query Language (KQL)
+3. Python
+4. Transact Structured Query Language (T-SQL)
+
+
+---
+
+### Antwort:
+2. Kusto Query Language (KQL)
+
+---
+
+## Q35:
+
+Your company is evaluating whether to use secure score in Microsoft Defender for Cloud.
+
+A higher secure score means a lower identified risk level in an Azure subscription.
+
+Select Yes if the statement is true. Otherwise, select No.
+
+Select only one answer.
+
+YES
+No
+
+---
+### Antwort:
+
+YES
+
+---
+
+## Q34:
+
+Your company is evaluating whether to use secure score in Microsoft Defender for Cloud.
+
+Enabling multi-factor authentication (MFA) will increase your secure score.
+
+Select Yes if the statement is true. Otherwise, select No.
+
+Select only one answer.
+
+YES
+No
+
+---
+### Antwort:
+
+YES
+
+---
+
+## Q33:
+
+Your company is evaluating whether to use secure score in Microsoft Defender for Cloud.
+
+A secure score can be manually updated by administrators.
+
+Select Yes if the statement is true. Otherwise, select No.
+
+---
+### Antwort:
+
+No
+
+---
+
+## Q32:
+
+You have an Azure subscription.
+
+You use the Microsoft Defender for Cloud with Foundational CSPM plan.
+
+What security policy is enabled by default?
+
+Select only one answer.
+
+1. CIS Microsoft Azure Foundations Benchmark v2.0.0
+2. ISO 27001:2013
+3. Microsoft cloud security benchmark
+4. PCI DSS v4
+
+---
+
+### Antwort:
+3. Microsoft cloud security benchmark
+
+The Microsoft cloud security benchmark is enabled by default when you use the Microsoft Defender for Cloud with Foundational CSPM plan. This benchmark provides a set of security recommendations aligned with Microsoft's best practices and industry standards to help you secure your Azure environment.
+
+---
+
+## Q30:
+
+You have an Azure subscription that is using an Azure Dedicated HSM.
+
+You plan to deploy the following resources to the subscription:
+
+- A Virtual machine named VM1 that is running an application named App1. App1 is migrated from on-premises, where it was using HSM.
+- A Virtual machine named VM2 that is protected by Azure Disk Encryption.
+- A Storage account namestorage1.e1
+
+Which resources can utilize Azure Dedicated HSM?
+
+Select only one answer.
+
+1. App1 only
+2. App1 and VM2 only
+3. App1 and storage1 only
+4. App1, VM2 and storage1
+
+---
+
+### Antwort:
+2. App1 and VM2 only
+
+Which resources can utilize Azure Dedicated Azure Hardware Security Module HSM among those below?
+
+- an application App1 deployed to a visual machine on a Azure Subscription
+- a virtual machine VM2 deployed  to a Azure Subscription and that is protected with Azure Disk Encryption
+- a storage account on the Azure Subscription
+
+Azure Dedicated HSM can be utilized by both application App1 deployed to a virtual machine and the virtual machine VM2.
+
+Here's a breakdown of why:
+
+Application App1:
+
+If App1 requires strong cryptographic operations, such as key generation, encryption, and decryption, it can leverage the HSM to securely store and manage cryptographic keys. This ensures the highest level of security for sensitive data handled by the application.   
+Virtual Machine VM2:
+
+While Azure Disk Encryption (ADE) provides encryption for disk volumes, using a Dedicated HSM can further enhance security by providing a hardware-based root of trust for key management. This can be particularly beneficial for highly sensitive workloads.
+Storage accounts do not directly interact with Dedicated HSMs. They typically rely on Azure Key Vault for key management and encryption.
+
+By using Azure Dedicated HSM, you can achieve a higher level of security for your applications and virtual machines, especially when dealing with sensitive data and critical operations.
+---
+
+## Q29:
+
+You have an Azure subscription that contains a user named Admin1 and a key vault named Vault1.
+
+You plan to delegate Admin1 permissions on Vault1.
+
+You need to ensure that you can use Azure attribute-based access control (Azure ABAC) to constrain role assignment.
+
+To which role should you assign Admin1?
+
+Select only one answer.
+
+1. Key Vault Administrator
+2. Key Vault Certificates Officer
+3. Key Vault Data Access Administrator
+4. Key Vault Reader
+
+---
+
+### Antwort:
+1. Key Vault Administrator
+
+---
+
+## Q28:
+
+You have an Azure subscription that contains a Windows virtual machine named VM1. 
+VM1 has only a private IP address.
+
+You plan to deploy Azure Bastion to protect VM1 connections.
+
+You need to ensure that you can connect to VM1 by using the Remote Desktop client, started by Azure CLI.
+
+Which Azure Bastion SKU should you deploy?
+
+Select only one answer.
+
+1. Developer SKU only
+2. Standard SKU only
+3. Basic SKU or Standard SKU only
+4. Developer SKU or Standard SKU only
+4. Developer SKU, Basic SKU or Standard SKU
+
+---
+
+### Antwort:
+2. Standard SKU only
+
+which Azure Bastion SKU among those below allow a Remote Desktop client, started by Azure CLI to connect to a Windows Virtual machine deployed to an Azure Subscription with only a private IP address?
+
+Developer SKU
+Standard SKU
+Basic SKU
+
+The Standard SKU of Azure Bastion is the correct choice for your scenario. It allows you to connect to Windows VMs with private IP addresses using RDP, making it compatible with the Azure CLI-initiated Remote Desktop client.   
+
+Here's a breakdown of why the Standard SKU is necessary:
+
+IP-Based Connection: The Standard SKU enables IP-based connections, which is crucial for accessing VMs with private IP addresses.   
+Remote Desktop Protocol (RDP) Support: The Standard SKU supports RDP connections, allowing you to use the Remote Desktop client to access your Windows VM.
+
+   
+
+---
+
+## Q27:
+
+You have an Azure subscription.
+
+You plan to deploy a Kubernetes cluster named AKS1.
+
+You need to configure isolation between multiple teams who will be using AKS1.
+
+What should you use?
+
+Select only one answer.
+
+1. Azure policies
+2. Namespaces
+3. Roles
+4. Virtual network subnets
+
+---
+
+### Antwort:
+2. Namespaces
+
+which among options the following should I use to make sure that teams using Azure Kubernetes are isolated from each other?
+
+Azure policies
+Namespaces
+Roles
+Virtual network subnets
+
+To effectively isolate teams using Azure Kubernetes Service (AKS), you should primarily use Namespaces.
+
+Namespaces provide a logical way to divide a single cluster into multiple virtual clusters. 
+
+Each namespace is isolated from others, ensuring that resources within one namespace cannot directly access resources in another. This allows different teams to deploy and manage their applications independently within the same cluster.
+
+Here's a breakdown of how each option can contribute to isolation:
+
+Azure Policies: Useful for enforcing governance and compliance rules across the entire cluster. They can be used to restrict resource creation or configuration to specific namespaces.
+Roles: While roles can be used to control access to resources within a namespace, they don't inherently isolate teams.
+Virtual Network Subnets: While virtual network subnets can isolate network traffic, they are not the primary mechanism for isolating teams within a single AKS cluster. Namespaces offer a more granular and efficient approach.
+By combining Namespaces with Azure Policies and Roles, you can achieve a robust and secure isolation strategy for your AKS environment.
+
+---
+
+## Q26:
+
+You have an Azure virtual network named VNET1 that has an IP address space of 192.168.0.0/16 and the following subnets:
+
+- Subnet1- has an IP address range of 192.168.1.0/24 and is connected to 15 VMs.
+- Subnet2- has an IP address range of 192.168.2.0/24 and does NOT have any VMs connected.
+
+You need to ensure that you can deploy Azure Firewall to VNET1.
+
+What should you do?
+
+Select only one answer.
+
+1. Add a new subnet to VNET1.
+2. Add a service endpoint to Subnet2.
+3. Modify the IP address space of VNET1.
+4. Modify the subnet mask of Subnet2.
+
+---
+
+### Antwort:
+
+1. Add a new subnet to VNET1.
+
+---
+
+## Q25:
+
+You have an Azure subscription that contains the following app service web apps:
+
+WebApp1, which is configured with Free pricing plan.
+WebApp2, which is configured with Shared pricing plan.
+WebApp3, which is configured with Standard pricing plan.
+WebApp4, which is configured with Premium pricing plan.
+
+You plan to configure encryption for web app traffic.
+
+For which web apps you can configure TLS encryption?
+
+Select only one answer.
+
+1. WebApp4 only
+2. WebApp3 and WebApp4 only
+3. WebApp2, WebApp3 and WebApp4 only
+4. WebApp1, WebApp2, WebApp3 and WebApp4
+
+---
+
+### Antwort:
+2. WebApp3 and WebApp4 only
+
+
+is TLS encryption an available feature on the with Standard pricing plan for App Services?
+
+Yes, TLS encryption is an available feature on the Standard pricing plan for App Services. 
+It's enabled by default, ensuring secure communication between your app and its users.
+
+---
+
+## Q24:
+
+You have an Azure subscription.
+
+You plan to create an Azure private link service named Private1.
+
+Which resource is required before you can create Private1?
+
+Select only one answer.
+
+1. Load balancer
+2. Network interface
+3. Network security group
+4. Public IP address
+5. Service endpoint
+
+---
+
+### Antwort:
+Load balancer
+
+which among the following do I need to have to create an Azure private link service?
+
+Load balancer
+Network interface
+Network security group
+Public IP address
+Service endpoint
+
+To create an Azure Private Link service, you primarily need the following:
+
+1. Load Balancer: A Standard Load Balancer is required to route traffic to the service that you want to expose through the Private Link.   
+
+2. Virtual Network: The Load Balancer and Private Link service must be deployed within a Virtual Network.
+
+3. Service Endpoint: You'll need to create a service endpoint within the Virtual Network to enable private connectivity to the servic
+
+https://learn.microsoft.com/en-us/azure/private-link/private-link-service-overview
+
 ---
 
 ## Q23:
@@ -37,9 +414,22 @@ Select only one answer.
 
 ---
 
-
 ### Antwort:
+3. WebApp2 and WebApp3 only
 
+Can a Web App deployed  as Premium pricing plan in Azure use network security groups?
+
+Yes, a Web App deployed as a Premium pricing plan in Azure can use Network Security Groups (NSGs) to control inbound and outbound traffic.
+
+ 1  This is achieved through Virtual Network integration, which allows you to connect your App Service to a Virtual Network (VNet). 2  Once integrated, you can apply NSGs to the subnet where your App Service resides, providing granular control over network traffic. 3    
+
+No, a Web App deployed as a Standard pricing plan in Azure cannot directly use Network Security Groups (NSGs). NSG integration is a feature primarily available for Premium plans and higher.
+
+However, there are some workarounds to achieve similar network security measures for Standard plans:
+
+IP Restrictions: You can configure IP restrictions at the App Service level to allow access only from specific IP addresses or ranges. This provides basic inbound traffic control.   
+Azure Front Door: By using Azure Front Door, you can create web application firewall (WAF) policies to filter incoming traffic based on various criteria, including IP addresses, protocols, and HTTP headers. This offers more advanced protection and filtering capabilities.   
+Consider Upgrading to a Premium Plan: If your security requirements necessitate granular network control, upgrading to a Premium plan will enable direct NSG integration, providing the most comprehensive security options.
 
 ---
 
