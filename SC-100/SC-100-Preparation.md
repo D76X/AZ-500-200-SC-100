@@ -37,13 +37,9 @@ SC-100: Design security solutions for infrastructure-Learning Path
 
 ---
 
-# Zero Trust
+# Well-Architected Framework (WAF)
 
-[Introduction to Zero Trust and best practice frameworks](https://learn.microsoft.com/en-us/training/modules/introduction-zero-trust-best-practice-frameworks/)  
-
-[Zero Trust Collection](https://learn.microsoft.com/en-us/collections/kjqkh7d6d0oqjn)  
-
-[Knowledge check - Introduction to Zero Trust and best practice frameworks](https://learn.microsoft.com/en-us/training/modules/introduction-zero-trust-best-practice-frameworks/6-knowledge-check)  
+[Knowledge check - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)](https://learn.microsoft.com/en-us/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/9-knowledge-check)  
 
 ---
 
@@ -56,6 +52,121 @@ SC-100: Design security solutions for infrastructure-Learning Path
 ---
 
 ### References
+
+---
+
+## Q007:
+
+Was sind Azure-Zielzonen? 
+
+- Ein Feature in Azure, das zum Authentifizieren des Gerätezugriffs bei Cloudumgebungen verwendet wird.
+- Ein System zum Verwalten der Identität und des Zugriffs für Cloudressourcen in Azure.
+- Eine vorgeschriebene Architektur zum Konfigurieren einer sicheren und skalierbaren Cloudumgebung.
+- Eine Funktion in Azure, die Organisationen mit unterschiedlichen finanziellen Ressourcen mehrere Zahlungsmöglichkeiten bietet.
+
+What are Azure Landing Zones? 
+
+- A feature in Azure used to authenticate device access to cloud environments.
+- A system designed to manage identity and access for cloud resources in Azure.
+- A prescribed architecture for configuring a secure and scalable cloud environment.
+- A feature on Azure that offers multiple payment methods to organizations of different financial abilities.
+
+---
+
+### Answer:
+- Eine vorgeschriebene Architektur zum Konfigurieren einer sicheren und skalierbaren Cloudumgebung.
+- A prescribed architecture for configuring a secure and scalable cloud environment.
+
+Azure-Zielzonen bieten eine automatisierte und präskriptive Referenzimplementierung, um schnell 
+eine umfassende sichere Cloudbaseline einzurichten.
+
+Azure Landing Zones provide an automated and prescriptive reference implementation to rapidly 
+set up a comprehensive secure cloud baseline.
+
+---
+
+### References
+
+
+---
+
+## Q006:
+
+Was ist Azure Well-Architected Framework? 
+
+- Ein Framework zum Entwickeln resilienter und fehlertoleranter serverloser Anwendungen.
+- Ein Framework, das sich ausschließlich auf sicherheitsbezogene Entwurfsentscheidungen für cloudbasierte Anwendungen konzentriert.
+- Eine Azure-Blaupause, die die Bereitstellungszeiten mithilfe vordefinierter Infrastrukturstapel beschleunigen soll.
+- Diesen Satz von Leitgedanken können Sie zur Verbesserung der Workloadqualität verwenden.
+
+What is the Well Architected Framework? 
+
+- A framework to develop resilient and fault-tolerant serverless applications.
+- A framework that focuses exclusively on security-related design decisions for cloud-based applications.
+- An Azure blueprint designed to expedite deployment times using predefined infrastructure stacks.
+- A set of guiding tenets that you can use to improve the quality of a workload.
+
+
+---
+
+### Answer:
+- Diesen Satz von Leitgedanken können Sie zur Verbesserung der Workloadqualität verwenden.
+- A set of guiding tenets that you can use to improve the quality of a workload.
+
+Well-Architected Framework ist ein systematischer Ansatz, der Kunden eine konsistente und 
+methodisch validierte Bewertung ihrer Cloudarchitekturen basierend auf verfügbaren bewährten
+Methoden ermöglicht.
+
+The Well-Architected Framework is a systematic approach that provides customers with a 
+consistent and methodically validated assessment of their cloud architectures based on 
+available best practices.
+
+---
+
+### References
+
+---
+
+## Q005:
+
+Was ist das Hauptziel von Cloud Adoption Framework? 
+
+- Um Richtlinien für die Sicherheit von Anwendungen bereitzustellen.
+- Um eine Methodik zum Erstellen und Bereitstellen einer Cloudinfrastruktur bereitzustellen.
+- Um eine Möglichkeit zu bieten, ganze Workloads ohne Hindernisse in die Cloud zu migrieren.
+- Um eine vollständige Liste der verfügbaren Clouddienste mit ihren Beschreibungen anzubieten.
+
+What is the main objective of the Cloud Adoption Framework? 
+
+- To provide guidelines on how to make applications more secure.
+- To provide a methodology to build and deploy cloud infrastructure.
+- To offer a way to migrate entire workloads to the cloud without any obstacles.
+- To offer a complete list of available cloud services with their descriptions.
+
+---
+
+### Answer:
+- Um eine Methodik zum Erstellen und Bereitstellen einer Cloudinfrastruktur bereitzustellen.
+- To provide a methodology to build and deploy cloud infrastructure.
+
+Cloud Adoption Framework bietet IT-Experten klare Schritt-für-Schritt-Anleitungen, 
+um Cloudressourcen effektiv zu erstellen, zu testen und bereitzustellen und gleichzeitig 
+bewährte Methoden anzuwenden.
+
+The Cloud Adoption Framework provides a clear step-by-step guidance for IT professionals to 
+create, test, and deploy cloud resources effectively while applying best practices.
+
+---
+
+### References
+
+---
+
+# Zero Trust
+
+[Introduction to Zero Trust and best practice frameworks](https://learn.microsoft.com/en-us/training/modules/introduction-zero-trust-best-practice-frameworks/)  
+[Zero Trust Collection](https://learn.microsoft.com/en-us/collections/kjqkh7d6d0oqjn)  
+[Knowledge check - Introduction to Zero Trust and best practice frameworks](https://learn.microsoft.com/en-us/training/modules/introduction-zero-trust-best-practice-frameworks/6-knowledge-check)  
 
 ---
 
