@@ -26,6 +26,8 @@
 
 # Learning Path 1: Design solutions that align with security best practices and priorities
 
+## LP1-Module-04:
+[Design a resiliency strategy for ransomware and other attacks based on Microsoft Security Best Practices](https://learn.microsoft.com/en-us/training/modules/design-resiliency-strategy-common-cyberthreats-like-ransomware/)    
 
 ## LP1-Module-03:
 [Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)](https://learn.microsoft.com/en-us/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/)  
@@ -56,17 +58,7 @@
 
 ---
 
-# 03 Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)
-
-[Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)](https://learn.microsoft.com/en-us/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/)  
-
----
-
-# 02 WAF
-
-[Design security solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)](https://learn.microsoft.com/en-us/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/)
-[Knowledge check - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)](https://learn.microsoft.com/en-us/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/9-knowledge-check)
-[Wissensüberprüfung: Entwerfen einer Lösung mit Microsoft Cybersecurity Reference Architecture und Microsoft Cloud Security Benchmark](https://learn.microsoft.com/de/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/4-knowledge-check) 
+# LP-1-04 Design a resiliency strategy for ransomware and other attacks based on Microsoft Security Best Practices
 
 ---
 
@@ -79,6 +71,20 @@
 ---
 
 ### References
+
+---
+
+# LP-1-03 Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)
+
+[Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)](https://learn.microsoft.com/en-us/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/)  
+
+---
+
+# LP-1-02 WAF
+
+[Design security solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)](https://learn.microsoft.com/en-us/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/)
+[Knowledge check - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)](https://learn.microsoft.com/en-us/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/9-knowledge-check)
+[Wissensüberprüfung: Entwerfen einer Lösung mit Microsoft Cybersecurity Reference Architecture und Microsoft Cloud Security Benchmark](https://learn.microsoft.com/de/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/4-knowledge-check) 
 
 ---
 
@@ -214,8 +220,6 @@ Using best practices can reduce staffing needs, complexity, and risk exposure, b
 ---
 
 ### References
-
-
 
 ---
 
@@ -358,7 +362,7 @@ create, test, and deploy cloud resources effectively while applying best practic
 
 ---
 
-# 01 Zero Trust
+# LP-1-01 Zero Trust
 
 [Introduction to Zero Trust and best practice frameworks](https://learn.microsoft.com/en-us/training/modules/introduction-zero-trust-best-practice-frameworks/)  
 [Zero Trust Collection](https://learn.microsoft.com/en-us/collections/kjqkh7d6d0oqjn)  
