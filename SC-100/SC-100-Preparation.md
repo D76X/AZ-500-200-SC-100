@@ -5,9 +5,9 @@
 # SC1-100 Leaning Paths:
 
 [SC-100: Design solutions that align with security best practices and priorities-Learning Path](https://learn.microsoft.com/en-us/training/paths/sc-100-design-solutions-best-practices-priorities/)   
-[SC-100: Design security operations, identity, and compliance capabilities-Learning Path]()
-SC-100: Design security solutions for applications and data-Learning Path
-SC-100: Design security solutions for infrastructure-Learning Path 
+[SC-100: Design security operations, identity, and compliance capabilities-Learning Path](https://learn.microsoft.com/en-us/training/paths/sc-100-design-operations-identity-compliance-capabilities/)
+[SC-100: Design security solutions for applications and data-Learning Path](https://learn.microsoft.com/en-us/training/paths/sc-100-design-security-solutions-applications-data/)  
+[SC-100: Design security solutions for infrastructure-Learning Path](https://learn.microsoft.com/en-us/training/paths/sc-100-design-security-solutions-infrastructure/)
 
 ---
 
@@ -26,20 +26,21 @@ SC-100: Design security solutions for infrastructure-Learning Path
 
 # Learning Path 1: Design solutions that align with security best practices and priorities
 
+
+## LP1-Module-03:
+[Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)](https://learn.microsoft.com/en-us/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/)  
+
+## LP1-Module-02:
 [SC-100: Design solutions that align with security best practices and priorities-Learning Path](https://learn.microsoft.com/en-us/training/paths/sc-100-design-solutions-best-practices-priorities/)  
 
----
-
-# Cloud Adoption Framework
-
+### Cloud Adoption Framework
 [Design security solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)](https://learn.microsoft.com/en-us/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/)  
 
-
----
-
-# Well-Architected Framework (WAF)
-
+### Well-Architected Framework (WAF)
 [Knowledge check - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)](https://learn.microsoft.com/en-us/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/9-knowledge-check)  
+
+## LP1-Module-01:
+[Introduction to Zero Trust and best practice frameworks](https://learn.microsoft.com/en-us/training/modules/introduction-zero-trust-best-practice-frameworks/)
 
 ---
 
@@ -48,6 +49,201 @@ SC-100: Design security solutions for infrastructure-Learning Path
 ---
 
 ### Answer:
+
+---
+
+### References
+
+---
+
+# 03 Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)
+
+[Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)](https://learn.microsoft.com/en-us/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/)  
+
+---
+
+# 02 WAF
+
+[Design security solutions that align with the Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)](https://learn.microsoft.com/en-us/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/)
+[Knowledge check - Cloud Adoption Framework (CAF) and Well-Architected Framework (WAF)](https://learn.microsoft.com/en-us/training/modules/design-solutions-align-cloud-adoption-framework-well-architected-framework/9-knowledge-check)
+[Wissensüberprüfung: Entwerfen einer Lösung mit Microsoft Cybersecurity Reference Architecture und Microsoft Cloud Security Benchmark](https://learn.microsoft.com/de/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/4-knowledge-check) 
+
+---
+
+## Q01X:
+
+---
+
+### Answer:
+
+---
+
+### References
+
+---
+
+## Q011:
+
+Was ist der Unterschied zwischen den im Microsoft Cloud Security Benchmark beschriebenen defensiven und ermittelnden Sicherheitskontrollmechanismen? 
+
+- Ermittelnde Kontrollmechanismen zielen darauf ab, das Benutzerverhalten zu ändern, während defensive Kontrollmechanismen auf Vorfälle überwachen.
+- Defensive Kontrollmechanismen verhindern proaktiv Sicherheitsverletzungen, während ermittelnde Kontrollmechanismen diese Vorfälle aufdecken und darauf reagieren, nachdem sie eingetreten sind.
+- Ermittelnde Kontrollmechanismen beruhen auf der passiven Überwachung von Systemprotokollen, während defensive Kontrollmechanismen aktives Scannen erfordern.
+- Defensive Kontrollmechanismen beruhen vollständig auf einer präemptiven Konfiguration, während erkennende Kontrollmechanismen größtenteils über heuristische Algorithmen funktionieren.
+
+What is the difference between defensive and detective security controls, as discussed in the Microsoft cloud security benchmark 
+
+- Detective controls focus on changing user behavior while defensive controls monitor for incidents
+- Defensive controls proactively prevent security incidents while Detective controls detect and respond to these incidents after they occur
+- Detective controls rely on passive monitoring of system logs while defensive controls require active scanning
+- Defensive controls rely entirely on preemptive configuration while Detective controls mostly operate via heuristic algorithms
+
+---
+
+### Answer:
+- Defensive Kontrollmechanismen verhindern proaktiv Sicherheitsverletzungen, während ermittelnde Kontrollmechanismen diese Vorfälle aufdecken und darauf reagieren, nachdem sie eingetreten sind.
+- Defensive controls proactively prevent security incidents while Detective controls detect and respond to these incidents after they occur
+
+---
+
+### References
+
+## Defensive Security Controls
+
+Purpose: To proactively prevent security incidents from occurring.   
+
+Examples:
+
+Network security controls: 
+Firewalls, intrusion detection systems (IDS), and intrusion prevention systems (IPS) to monitor and filter network traffic.   
+
+Access controls: 
+Role-based access control (RBAC), multi-factor authentication (MFA), and strong password policies to restrict unauthorized access to resources.
+
+Data protection controls: 
+Encryption, data loss prevention (DLP), and backup and recovery solutions to protect sensitive data.
+
+System hardening controls: 
+Configuration management and vulnerability scanning to reduce attack surfaces.   
+
+## Detective Security Controls
+
+Purpose: To identify and respond to security incidents that have already occurred.   
+
+Examples:
+
+Log monitoring and analysis: 
+Continuously monitoring system logs for suspicious activity.   
+
+Security information and event management (SIEM): 
+Centralized collection and analysis of security events from various sources.   
+
+Threat detection and response: 
+Advanced threat detection tools to identify and respond to sophisticated attacks.
+
+Incident response planning: 
+Having a well-defined plan to respond to security incidents effectively.
+
+---
+
+## Q010:
+
+Was ist der Zweck des Microsoft Cloud Security Benchmark? 
+
+- Es sollen empfohlene Sicherheitskonfigurationen und Best Practices für Microsoft-Clouddienste bereitgestellt werden.
+- Es soll eine umfassende Liste aller möglichen Sicherheitsbedrohungen für Microsoft-Clouddienste bereitgestellt werden.
+- Es soll eine Liste aller Sicherheitsverletzungen bereitgestellt werden, die in Microsoft-Clouddiensten aufgetreten sind.
+- Es soll ein Tool bereitgestellt werden, mit dem die Sicherheitsrisiken von Microsoft-Clouddiensten für Angriffe getestet werden.
+
+What is the purpose of the Microsoft Cloud Security Benchmark? 
+
+- To provide a set of recommended security configurations and best practices for Microsoft cloud services.
+- To provide a comprehensive list of all possible security threats to Microsoft cloud services.
+- To provide a list of all security breaches that occurred in Microsoft cloud services.
+- To provide a tool for testing the vulnerability of Microsoft cloud services to attacks.
+
+---
+
+### Answer:
+- Es sollen empfohlene Sicherheitskonfigurationen und Best Practices für Microsoft-Clouddienste bereitgestellt werden.
+- To provide a set of recommended security configurations and best practices for Microsoft cloud services.
+
+Der Microsoft Cloud Security Benchmark wurde entwickelt, um empfohlene Sicherheitskonfigurationen und Best Practices für Microsoft-Clouddienste bereitzustellen.
+
+The Microsoft Cloud Security Benchmark is designed to provide a set of recommended security configurations and best practices for Microsoft cloud services.
+
+---
+
+### References
+
+---
+
+## Q009:
+
+Was ist ein Hauptvorteil der Verwendung von bewährten Methoden, wie sie in der MCRA-Referenzarchitektur zu finden sind, wenn es um die Sicherheit in der Cloud geht? 
+
+- Muster machen eine detaillierte Sicherheitsbewertung für jedes einzelne Projekt überflüssig.
+- Muster reduzieren die Kosten, indem die Anzahl der zu sichernden Komponenten, Plattformen und Architekturen begrenzt wird.
+- Muster ermöglichen es Software, sich in Echtzeit an jede Art von Bedrohung anzupassen.
+
+
+What is a key benefit of using best practices, such as those found in the MCRA reference architecture when addressing cloud security concerns? 
+
+- Patterns eliminate the need for detailed security assessment for each individual project
+- Patterns reduce costs by limiting the number of components, platforms, and architectures that must be secured
+- Patterns enable software to adapt to any type of threat in real-time
+
+---
+
+### Answer:
+- Muster reduzieren die Kosten, indem die Anzahl der zu sichernden Komponenten, Plattformen und 
+- Patterns reduce costs by limiting the number of components, platforms, and architectures that must be secured
+
+? Falch!
+- Muster machen eine detaillierte Sicherheitsbewertung für jedes einzelne Projekt überflüssig.
+- Patterns eliminate the need for detailed security assessment for each individual project
+
+Die Verwendung von bewährten Methoden verkürzen zwar den Zeitaufwand für die Sicherheitsbewertung, aber es sollten dennoch Sicherheitsbewertungen durchgeführt werden, um sicherzustellen, dass das richtige Muster ausgewählt und an die jeweiligen Anforderungen des Projekts angepasst wird.
+
+Die Verwendung von bewährten Methoden kann den Personalbedarf, die Komplexität und das Risiko verringern und finanzielle Vorteile mit sich bringen, die sich eher aus den Einsparungen durch Wiederverwendung und Vereinfachung ergeben als aus der Reduzierung der Anzahl von Plattformen, Komponenten oder Architekturen allein.
+
+The use of best practices does cut down the time required for security evaluation, but security assessments should still be carried out to ensure the right pattern is chosen and customized for each project's distinct requirements.
+
+Using best practices can reduce staffing needs, complexity, and risk exposure, bringing financial benefits that arise from economies of reuse and simplification rather than reducing the number of platforms, components, or architectures alone.
+
+---
+
+### References
+
+
+
+---
+
+## Q008:
+
+Welche der folgenden Aussagen beschreibt am besten das Ziel einer Cloudreferenzarchitektur wie Microsoft Cybersecurity Reference Architecture (MCRA) von Microsoft? 
+
+- Alle Cloudmigrationsprojekte sollen mit demselben Ansatz behandelt werden.
+- Es werden Tools und Anbieter vorgeschrieben, um sichere Clouds zu erstellen.
+- Eine sichere Cloudarchitektur wird definiert, die mit einem beliebigen Technologiestapel implementiert werden kann.
+- Der Fokus soll auf technischen Sicherheitstipps für Cloudarchitekt*innen liegen.
+
+Which of the following best defines the objective of a cloud reference architecture like Microsoft Cybersecurity Reference Architecture (MCRA) from Microsoft? 
+
+- To handle all cloud migration projects with the same approach
+- To prescribe a set of tools and vendors for building secure clouds
+- To define a secure cloud architecture that can be implemented anywhere with any technology stack
+- To focus only on technical security tips for cloud architects
+
+---
+
+### Answer:
+- Eine sichere Cloudarchitektur wird definiert, die mit einem beliebigen Technologiestapel implementiert werden kann.
+- To define a secure cloud architecture that can be implemented anywhere with any technology stack
+
+MCRA wurde entwickelt, um eine sicherheitsorientierte Referenzarchitektur bereitzustellen, die fast überall angewendet werden kann, unabhängig von den zugrunde liegenden Technologien, Workloads oder Datentypen.
+
+MCRA is designed to provide security-focused reference architecture guidance that can apply almost anywhere no matter what underlying technologies, workloads, or data types are involved.
 
 ---
 
@@ -162,7 +358,7 @@ create, test, and deploy cloud resources effectively while applying best practic
 
 ---
 
-# Zero Trust
+# 01 Zero Trust
 
 [Introduction to Zero Trust and best practice frameworks](https://learn.microsoft.com/en-us/training/modules/introduction-zero-trust-best-practice-frameworks/)  
 [Zero Trust Collection](https://learn.microsoft.com/en-us/collections/kjqkh7d6d0oqjn)  
