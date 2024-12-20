@@ -74,6 +74,108 @@
 
 ---
 
+## Q014:
+
+Wie kann die Automatisierung der Updateverwaltung dazu beitragen, Sicherheitsbedrohungen zu minimieren? 
+
+- Automatisieren der App-Entwicklung, für mehr Sicherheit durch Design
+- Sicherstellen, dass alle Updates automatisch installiert werden, sobald sie verfügbar sind
+- Schnellere Bereitstellung kritischer Sicherheitspatches in der gesamten Infrastruktur
+- Bereitstellen einer detaillierten Protokollanalyse für sicherheitsrelevante Ereignisse in allen Systemen
+
+How can update management automation help mitigate against security threats? 
+
+- Automating app development to be more secure by design
+- Ensuring all updates are automatically installed as soon as they become available
+- Facilitating quicker deployment of critical security patches across infrastructure
+- Providing detailed log analysis for security events across systems
+
+---
+
+### Answer:
+- Schnellere Bereitstellung kritischer Sicherheitspatches in der gesamten Infrastruktur
+- Facilitating quicker deployment of critical security patches across infrastructure
+
+Die Automatisierung der Updateverwaltung hilft dabei, wichtige Sicherheitspatches schnell bereitzustellen, sodass Angreifer weniger Zeit haben, Sicherheitsrisiken auszunutzen.
+
+Update management automation helps quickly deploy critical security patches, reducing the time attackers have to exploit vulnerabilities.
+
+---
+
+### References
+
+---
+
+## Q013:
+
+Was ist eine wichtige Komponente der Planung der Geschäftsresilienz? 
+
+- Strikte Einhaltung von Unternehmensrichtlinien und -verfahren
+- Durchführen regelmäßiger Risikobewertungen
+- Festlegen klarer Kommunikationswege und Entscheidungsbefugnisse
+- Häufiges Ausführen simulierter Notfallszenarien
+What is a critical component of business resiliency planning? 
+
+- Strict adherence to company policies and procedures
+- Performing regular risk assessments
+- Establishing clear lines of communication and decision-making authority
+- Frequently performing simulated disaster scenarios
+
+---
+
+### Answer:
+- Durchführen regelmäßiger Risikobewertungen
+- Performing regular risk assessments
+
+Das Verständnis potenzieller Risiken ist der Schlüssel für die Entwicklung effektiver Resilienzpläne. Regelmäßige Risikobewertungen helfen dabei, diese Risiken zu erkennen und geeignete Strategien zur Risikominderung zu entwickeln.
+
+Understanding potential risks is key to developing effective resiliency plans. Regular risk assessments help identify these risks and allow for appropriate mitigation strategies to be developed.
+
+Wrong:
+- Häufiges Ausführen simulierter Notfallszenarien
+- Frequently performing simulated disaster scenarios
+
+Die Simulation von Notfallszenarien ist wichtig, aber kein wichtiger Bestandteil der Planung der Geschäftsresilienz.
+Simulating disaster scenarios is important, but isn't a critical component of business resiliency planning.
+
+---
+
+### References
+
+---
+
+## Q012:
+
+Was ist die primäre Methode zur Abmilderung von Ransomware-Angriffen? 
+
+- Häufiges Patchen von Systemen und Anwendungen
+- Überwachen des Netzwerkdatenverkehrs auf Anzeichen von Kompromittierung
+- Regelmäßiges Sichern von Daten und Testen von Wiederherstellungsverfahren
+- Erzwingen komplexer Kennwortrichtlinien für alle Benutzer
+
+What is the primary method for mitigating against ransomware attacks? 
+
+- Frequently patching systems and applications
+- Monitoring network traffic for indicators of compromise
+- Backing up data regularly and testing restore procedures
+- Enforcing complex password policies for all users
+
+---
+
+### Answer:
+- Regelmäßiges Sichern von Daten und Testen von Wiederherstellungsverfahren
+- Backing up data regularly and testing restore procedures
+
+Regelmäßige Sicherungen sind für die Wiederherstellung verloren gegangener oder verschlüsselter Daten nach einem Ransomware-Angriff unerlässlich. Das Testen von Wiederherstellungsverfahren stellt sicher, dass die Sicherungen tatsächlich die gewünschte Wiederherstellung durchführen können.
+
+Regular backups are essential for restoring any lost or encrypted data after a ransomware attack. Testing restore procedures ensure that the backups can actually perform the desired restore.
+
+---
+
+### References
+
+---
+
 # LP-1-03 Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)
 
 [Design solutions that align with the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB)](https://learn.microsoft.com/en-us/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/)  
