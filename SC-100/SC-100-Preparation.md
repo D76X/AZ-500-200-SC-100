@@ -528,6 +528,7 @@ What does the Zero Trust Rapid Modernization Plan (RaMP) aim to do?
 ---
 
 ### References
+[RaMP Checklist — Explicitly validate trust for all access requests](https://learn.microsoft.com/en-us/security/zero-trust/user-access-productivity-validate-trust)  
 
 ---
 
@@ -548,5 +549,7 @@ What is the core principle of Zero Trust security?
 ---
 
 ### References
+
+This answer is obvious.
 
 ---

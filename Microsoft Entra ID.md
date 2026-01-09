@@ -1848,23 +1848,39 @@ Conditional Access policies, such as multifactor authentication, can be enforced
 [Weitere Informationen zu Microsoft Priva](https://learn.microsoft.com/de-de/privacy/priva/priva-overview) 
 [Introduction to Microsoft Priva \- Preparing for the SC-900 Exam](https://www.youtube.com/watch?v=jfxtSZtVq5o) 
 
+The goal of Microsoft Priva is to provide a tool to the compliance team to improve efficiency when managing privacy and personal information, empowering information workers to make smart data handling decisions, and automating and managing subject requests at scale.
+
+Microsoft Priva helps companies with 
+
+- safeguarding personal data 
+- building a privacy-resilient workplace by **proactively** identifying and protecting against privacy risks such as:
+  - data hoarding
+  - data transfers
+  - data oversharing
+
+There are two parts to Microsoft Priva:
+
+1. Priva Privacy Risk Management
+2. Priva Subject Rights Requests
+
 ---
 
-# [Priva Privacy Risk Management](https://learn.microsoft.com/en-us/privacy/priva/risk-management) 
+## [1. Priva Privacy Risk Management](https://learn.microsoft.com/en-us/privacy/priva/risk-management) 
 
 [Informationen zum Datenschutz-Risikomanagement](https://learn.microsoft.com/de-de/privacy/priva/risk-management) 
 
-[Priva Subject Rights Requests](https://learn.microsoft.com/en-us/privacy/priva/subject-rights-requests) 
+---
+
+## [2. Priva Subject Rights Requests](https://learn.microsoft.com/en-us/privacy/priva/subject-rights-requests) 
 
 It gives you the capability to set up policies that identify privacy risks in your Microsoft 365 environment and enable easy remediation.
-
 Key targets that are reached **by setting up a Priva Privacy Risk Management Policy**:
 
 * Detect overexposed personal data so that users can secure it.  
     
 * Spot and limit transfers of personal data:  
     
-  *  across departments   
+  * across departments   
   * regional borders  
   * Internal and external users
 
