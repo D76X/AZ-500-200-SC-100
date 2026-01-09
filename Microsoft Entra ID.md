@@ -1858,6 +1858,11 @@ Microsoft Priva helps companies with
   - data transfers
   - data oversharing
 
+- Gain visibility into the storage and movement of personal data
+- Empower employees to make smart data handling decisions
+- Enable users to effectively manage data and take steps to comply with evolving privacy regulations
+- Manage subject rights requests at scale
+
 There are two parts to Microsoft Priva:
 
 1. Priva Privacy Risk Management
