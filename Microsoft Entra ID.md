@@ -1840,16 +1840,12 @@ Conditional Access policies, such as multifactor authentication, can be enforced
 
 ---
 
- 
-
-# Microsoft Priva
-
 # Microsoft Priva
 
 [**Module: SC-100: Design security operations, identity, and compliance capabilities \-  Design solutions for regulatory compliance  \- Address privacy requirements with Microsoft Priva**](https://learn.microsoft.com/en-us/training/modules/design-solutions-regulatory-compliance/4-address-privacy-requirements-microsoft-priva)  
-   
-[Weitere Informationen zu Microsoft Priva](https://learn.microsoft.com/de-de/privacy/priva/priva-overview) 
 
+[Introduction to Microsoft Priva - Preparing for the SC-900 Exam Vlad Talks Tech](https://www.youtube.com/watch?v=jfxtSZtVq5o&t=268s)     
+[Weitere Informationen zu Microsoft Priva](https://learn.microsoft.com/de-de/privacy/priva/priva-overview) 
 [Introduction to Microsoft Priva \- Preparing for the SC-900 Exam](https://www.youtube.com/watch?v=jfxtSZtVq5o) 
 
 ---
