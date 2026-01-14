@@ -547,9 +547,13 @@ And the the Zero Trust key practices:
 - Data Protection: Encrypt data in transit and at rest and classify data to apply appropriate controls.
 - MFA/Strong Authentication: Require multiple forms of verification for identity confirmation. 
 
-The The (RaMP) checklist cover the following areas, which together represent the basic set of elements that any user must obtain to be productive:
+The The (RaMP) checklist cover the following areas, which are named **sections** in the RaMP Zero Trust architecture, 
+which together represent the basic set of elements that any user must obtain to be productive:
 
 - [Identities](https://learn.microsoft.com/en-us/security/zero-trust/user-access-productivity-validate-trust#identities)  
+- [Endpoints](https://learn.microsoft.com/en-us/security/zero-trust/user-access-productivity-validate-trust#endpoints)  
+- [Apps](https://learn.microsoft.com/en-us/security/zero-trust/user-access-productivity-validate-trust#apps)  
+- [Network](https://learn.microsoft.com/en-us/security/zero-trust/user-access-productivity-validate-trust#network)  
 
 ---
 
