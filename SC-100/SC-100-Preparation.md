@@ -533,7 +533,23 @@ What does the Zero Trust Rapid Modernization Plan (RaMP) aim to do?
 
 The (RaMP) checklist helps you establish a security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access, for both public and private networks.
 
+It provides the adopter with a roadmap and a series of checklists to make usre that the cloud adoption process is implemented according to the Zero Trust principles:
 
+- Verify Explicitily
+- Use Least Priviledge Access
+- Assume Breach
+
+And the the Zero Trust key practices:
+
+- Microsegmentation: Divide networks into small, isolated zones to contain breaches and prevent attackers from moving freely (lateral movement).
+- Continuous Monitoring: Constantly monitor all activities and sessions, adapting policies in real-time as risk factors change.
+- Device Compliance: Verify the security posture and compliance of every device before granting access.
+- Data Protection: Encrypt data in transit and at rest and classify data to apply appropriate controls.
+- MFA/Strong Authentication: Require multiple forms of verification for identity confirmation. 
+
+The The (RaMP) checklist cover the following areas, which together represent the basic set of elements that any user must obtain to be productive:
+
+- [Identities](https://learn.microsoft.com/en-us/security/zero-trust/user-access-productivity-validate-trust#identities)  
 
 ---
 
