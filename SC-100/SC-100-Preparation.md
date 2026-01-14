@@ -528,7 +528,12 @@ What does the Zero Trust Rapid Modernization Plan (RaMP) aim to do?
 ---
 
 ### References
+
 [RaMP Checklist — Explicitly validate trust for all access requests](https://learn.microsoft.com/en-us/security/zero-trust/user-access-productivity-validate-trust)  
+
+The (RaMP) checklist helps you establish a security perimeter for cloud applications and mobile devices that uses identity as the control plane and explicitly validates trust for user accounts and devices before allowing access, for both public and private networks.
+
+
 
 ---
 
