@@ -505,6 +505,24 @@ What is the purpose of the Secure Data with Zero Trust initiative?
 ### Answer:
 - To protect data through data classification, access controls, and auditing
 
+Microsoft offers robust tools and guidance for protecting data through a comprehensive strategy that includes: 
+
+- data classification
+- access controls
+- auditing. 
+
+This framework is primarily built around Microsoft Purview, a suite of data governance and compliance solutions. 
+
+Key aspects of Microsoft's approach include:
+
+> Data Classification:
+
+Microsoft Purview provides automated tools to discover, classify, and label sensitive information across cloud, hybrid, and on-premises environments.
+
+- Automated Labeling: Machine learning and built-in sensitive information types help automatically apply sensitivity labels to data as it is created or modified
+- Manual Labeling: Users can also manually apply labels based on data sensitivity
+- Policies: Classification helps inform data loss prevention (DLP) policies, retention policies, and data lifecycle management
+
 ---
 
 ### References
