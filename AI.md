@@ -2,12 +2,15 @@
 
 
 [10 Perplexity Comet Agents to Automate Your Work (AI Browser)](https://www.youtube.com/watch?v=lqAHw6TwLsk)  
+[3 Perplexity Comet Agents for Work Automation Ali H. Salem](https://www.youtube.com/watch?v=thpg9WWsQHI)  
 [Perplexity: Beginner to Pro in 27 Minutes Ali H. Salem](https://www.youtube.com/watch?v=edbKMwddwBU&t=815s)  
 [COMET Browser: What can an AI Browser ACTUALLY Do? Learn With Shopify](https://www.youtube.com/watch?v=7ZsZ0DAbW-E)  
 
-> Use Cases
+---
 
-1. instant article.
+> Use Cases for Comet Browser
+
+1. instant article summary.
 2. fill in a spreadsheet from the data available from one or multiple tabs without having to manually copyi and paste.
 3. web-wide product comparison and best price search. 
 4. effortless tab organisation - just by asking COMET to do it for you by giving it a criterion in the chat.
@@ -18,3 +21,5 @@
 9. social media and community monitoring.
 10. Product comparison and decision making.
 11. Workflow automation & scheduling: executive (general) assistant.
+
+---
