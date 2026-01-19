@@ -18,3 +18,4 @@
 9. social media and community monitoring.
 10. Product comparison and decision making.
 11. Workflow automation & scheduling: executive (general) assistant.
+12. academic & business research.
