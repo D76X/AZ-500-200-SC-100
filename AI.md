@@ -3,6 +3,7 @@
 
 [10 Perplexity Comet Agents to Automate Your Work (AI Browser)](https://www.youtube.com/watch?v=lqAHw6TwLsk)  
 [Perplexity: Beginner to Pro in 27 Minutes Ali H. Salem](https://www.youtube.com/watch?v=edbKMwddwBU&t=815s)  
+[10 Game Changing Ways I Use the Comet Browser: Unlocking Next Level Browsing with AI The Tech Girl](https://www.youtube.com/watch?v=fq3KobEWiD8&t=27s)   
 [COMET Browser: What can an AI Browser ACTUALLY Do? Learn With Shopify](https://www.youtube.com/watch?v=7ZsZ0DAbW-E)  
 
 > Use Cases

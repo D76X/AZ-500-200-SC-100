@@ -1874,6 +1874,29 @@ There are two parts to Microsoft Priva:
 
 [Informationen zum Datenschutz-Risikomanagement](https://learn.microsoft.com/de-de/privacy/priva/risk-management) 
 
+Privacy Risk Management in Microsoft Priva gives you the capability to set up policies that identify privacy risks
+in your Microsoft 365 environment and enable easy remediation.
+
+> Key Areas
+
+1. Limit data overexposure
+
+[Privacy risk management policies](https://learn.microsoft.com/en-us/privacy/priva/risk-management-policies)  
+
+Limit data overexposure by creating alerts if personal data is accessible by too many people.
+Priva makes it possible to create **Priva Policies** to determine when data is access to broadly or often and to take actions when this happens.
+
+
+2. Find and mitigate data transfers
+
+[Data transfer policies in privacy risk management](https://learn.microsoft.com/en-us/privacy/priva/risk-management-policy-data-transfer)    
+
+It enables administrators to set up automated policies that detect data movements  across departments, regions, or to external parties within the Microsoft 365 environment, in near real-time and provides tools for users to take corrective action. 
+
+Data transfer policies in Microsoft Priva Privacy Risk Management allow you to monitor for personal data transfers outside of your organization, as well as internal transfers between different departments or countries or regions. When a policy match is detected, you can send users notifications in Microsoft Teams or emails with remediation options that include revoking access to, keeping, or deleting items (see details at step 10 of the policy creation process).
+
+3. Minimize stored data
+
 ---
 
 ## [2. Priva Subject Rights Requests](https://learn.microsoft.com/en-us/privacy/priva/subject-rights-requests) 
