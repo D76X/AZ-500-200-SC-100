@@ -1877,11 +1877,20 @@ There are two parts to Microsoft Priva:
 Privacy Risk Management in Microsoft Priva gives you the capability to set up policies that identify privacy risks
 in your Microsoft 365 environment and enable easy remediation.
 
+Microsoft Priva covers the following range of Microsoft products:
+
+- Exhange Online
+- SharePoint Online
+- OneDrive for Business
+- Microsoft Teams
+
 > Key Areas
+
+[Privacy risk management policies](https://learn.microsoft.com/en-us/privacy/priva/risk-management-policies)  
 
 1. Limit data overexposure
 
-[Privacy risk management policies](https://learn.microsoft.com/en-us/privacy/priva/risk-management-policies)  
+[Data overexposure policies in privacy risk management](https://learn.microsoft.com/en-us/privacy/priva/risk-management-policy-data-overexposure)  
 
 Limit data overexposure by creating alerts if personal data is accessible by too many people.
 Priva makes it possible to create **Priva Policies** to determine when data is access to broadly or often and to take actions when this happens.
@@ -1896,6 +1905,19 @@ It enables administrators to set up automated policies that detect data movement
 Data transfer policies in Microsoft Priva Privacy Risk Management allow you to monitor for personal data transfers outside of your organization, as well as internal transfers between different departments or countries or regions. When a policy match is detected, you can send users notifications in Microsoft Teams or emails with remediation options that include revoking access to, keeping, or deleting items (see details at step 10 of the policy creation process).
 
 3. Minimize stored data
+
+[Data minimization policies in privacy risk management](https://learn.microsoft.com/en-us/privacy/priva/risk-management-policy-data-minimization)  
+
+Data minimization policies focus on the age of your content and how long it has been since it was last modified. 
+Monitoring for personal data that's still being retained in older, unused content can help you better manage your 
+stored data and reduce risks.
+
+Microsoft Priva Privacy Risk Management allows you to create policies to monitor data that hasn't been modified 
+within a timeframe that you select. When a policy match is detected, you can send users email notifications with 
+remediation options to delete or keep the content item (see details at step 10 of the policy creation process).
+
+For example, GDPR requires customer's data to be erased after some time if the data is no longer relevant to 
+reduce the privacy risk.
 
 ---
 
