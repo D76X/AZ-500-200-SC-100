@@ -1938,6 +1938,21 @@ Fulfilling the requests, for most organizations, is a highly manual and time con
 Priva Subject Rights Requests gives you the capability to set up policies that identify privacy risks in your 
 Microsoft 365 environment and enable easy remediation.
 
+Easily create a subject right request with the information you have about the subject who placed the request:
+
+- Name
+- Residency
+- Relationship
+  - Customer
+  - Current/Former employee
+
+Microsoft provides multiple **templates for you to start from** such as: 
+
+- Data Export Template
+- Data Deletion Template
+
+---
+
 Key targets that are reached **by setting up a Priva Privacy Risk Management Policy**:
 
 * Detect overexposed personal data so that users can secure it.  
