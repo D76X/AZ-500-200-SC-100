@@ -160,13 +160,14 @@ Kibana: For visualizing data.
 [HeartBeat](https://www.elastic.co/docs/reference/beats/heartbeat)  
 [Heartbeat Lightweight shipper for uptime monitoring](https://www.elastic.co/beats/heartbeat)  
 
-Heartbeat for ELK (Elastic Stack) is a lightweight monitoring tool that actively checks the availability and performance of your services (websites, APIs, databases) by sending periodic pings (ICMP, TCP, HTTP), reporting 
-uptime status, response times, and errors to Elasticsearch for analysis in Kibana, providing crucial service-level visibility beyond basic server metrics. 
+Heartbeat for ELK (Elastic Stack) is a lightweight monitoring tool that actively checks the availability and performance of your services (websites, APIs, databases) 
+by sending periodic pings (ICMP, TCP, HTTP), reporting uptime status, response times, and errors to Elasticsearch for analysis in Kibana, providing crucial 
+service-level visibility beyond basic server metrics. 
 
 How it Works:
 
-Probes Services: Heartbeat runs as a daemon (similar to Filebeat or Metricbeat) on a server, often outside your network, to simulate real user interactions.
-Monitors Protocols: It checks services using various methods:
+- Probes Services: Heartbeat runs as a daemon (similar to Filebeat or Metricbeat) on a server, often outside your network, to simulate real user interactions.
+- Monitors Protocols: It checks services using various methods:
 ICMP: Simple "is it alive?" pings (requires root on Linux).
 TCP: Connects to specific ports to see if a service is listening.
 HTTP/HTTPS: Checks for specific status codes, response headers, or content on web services.
