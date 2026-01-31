@@ -168,17 +168,18 @@ How it Works:
 
 - Probes Services: Heartbeat runs as a daemon (similar to Filebeat or Metricbeat) on a server, often outside your network, to simulate real user interactions.
 - Monitors Protocols: It checks services using various methods:
-ICMP: Simple "is it alive?" pings (requires root on Linux).
-TCP: Connects to specific ports to see if a service is listening.
-HTTP/HTTPS: Checks for specific status codes, response headers, or content on web services.
-Reports to ELK: It sends uptime metrics and detailed health data to Elasticsearch.
-Visualizes in Kibana: Pre-built dashboards in Kibana provide instant overviews of service availability, response times, and downtime, helping to quickly pinpoint issues. 
+    - ICMP: Simple "is it alive?" pings (requires root on Linux).
+    - TCP: Connects to specific ports to see if a service is listening.
+    - HTTP/HTTPS: Checks for specific status codes, response headers, or content on web services.
+
+- Reports to ELK: It sends uptime metrics and detailed health data to Elasticsearch.
+- Visualizes in Kibana: Pre-built dashboards in Kibana provide instant overviews of service availability, response times, and downtime, helping to quickly pinpoint issues. 
 
 Key Benefits:
 
-Uptime Monitoring: Verifies services are reachable and meet SLAs, not just that the server is running (unlike Metricbeat).
-Comprehensive Checks: Supports TLS, authentication, proxies, and can monitor load-balanced services.
-Integration: Seamlessly combines with other Elastic Stack tools (Metricbeat, APM) for holistic observability, combining service availability with server metrics for faster troubleshooting. 
+- Uptime Monitoring: Verifies services are reachable and meet SLAs, not just that the server is running (unlike Metricbeat).
+- Comprehensive Checks: Supports TLS, authentication, proxies, and can monitor load-balanced services.
+- Integration: Seamlessly combines with other Elastic Stack tools (Metricbeat, APM) for holistic observability, combining service availability with server metrics for faster troubleshooting. 
 
 ---
 
