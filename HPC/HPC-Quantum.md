@@ -36,12 +36,30 @@
 
 ## Quantum Computing Book Recommendations by Dr. Olivia Lanes
 
-> 01. Quantum Information Science Riccardo Manenti · Mario Motta
+> 01. Quantum Mechanics the theoretical minimum - Leonard Susskind and others 
+
+[The Theoretical Minimum (5 books)](https://www.amazon.it/dp/B086YBGTWJ?binding=kindle_edition&qid=1772872083&sr=8-1&ref=dbs_dp_rwt_sb_pc_tkin)
+
+- The Theoretical Minimum: What You Need to Know to Start Doing Physics (English Edition)
+- Classical Mechanics (English Edition)
+- Quantum Mechanics: The Theoretical Minimum (Theoretical Minimum 2) (English Edition)
+- Special Relativity and Classical Field Theory: The Theoretical Minimum (Theoretical Minimum 3) (English Edition)  
+- General Relativity: The Theoretical Minimum (English Edition)
+
+> 02. Quantum Information Science Riccardo Manenti · Mario Motta
 
 [Quantum Information Science Riccardo Manenti · Mario Motta Aug 2023 · Oxford University Press](https://play.google.com/store/books/details?id=RkbMEAAAQBAJ&rdid=book-RkbMEAAAQBAJ&rdot=1&source=gbs_atb&pcampaignid=books_booksearch_atb&pli=1)  
+
 [Quantum Information Science (English Edition)  by Riccardo Manenti (Author), Mario Motta (Author)](https://www.amazon.it/-/en/Riccardo-Manenti-ebook/dp/B0CDHMPQDJ/ref=tmm_kin_swatch_0)
 
+> 03. The thirty years that shook Physics 
 
+
+> 04. Building Quantum Computers: A Practical Introduction
+
+[Building Quantum Computers: A Practical Introduction by Shayan Majidy, Christopher Wilson, Raymond Laflamme, Kindle](https://www.amazon.it/Building-Quantum-Computers-Practical-Introduction-ebook/dp/B0D3JFX7VC/ref=tmm_kin_swatch_0?_encoding=UTF8&dib_tag=se&dib=eyJ2IjoiMSJ9.R0exIGb8yemNgl3Y8ovhqwTgvEelHmP87RkmPXlPLO3lzjwdopn-kluOVOrrKEtwnlndB2NqIgml2M-IVd4_NxSJYYI1K_iAlzSMUxxmRM8aE5o6hIV2tKTSS-aJ1mEATFuZSbiGrZhnzf3R5kP08X0_1J_bE0N5TulyaOi9IJU.n7z9Q0OSwj1im5ajzkHV6fInonQQjRms2KygWUKiyhM&qid=1772879366&sr=8-1)  
+
+> 05. The Demon-Haunted WOrld: Science as a light in the dark by Carl Sagan
 
 ---
 
