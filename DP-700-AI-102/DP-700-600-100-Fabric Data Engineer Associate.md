@@ -1,7 +1,5 @@
 # DP-700-Fabric Data Engineer Associate
 
-# DP-700-Fabric Data Engineer Associate
-
 [**DP-700-600-Pluralsight-Channel**](https://app.pluralsight.com/channels/details/1ec80bf6-3c1b-4a5b-b603-022ef53107ec) 
 
 [DP-700: Implementing Data Engineering Solutions Using Microsoft Fabric \- Collection](https://learn.microsoft.com/en-us/collections/wpg2tztnx0gqqn)
