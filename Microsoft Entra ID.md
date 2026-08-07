@@ -1,6 +1,8 @@
-# MEID
+# Microsoft Entra ID (MEID)
 
-# Microsoft Entra ID
+[Must-Know Differences App Registrations vs Enterprise Apps Lionel Gurret](https://www.youtube.com/watch?v=0hAAR9m2vJU&t=7s)  
+
+---
 
 [Designing & Implementing Active Directory and Entra ID by **Neil Morrissey \- Pluralsight**](https://app.pluralsight.com/library/courses/azure-active-directory-designing-implementing/table-of-contents) 
 
