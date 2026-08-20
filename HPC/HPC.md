@@ -24,30 +24,49 @@ High-Performance [Computing (HPC) in Azure \- **John Savill**](https://www.youtu
 **Modules**
 
 01[\-Introduction to high-performance computing (HPC) on Azure](https://learn.microsoft.com/en-us/training/modules/intro-to-hpc/)  
+
 02- Create [an Azure Batch account by using the Azure portal](https://learn.microsoft.com/en-us/training/modules/create-batch-account-using-azure-portal/)   
+
 [03- Run parallel tasks in Azure Batch with the Azure CLI](https://learn.microsoft.com/en-us/training/modules/run-parallel-tasks-in-azure-batch-with-the-azure-cli/)  
+
 04- Create [an app to run parallel compute jobs in Azure Batch](https://learn.microsoft.com/en-us/training/modules/create-an-app-to-run-parallel-compute-jobs-in-azure-batch/)   
+
 [05-Create, customise, and manage an HPC cluster in Azure with Azure CycleCloud](https://learn.microsoft.com/en-us/training/modules/azure-cyclecloud-high-performance-computing/)   
+
 [06-Customize high-performance computing clusters deployed with Azure CycleCloud](https://learn.microsoft.com/en-us/training/modules/customize-clusters-azure-cyclecloud/)   
+
 [07-Understand factors that influence HPC storage selection in Azure](https://learn.microsoft.com/en-us/training/modules/hpc-storage-considerations/)   
+
 08- Choose [the best service level of Azure NetApp Files for your high-performance computing (HPC) applications](https://learn.microsoft.com/en-us/training/modules/choose-service-level-azure-netapp-files-hpc-applications/)   
+
 [09-Improve Azure NetApp Files performance for your EDA and HPC applications by using best practices](https://learn.microsoft.com/en-us/training/modules/improve-azure-netapp-files-performance-hpc-eda-best-practices/)    
+
 [10-Optimizing tightly coupled HPC applications on HBv2, HC, and HB series virtual machines](https://learn.microsoft.com/en-us/training/modules/optimize-tightly-coupled-hpc-apps/)   
+
 [11-Troubleshoot tightly coupled HPC applications on HBv2, HC, and HB series virtual machines](https://learn.microsoft.com/en-us/training/modules/troubleshoot-tightly-coupled-hpc-apps/)
+
+---
 
 ### HPC Concepts & Computer Architecture
 
-[**Flynn's taxonomy**](https://en.wikipedia.org/wiki/Flynn%27s_taxonomy) for Computer Architectures (ref: [**Einführung in HPC) in Azure-Azure Batch**](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/2-azure-batch))  
+[**Flynn's taxonomy**](https://en.wikipedia.org/wiki/Flynn%27s_taxonomy) for Computer Architectures (ref: 
+
+[**Einführung in HPC) in Azure-Azure Batch**](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/2-azure-batch))  
 [Intro to Parallelism with Flynn's Taxonomy \- International](https://www.youtube.com/watch?v=MJ-ettBDJqQ)
 
 [**SISD**: Single Instruction Single Data](https://harsh9verma.medium.com/sisd-simd-misd-mimd-fdf6f8e4b6e1)  
-[**SIMD**: Single Instruction Multiple Data](https://harsh9verma.medium.com/sisd-simd-misd-mimd-fdf6f8e4b6e1)	  
-[**MISD**: Multiple Instruction Single Data](https://harsh9verma.medium.com/sisd-simd-misd-mimd-fdf6f8e4b6e1)	  
-[**MIMD**: Multiple Instruction and Multiple Data Stream](https://harsh9verma.medium.com/sisd-simd-misd-mimd-fdf6f8e4b6e1)
 
-[**Hyperthreading**: What is Hyperthreading?](https://www.intel.com/content/www/us/en/gaming/resources/hyper-threading.html)
+[**SIMD**: Single Instruction Multiple Data](https://harsh9verma.medium.com/sisd-simd-misd-mimd-fdf6f8e4b6e1)	  
+
+[**MISD**: Multiple Instruction Single Data](https://harsh9verma.medium.com/sisd-simd-misd-mimd-fdf6f8e4b6e1)	  
+
+[**MIMD**: Multiple Instruction and Multiple Data Stream](https://harsh9verma.medium.com/sisd-simd-misd-mimd-fdf6f8e4b6e1)  
+
+[**Hyperthreading**: What is Hyperthreading?](https://www.intel.com/content/www/us/en/gaming/resources/hyper-threading.html)  
 
 [**Embarrassingly parallel (perfect parallelism)**](https://en.wikipedia.org/wiki/Embarrassingly_parallel) is a term that refers to computations that can be split into parallel tasks **with no or minimal dependency upon communication between them**. A common example is **3D video rendering** in a GPU, where each frame or pixel can be handled independently.
+
+---
 
 ### HPC Applications
 
@@ -55,18 +74,23 @@ High-Performance [Computing (HPC) in Azure \- **John Savill**](https://www.youtu
 [MatterSim Documentation](https://microsoft.github.io/mattersim/)   
 [MatterSim: A deep-learning model for materials under real-world conditions \- **Microsoft Research Blog**](https://www.microsoft.com/en-us/research/blog/mattersim-a-deep-learning-model-for-materials-under-real-world-conditions/)
 
+---
+
 ### Marketplace
 
-[Azure CycleCloud Workspace for Slurm-**Marketplace**](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azurecyclecloud.azure-cyclecloud-workspace-for-slurm?tab=Overview)   
+[Azure CycleCloud Workspace for Slurm-**Marketplace**](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/azurecyclecloud.azure-cyclecloud-workspace-for-slurm?tab=Overview)    
+
 [HDAP for SAAS customers](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/htcglobalservicesinc1699467740372.hdap_saas?tab=overview) 
 
 [Deploy AI infrastructure at scale on Azure in minutes\!​ | BRK232-Microsoft Events](https://www.youtube.com/watch?v=icQLydHK0rc)  
  
+ ---
 
 ### Azure TRE
 
 [Azure TRE v0.21.0 Introducing the AzureTRE](https://microsoft.github.io/AzureTRE/latest/)   
-[AzureTRE GitHub](https://github.com/microsoft/AzureTRE) 
+
+[AzureTRE GitHub](https://github.com/microsoft/AzureTRE)  
 
 **There is a need to enable researchers and solution developers to collaborate on sensitive data** **in the following scenarios and industries:**
 
@@ -78,20 +102,27 @@ Trusted Research Environments (TREs) enable organisations to provide research an
 
 ### Cases & Partnerships {#cases-&-partnerships}
 
-[03\. Azure\_HPC+AI Day: How to Onboard as a Partner](https://www.youtube.com/watch?v=RzNsW8u0cCQ&list=PLLasX02E8BPBlrbSDYOJ99YB34tKekvoK&index=5)   
+[03\. Azure\_HPC+AI Day: How to Onboard as a Partner](https://www.youtube.com/watch?v=RzNsW8u0cCQ&list=PLLasX02E8BPBlrbSDYOJ99YB34tKekvoK&index=5)    
+
 [01\. Azure HPC+Al Day Keynote](https://www.youtube.com/watch?v=YeCHFabuBMo)  
+
 [New Azure HPC and partner offerings at Supercomputing 19](https://azure.microsoft.com/en-us/blog/new-azure-hpc-and-partner-offerings-at-supercomputing-19/)  
+
 [**Capgemini** Shaping the Future of Healthcare: Meeting HCP Demands with Integrated Solutions](https://www.capgemini.com/de-de/insights/research/shaping-the-future-of-healthcare-meeting-hcp-demands-with-integrated-solutions/)   
+
 [**Cagemini**: Healthcare Provider (HCP) Services Capabilities, 2024](https://www.hfsresearch.com/research/capgemini-healthcare-provider-hcp-services-capabilities-2024/) 
 
-**Sensyne Health**  
 [**Sensyne Health**: Microsoft Azure’s first Azure HPC \+ AI Day \- Blog](#cases-&-partnerships)   
 [01\. Azure HPC+Al Day Keynote](https://www.youtube.com/watch?v=YeCHFabuBMo)
 
 **Ansys**  
+
 [Ansys Microsoft Azure](https://www.ansys.com/partner-ecosystem/high-performance-computing-partners/microsoft-azure)  
+
 [Azure Digital Twins](https://azure.microsoft.com/en-us/products/digital-twins/)   
+
 [Simulate. Scale. Succeed. With Ansys Access on Microsoft Azure](https://www.ansys.com/products/cloud/ansys-access)   
+
 [Ansys Cloud \- Contact Me \- Marketplace](https://azuremarketplace.microsoft.com/en-us/marketplace/apps/ansys.ansys_cloud?tab=overview) 
 
 ---
@@ -153,7 +184,9 @@ Es gibt eine gute Darstellung was ein HPC ist, indem es teilt eine allgemeines H
 [Prepare for cloud adoption: **Ready Methodology**](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/)
 
 [HPC-Reference **architecture** **for seismic processing**](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-hpc/compute#reference-architecture-for-seismic-processing)   
+
 [HPC Reference **architecture for energy**](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-hpc/azure-hpc-landing-zone-accelerator#example-conceptual-reference-architecture-for-energy)    
+
 [HPC-Reference **architecture for finance**](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-hpc/azure-hpc-landing-zone-accelerator#example-conceptual-reference-architecture-for-finance) 
 
 [**Comparison chart between Azure Batch & Azure CycleCloud**](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-hpc/ready#comparison-chart) 
@@ -171,11 +204,14 @@ The most significant differences are the following:
 ## HPC Virtual Machine Sizes
 
 [Virtual Machine series-Microsoft](https://azure.microsoft.com/en-us/pricing/details/virtual-machines/series/)   
+
 [Sizes for virtual machines in Azure \- HPC](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview?tabs=breakdownseries%2Cgeneralsizelist%2Ccomputesizelist%2Cmemorysizelist%2Cstoragesizelist%2Cgpusizelist%2Cfpgasizelist%2Chpcsizelist#high-performance-compute)   
-[Introducing the new HB and HC Azure VM sizes for HPC](https://azure.microsoft.com/en-us/blog/introducing-the-new-hb-and-hc-azure-vm-sizes-for-hpc/)  
+
+[Introducing the new HB and HC Azure VM sizes for HPC](https://azure.microsoft.com/en-us/blog/introducing-the-new-hb-and-hc-azure-vm-sizes-for-hpc/)   
+
 [HPC in Azure  **7 TB/s Memory Bandwidth VMs** \- with Mark Russinovich-**Microsoft Mechanics**](https://www.youtube.com/watch?v=NGuVGM6amsw&t=13s)
 
-[Funktionsweise von Azure HPC](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/3-how-azure-hpc-works) :
+[Funktionsweise von Azure HPC](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/3-how-azure-hpc-works)  
 
 [**H-Series: HPC VMs**](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview?tabs=breakdownseries%2Cgeneralsizelist%2Ccomputesizelist%2Cmemorysizelist%2Cstoragesizelist%2Cgpusizelist%2Cfpgasizelist%2Chpc-hx-fam#high-performance-compute)
 
@@ -221,12 +257,14 @@ Example workloads include fluid dynamics, finite element analysis, seismic proce
 GPUs are ideal for compute and graphics-intensive workloads: high-end remote visualization, deep learning, and predictive analytics.
 
 [NC-series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview?tabs=breakdownseries%2Cgeneralsizelist%2Ccomputesizelist%2Cmemorysizelist%2Cstoragesizelist%2Cgpu-nc-fam%2Cfpgasizelist%2Chpcsizelist#gpu-accelerated)   
+
 [NC sub-family GPU accelerated VM size series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nc-family) 
 
 **Computing and ML & AI Workloads**. The latest version—NCsv3—features **NVIDIA’s Tesla V100 GPU**.  
 These offer substantial acceleration for processes that require **heavy computational power**.  
    
-[ND-series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview?tabs=breakdownseries%2Cgeneralsizelist%2Ccomputesizelist%2Cmemorysizelist%2Cstoragesizelist%2Cgpu-nd-fam%2Cfpgasizelist%2Chpcsizelist#gpu-accelerated)   
+[ND-series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview?tabs=breakdownseries%2Cgeneralsizelist%2Ccomputesizelist%2Cmemorysizelist%2Cstoragesizelist%2Cgpu-nd-fam%2Cfpgasizelist%2Chpcsizelist#gpu-accelerated)    
+
 [ND sub-family GPU accelerated virtual machine size series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nd-family) 
 
 **These are focused on training and inference scenarios for deep learning**. 
@@ -235,11 +273,13 @@ It uses the NVIDIA Tesla P40 GPUs. The latest version \- NDv2 \- features the NV
 They offer specialized capabilities for training and inference of complex machine learning models, facilitating faster computations and efficient handling of large datasets.
 
 [NG-Series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview?tabs=breakdownseries%2Cgeneralsizelist%2Ccomputesizelist%2Cmemorysizelist%2Cstoragesizelist%2Cgpu-ng-fam%2Cfpgasizelist%2Chpcsizelist#gpu-accelerated)  
+
 [NG sub-family GPU accelerated VM size series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/ng-family) 
 
 They harness **powerful AMD Radeon** **PRO GPU** na dare designed for cloud **gaming and remote desktop applications** and to deliver high-quality, interactive gaming experiences in the cloud, **rendering complex graphics** and **streaming high-definition video**. It is ideal for users needing reliable, high-performance access to desktop applications from anywhere.
 
 [NV-series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview?tabs=breakdownseries%2Cgeneralsizelist%2Ccomputesizelist%2Cmemorysizelist%2Cstoragesizelist%2Cgpu-nv-fam%2Cfpgasizelist%2Chpcsizelist#gpu-accelerated)   
+
 [NV sub-family GPU accelerated VM size series](https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/gpu-accelerated/nv-family) 
 
 These are **specifically designed for graphics-intensive applications such as graphics rendering, simulation, and virtual desktops**. They enables **powerful remote visualization workloads** and other **graphics-intensive applications** backed by the NVIDIA Tesla M60 GPU. NCsv3, NCsv2, NC and NDs
@@ -250,17 +290,20 @@ Example workloads include simulation, deep learning, graphics rendering, video e
 
 ---
 
-# [Stogare & File System](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/3-how-azure-hpc-works)
+# [Stogare & File System](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/3-how-azure-hpc-works)  
 
-[Funktionsweise von Azure HPC](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/3-how-azure-hpc-works) 
+[Funktionsweise von Azure HPC](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/3-how-azure-hpc-works)   
 
-## [Storage for Azure HPC workloads](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-hpc/storage)
+## [Storage for Azure HPC workloads](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-hpc/storage)  
 
 [**Speicher für Azure HPC-Workloads**](https://learn.microsoft.com/de-de/azure/cloud-adoption-framework/scenarios/azure-hpc/storage)   
+
 [**Understand factors that influence HPC storage selection in Azure**](https://learn.microsoft.com/en-us/training/modules/hpc-storage-considerations/)   
-[**Verstehen von Faktoren, die die HPC-Speicherauswahl in Azure beeinflussen**](https://learn.microsoft.com/de-de/training/modules/hpc-storage-considerations/) 
+
+[**Verstehen von Faktoren, die die HPC-Speicherauswahl in Azure beeinflussen**](https://learn.microsoft.com/de-de/training/modules/hpc-storage-considerations/)  
 
 Storage for Azure HPC workloads \>  
+
 [Überlegungen im Zusammenhang mit HPC](https://learn.microsoft.com/de-de/azure/cloud-adoption-framework/scenarios/azure-hpc/storage#hpc-considerations) | [HPC considerations](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-hpc/storage#hpc-considerations) :
 
 Knoten greifen **auf** Speicher in **einer Reihe von Szenarien** zu, die **zwischen** den folgenden Extremen liegen:
@@ -276,12 +319,11 @@ Knoten greifen **auf** Speicher in **einer Reihe von Szenarien** zu, die **zwisc
 
 ---
 
-## 
-
 ### Azure HPC Cache
 
 [**What is Azure HPC Cache?**](https://learn.microsoft.com/en-us/azure/hpc-cache/hpc-cache-overview)   
-[**Was ist Azure HPC Cache?**](https://learn.microsoft.com/de-de/azure/hpc-cache/hpc-cache-overview#visual-effects-vfx-rendering) 
+
+[**Was ist Azure HPC Cache?**](https://learn.microsoft.com/de-de/azure/hpc-cache/hpc-cache-overview#visual-effects-vfx-rendering)   
 
 **Why is Azure HPC Cache retired?**
 
@@ -290,13 +332,15 @@ Azure HPC Cache is being retired ON September 30, 2025 because the underlying Cl
 Microsoft encourages users to transition to newer options like:
 
 * [HPC Pack Cluster Burst to Azure IaaS VM](https://learn.microsoft.com/en-us/powershell/high-performance-computing/hpcpack-burst-to-azure-iaas-nodes?view=hpc19-ps)  
+
 * [HPC Pack Burst to Azure Batch service](https://learn.microsoft.com/en-us/powershell/high-performance-computing/burst-to-azure-batch-with-microsoft-hpc-pack?view=hpc19-ps)
 
 **It speeds access to your data for HPC tasks by caching files in Azure**. 
 
 Azure HPC Cache brings the scalability of cloud computing to your existing workflow. This service can be used even for workflows where your data is stored across WAN links, such as in your local datacenter network-attached storage (NAS) environment.
 
-[Funktionsweise von Azure HPC](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/3-how-azure-hpc-works):   
+[Funktionsweise von Azure HPC](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/3-how-azure-hpc-works)  
+
 Bringen Sie Ihre HPC-Anwendungen in Azure **unter Verwendung von Daten, die auf lokalen NAS-Geräten** **gespeichert sind**, mit HPC Cache zu Laufen.
 
 \> Use Cases:
@@ -312,6 +356,7 @@ Any system where a large number of machines need to access a set of files at sca
 Alle Anwendungen, die von der **Zwischenspeicherung in der Cloud von Dateien**, die sich in der Regel in einer **lokalen NAS-Umgebung** befinden, profitieren können durch **verrigernde Latenzzeit**.
 
 [Rendern visueller Effekte (VFX)](https://learn.microsoft.com/de-de/azure/hpc-cache/hpc-cache-overview#visual-effects-vfx-rendering)  
+
 [Biowissenschaften](https://learn.microsoft.com/de-de/azure/hpc-cache/hpc-cache-overview#life-sciences) 
 
 ---
@@ -319,13 +364,19 @@ Alle Anwendungen, die von der **Zwischenspeicherung in der Cloud von Dateien**, 
 ### Azure NetApp Files
 
 [**Azure NetApp Files- John Savill**](https://www.youtube.com/watch?v=OwajZ48Pa0c&t=1755s)   
-[Azure NetApp Files](https://azure.microsoft.com/en-us/products/netapp)  
+
+[Azure NetApp Files](https://azure.microsoft.com/en-us/products/netapp)   
+
 [Azure NetApp Files: Revolutionizing silicon design for HPC By Aung Oo, Vice President, Azure Storage](https://azure.microsoft.com/en-us/blog/azure-netapp-files-revolutionizing-silicon-design-for-high-performance-computing/)   
+
 [Guidelines for Azure NetApp Files network planning](https://learn.microsoft.com/en-us/azure/azure-netapp-files/azure-netapp-files-network-topologies) | [Richtlinien für die Azure NetApp Files-Netzwerkplanung](https://learn.microsoft.com/de-de/azure/azure-netapp-files/azure-netapp-files-network-topologies)   
+
 [Cross-region replication of Azure NetApp Files volumes](https://learn.microsoft.com/en-us/azure/azure-netapp-files/cross-region-replication-introduction)   
+
 [Regionsübergreifende Replikation von Azure NetApp Files-Volumes](https://learn.microsoft.com/de-de/azure/azure-netapp-files/cross-region-replication-introduction) 
 
-[Funktionsweise von Azure HPC](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/3-how-azure-hpc-works):   
+[Funktionsweise von Azure HPC](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/3-how-azure-hpc-works)  
+
 Greifen Sie auf große E/A-Mengen mit einer **Latenzzeit von unter einer Millisekunde** mit Azure NetApp Files zu, das als Azure-Dienst nativ in einem Azure-Rechenzentrum bereitgestellt wird.
 
 Zentrale Vorteile:
@@ -370,6 +421,7 @@ Für Folgendes hilfreich:
 ### Azure Managed Lustre Parallel File System
 
 [What is Azure Managed Lustre?](https://learn.microsoft.com/en-us/azure/azure-managed-lustre/amlfs-overview)   
+
 [Azure Managed Lustre Parallel File System](https://azure.microsoft.com/en-us/products/managed-lustre) 
 
 Zentrale Vorteile:
@@ -424,7 +476,7 @@ Parallele Dateisysteme sind in **zwei Hauptelemente unterteilt**:
 
 ---
 
-### [Cray ClusterStor](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-hpc/storage#cray-clusterstor) 
+### [Cray ClusterStor](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/azure-hpc/storage#cray-clusterstor)  
 
 [Funktionsweise von Azure HPC](https://learn.microsoft.com/de-de/training/modules/intro-to-hpc/3-how-azure-hpc-works)   
 [Accelerate supercomputing in the cloud with Cray ClusterStor](https://azure.microsoft.com/en-us/blog/supercomputing-in-the-cloud-announcing-three-new-cray-in-azure-offers/)   
