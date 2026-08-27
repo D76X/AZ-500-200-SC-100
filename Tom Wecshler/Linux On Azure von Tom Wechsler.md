@@ -1,34 +1,36 @@
-# Linux On Azure
+# Linux On Azure von Tom Wecshler 
+
+[Tom Wecshler YouTube](https://www.youtube.com/@tomvideo2brain)
+[Tom Wecshler](https://github.com/tomwechsler?page=3&tab=repositories) 
+
+[Linux on Azure by Tom Wechsler](https://www.youtube.com/playlist?list=PLi0MTIjZai_yi1NkwNt4YBN3mdGSlG6TS)
+[LinuxOnAzure](https://github.com/tomwechsler/LinuxOnAzure) 
 
 ---
-
-## [LinuxOnAzure](https://github.com/tomwechsler/LinuxOnAzure) \- [Tom Wecshler](https://github.com/tomwechsler?page=3&tab=repositories) \- [YouTube](https://www.youtube.com/@tomvideo2brain)
-
-### Ressourcen 
 
 [Deploy and administer Linux virtual machines on Azure-**Microsoft Learn-Module**](https://learn.microsoft.com/en-us/training/paths/deploy-administer-linux-virtual-machines-azure/) 
 
 [LinuxOnAzure GitHub Repo-Tom Wechler](https://github.com/tomwechsler/LinuxOnAzure)  
-[Azure Tip: Linux on Azure \- Folge 2 \- Mit SSH (Windows Terminal u. WSL) eine Remotesitzung erstellen](https://www.youtube.com/watch?v=ckhwvQezBBU)  
+
+[Azure Tip: Linux on Azure \- Folge 2 \- Mit SSH (Windows Terminal u. WSL) eine Remotesitzung erstellen](https://www.youtube.com/watch?v=ckhwvQezBBU)   
+
 [Bytesource \- Wir sind Ihr DevOps Experte](https://bytesource.net/de/devops/?ppc_keyword=&gclid=CjwKCAiA_vKeBhAdEiwAFb_nrae1f9jhSqJQDwO3_9CX1bTbXyXt5egpGzDQ6_3Y4_hx1A5xuD75fRoC8QgQAvD_BwE) 
 
 [Azure\_Cloud\_Shell](https://github.com/tomwechsler/Azure_Cloud_Shell)
 
 ---
 
-## [LinuxOnAzure](https://github.com/tomwechsler/LinuxOnAzure) \- [Tom Wecshler](https://github.com/tomwechsler?page=3&tab=repositories) \- [YouTube](https://www.youtube.com/@tomvideo2brain)
-
 ### Ressourcen 
 
-* #### [LinuxOnAzure GitHub Repo](https://github.com/tomwechsler/LinuxOnAzure)
+#### [01\_Überblick\_Hardware\_und\_virtuellen\_Verzeichnissen.txt](https://github.com/tomwechsler/LinuxOnAzure/blob/master/01_%C3%9Cberblick_Hardware_und_virtuellen_Verzeichnissen.txt)  
 
-* #### [01\_Überblick\_Hardware\_und\_virtuellen\_Verzeichnissen.txt](https://github.com/tomwechsler/LinuxOnAzure/blob/master/01_%C3%9Cberblick_Hardware_und_virtuellen_Verzeichnissen.txt)  
+[01\. Windows und Linux Tip: Installation vom Windows Subsystem für Linux](https://www.youtube.com/watch?v=zCFq5bluhfc)    
 
-[01\. Windows und Linux Tip: Installation vom Windows Subsystem für Linux](https://www.youtube.com/watch?v=zCFq5bluhfc)   
 [02\. Microsoft Tip: Windows Subsystem for Linux (WSL2) \- Konfiguration erweiterter Einstellungen](https://www.youtube.com/watch?v=N8DtdSxZFAw)  
-[03\. Microsoft Tip: Windows Subsystem for Linux (WSL2) und Visual Studio Code](https://www.youtube.com/watch?v=FK1xzerf-_s)   
-[04\. Microsoft Tip: Windows Subsystem for Linux (WSL2) und Notepad++](https://www.youtube.com/watch?v=bkoz_WblFew)
 
+[03\. Microsoft Tip: Windows Subsystem for Linux (WSL2) und Visual Studio Code](https://www.youtube.com/watch?v=FK1xzerf-_s)   
+
+[04\. Microsoft Tip: Windows Subsystem for Linux (WSL2) und Notepad++](https://www.youtube.com/watch?v=bkoz_WblFew)
     
 ---
 
