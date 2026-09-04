@@ -9,6 +9,7 @@
 # Quantum Algorithms
 
 [Why I Left Quantum Computing Research](https://www.youtube.com/watch?v=pDj1QhPOVBo&t=1100s)  
+
 [Foundational Quantum Algorithms Part I: Deutsch’s and Grover’s Algorithms: John Watrous | QQGS 2025](https://www.youtube.com/watch?v=PVCZb0p2FBo&t=36s) 
 
 [Practical Quantum Algorithms: Joana Fraxanet Morales | QGSS 2025](https://www.youtube.com/watch?v=pWCiaE-9UGM) 
@@ -16,6 +17,10 @@
 [Quantum vs Classical: Deutsch & Deutsch-Jozsa Algorithms Explained  Qiskit](https://www.youtube.com/watch?v=QcK0GK7DUh8)   
 
 [How the Variational Quantum Eigensolver finds ground states | VQE  Qiskit](https://www.youtube.com/watch?v=DUq-0r-Prw0) 
+
+[Quantum Algorithms Pt.1 Simulation of Physical Systems | Will Kirby | QGSS26 Qiskit](https://www.youtube.com/watch?v=X8YANoaMUGY)   
+
+[Quantum Mechanics forComputation | Kevin Sung | QGSS26 Qiskit](https://www.youtube.com/watch?v=-reX5fajpvg&t=23s)  
 
 ---
 
