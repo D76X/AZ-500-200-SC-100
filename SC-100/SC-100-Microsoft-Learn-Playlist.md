@@ -1,6 +1,16 @@
 
 [SC-100: Microsoft Cybersecurity Architect Microsoft Learn Course 27 videos Last updated on 6 Feb 2026](https://www.youtube.com/playlist?list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_)  
 
+[Cloud Adoption Framework for Microsoft](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)   
+[Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)    
+[Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)  
+
+> With aka.ms/XXX
+[Microsoft cloud security benchmark documentation (MCSB)](https://aka.ms/mcsb)
+[Cloud Adoption Framework for Microsoft](https://aka.ms/caf)
+[Azure Well-Architected Framework](https://aka.ms/waf)
+
+
 ---
 
 [Cybersecurity Architect | SC-100 | Episode 2 Microsoft Learn](https://www.youtube.com/watch?v=S1NuiEuQuBQ&list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_&index=3)   
@@ -8,6 +18,54 @@
 ---
 
 [Course Intro | SC-100 | Episode 1 Microsoft Learn](https://www.youtube.com/watch?v=3hLAnuadexg&list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_&index=3)  
+
+# What is MCSB in the context of the SC-100 Security Architect Exam?
+
+MCSB stands for the [Microsoft Cloud Security Benchmark](https://learn.microsoft.com/en-us/security/benchmark/azure/), 
+a foundational set of **prescriptive security best practices**, compliance guidelines, and control baselines used
+to secure cloud and hybrid workloads. [1, 2] 
+
+In the context of the SC-100 (Microsoft Cybersecurity Architect) Exam, MCSB is a core framework that you are expected 
+to master for designing and evaluating security posture management. [3, 4] 
+
+## Key Aspects of MCSB for the SC-100 Exam
+
+* Control Baseline: It provides a unified, measurable standard for security configurations across cloud resources, 
+moving beyond isolated settings into structured control families. [5, 6] 
+
+* Multi-Cloud Scope: Although formerly known as the Azure Security Benchmark, it applies broadly across Azure and multi-cloud environments (such as AWS and GCP). [4] 
+
+* Regulatory Mapping: MCSB maps directly to established industry standards like 
+    - Center for Internet Security (CIS) Controls, 
+    - National Institute of Standards and Technology (NIST), 
+    - Payment Card Industry Data Security Standard (PCI-DSS). [2, 4] 
+
+* Microsoft Defender for Cloud Integration: It serves as the underlying evaluation engine for the Regulatory Compliance dashboard and directly influences an organization's Secure Score. [2, 4] 
+
+## Core Control Domains Covered
+
+The benchmark is structured around critical operational domains that frequently appear in SC-100 scenario-based questions: [4, 7] 
+
+* Identity Management and Privileged Access
+* Network Security and Data Protection
+* Logging, Threat Detection, and Incident Response
+* Posture and Vulnerability Management
+* DevOps and Emerging AI Security Controls [7, 8, 9] 
+
+On the exam, you will be tested on how to recommend and evaluate architectural designs 
+that align workloads and governance models directly with MCSB requirements. [3, 4] 
+
+[1] [https://examos.io](https://examos.io/study-plans/microsoft-certified-cybersecurity-architect-expert-sc-100?from=hub)
+[2] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/security/benchmark/azure/introduction)
+[3] [https://intunedin.net](https://intunedin.net/2026/06/01/sc-100-microsoft-cybersecurity-architect-exam-resource-guide-april-2026-update/)
+[4] [https://www.youtube.com](https://www.youtube.com/watch?v=zNS-ldHMueI&t=4)
+[5] [https://www.youtube.com](https://www.youtube.com/watch?v=Z7RZ-H1WzHs&t=66)
+[6] [https://www.linkedin.com](https://www.linkedin.com/posts/vimal-singh1984_microsoft-cloud-security-benchmark-explained-activity-7332664143486885888-9vy3)
+[7] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/security/benchmark/azure/)
+[8] [https://www.linkedin.com](https://www.linkedin.com/pulse/sc-100-microsoft-cybersecurity-architect-masud-rana-fvpoc)
+[9] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/)
+
+---
 
 # What are the 7 pillars of Zero Trust in the context of the SC-100 Security Architect Exam?
 
@@ -118,3 +176,5 @@ In relation to the SC-100 Microsoft Cybersecurity Architect exam, the MCRA is a 
 [7] [https://www.youtube.com](https://www.youtube.com/watch?v=6iYxNm3TOiI&t=3)
 [8] [https://www.youtube.com](https://www.youtube.com/watch?v=hRs6VDinIJE&t=702)
 [9] [https://mscertquiz.com](https://mscertquiz.com/blog/sc-100-study-guide)
+
+---
