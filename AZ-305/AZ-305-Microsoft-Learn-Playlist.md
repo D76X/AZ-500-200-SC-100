@@ -16,7 +16,114 @@
 
 ---
 
+# [SC-100: Microsoft Cybersecurity Architect Microsoft Learn Playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_)  
+
+
+---
+
+# Episode 3
+[Security Posture Assessments | SC-100 | Episode 3 Microsoft Learn](https://www.youtube.com/watch?v=Nc-2gsBPl3Q&list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_&index=4)  
+
+1. run a general assesment 
+[Welcome to Microsoft Assessments](https://learn.microsoft.com/en-my/assessments/)
+
+    - who are the stateholders
+    - who owns what
+    - what are the assets. i.e. tenants, identities, apps
+    - what are the risks for each party and for the business
+    - are there previous security incidents?
+    - what is the expected ROI in each case, what was in the case of previos incidents if any?
+
+
+[Azure Well-Architected Review](https://learn.microsoft.com/en-my/assessments/azure-architecture-review/)  
+
+[Microsoft Cloud for Healthcare Learner Self-Assessment (Preview)](https://learn.microsoft.com/en-my/assessments/a597e375-3ebd-4dc7-8dd9-6d8f75a7ca70/)  
+
+---
+
+# Episode 1
 [Course introduction | Design Microsoft Azure Infrastructure Solutions | AZ-305 | Episode 1](https://www.youtube.com/watch?v=5h_pbmMb7T4&list=PLahhVEj9XNTejs0fgXT6HXaj_a_qsUoKa&index=3)  
+
+# Episode 2
+[Cybersecurity Architect | SC-100 | Episode 2 Microsoft Learn](https://www.youtube.com/watch?v=S1NuiEuQuBQ&list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_&index=4)
+
+---
+
+# Comparing best practice frameworks (https://aka.ms/xxx)
+
+## MCSB
+
+Includes **a collection of high-impact security recommendations** 
+you can use to help secure cloud services in a single or multicloud environment.
+
+## CAF
+
+- Full life cycle framework
+- Provides best practices, documentation, and tools that help you create and implement business and technology strategies
+
+# WAF
+
+- A set multiload of guiding tenets that can be used to improve the quality of a workload
+- The framework consists of five pillars of architectural excellence
+
+---
+
+# CAF Govern, CAF Secure and CAF mANAGE in the context of the AZ-305 Solution Architect Exam?
+
+In the context of Microsoft Azure and the AZ-305 Architecting Microsoft Azure Infrastructure Solutions exam, 
+**CAF** refers to the **Microsoft Cloud Adoption Framework for Azure**. 
+
+The Cloud Adoption Framework guides organizations through cloud alignment, strategy, and operations. 
+Within the framework's **Govern** and **Manage** methodologies, as well as the overarching security guidance (**Secure**), 
+Azure structures key operational disciplines for enterprise scale.
+
+---
+
+### 1. CAF Govern (Governance Methodology)
+
+CAF Govern focuses on maintaining control, compliance, and risk management without blocking developer velocity.
+
+* **AZ-305 Core Focus:** Designing landing zones, governance hierarchies, and subscription strategies using Azure tools.
+* **Key Principles & Tools:**
+  * **Five Disciplines of Governance:** Cost Management, Security Baseline, Identity Baseline, Resource Consistency, and Deployment Acceleration.
+  * **Azure Management Groups:** Organizing subscriptions hierarchically to apply policies efficiently across the enterprise.
+  * **Azure Policy & Blueprints:** Enforcing compliance rules (e.g., restricting locations, requiring tags, enforcing secure endpoints) and automated provisioning.
+  * **Cost Management & Billing:** Setting budgets, scopes, and cost allocation tags.
+
+---
+
+### 2. CAF Secure (Security Methodology)
+CAF Secure integrates security into every phase of cloud adoption, drawing heavily from the **Microsoft Cybersecurity Reference Architectures (MCRA)** and the **Zero Trust Model**.
+
+* **AZ-305 Core Focus:** Designing end-to-end secure architecture, identity controls, data protection, and threat monitoring.
+* **Key Principles & Tools:**
+  * **Zero Trust Architecture:** Assume breach, verify explicitly, and grant least privilege access.
+  * **Microsoft Defender for Cloud:** Monitoring security posture management (CPSM) and workload protection across hybrid/multicloud environments.
+  * **Microsoft Sentinel:** Cloud-native SIEM/SOAR for centralized log analytics and threat response.
+  * **Identity & Access Management:** Azure Active Directory (Entra ID), Privileged Identity Management (PIM), Conditional Access, and RBAC design.
+  * **Data & Network Security:** Encryption at rest/in transit, Key Vault, Private Endpoints, Firewall, and NSGs.
+
+---
+
+### 3. CAF Manage (Management Methodology)
+CAF Manage addresses business continuity, operational baseline creation, and daily workload management once workloads are live in Azure.
+
+* **AZ-305 Core Focus:** Designing reliable, resilient architectures with appropriate operational monitoring and disaster recovery strategies.
+* **Key Principles & Tools:**
+  * **Operations Baseline:** Defining standard operating procedures for patch management, backup, and monitoring across all resources.
+  * **Azure Monitor & Log Analytics:** Aggregating metrics, traces, and logs across subscriptions for continuous observability.
+  * **Business Continuity & Disaster Recovery (BCDR):** Designing architectures using Azure Backup and Azure Site Recovery (ASR) to meet business RTO (Recovery Time Objective) and RPO (Recovery Point Objective) requirements.
+  * **High Availability (HA) Design:** Utilizing Availability Sets, Availability Zones, and regional pairs.
+
+---
+
+### How They Compare for AZ-305
+
+| Domain | Primary Goal | Key Azure Services Tested |
+| :--- | :--- | :--- |
+| **CAF Govern** | Compliance, cost control, organizational hierarchy | Management Groups, Azure Policy, Azure Resource Manager (ARM), Tagging |
+| **CAF Secure** | Risk mitigation, access control, threat defense | Entra ID, Microsoft Defender for Cloud, Key Vault, Private Link, Sentinel |
+| **CAF Manage** | Operations, uptime, monitoring, backup/DR | Azure Monitor, Azure Site Recovery (ASR), Azure Backup, Log Analytics |
 
 ---
 
@@ -49,7 +156,9 @@ The AZ-305 exam tests your ability to balance and apply these five key pillars i
 ## Why It Matters for the AZ-305 Exam
 
 * Design Trade-offs: The exam frequently presents scenarios where optimizing for one pillar impacts another (e.g., increasing Reliability via multi-region replication increases Cost). You must choose the optimal compromise based on business priorities. [2, 9] 
+
 * Service Selection: Questions test your ability to select specific Azure services (like Azure Front Door, AKS, or Azure SQL) that natively satisfy the architectural standards defined by the framework. [5, 10] 
+
 * Evaluation & Governance: You are expected to know assessment tools like Azure Advisor and the [Azure Well-Architected Review](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/implementing-recommendations) to continuously evaluate and improve cloud architectures. [6, 11] 
 
 
@@ -64,6 +173,48 @@ The AZ-305 exam tests your ability to balance and apply these five key pillars i
 [9] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework)
 [10] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/well-architected/service-guides/)
 [11] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/well-architected/design-guides/implementing-recommendations)
+
+---
+
+# What is the role of Azure Advisor in the context of the AZ-305 Solution Architect Exam?
+
+Azure Advisor acts as a built-in cloud consultant that evaluates your resource configurations and usage telemetry 
+to provide proactive best-practice recommendations. [1] 
+
+In the context of the AZ-305 (Designing Microsoft Azure Infrastructure Solutions) exam, Azure Advisor maps directly to 
+the Azure Well-Architected Framework, serving as a practical tool for governance, optimization, and continuous improvement. [2, 3] 
+
+------------------------------
+## Core Pillars and Exam Relevance
+
+* Cost Optimization: Identifies idle resources, underutilized virtual machines, and recommends reserved instances to lower overall spending. AZ-305 tests your ability to design cost-effective solutions. [1, 4, 5] 
+
+* Security: Detects vulnerabilities, flags missing security baselines, and integrates recommendations from Microsoft Defender for Cloud. Security design is a core component of the exam. [2, 6] 
+
+* Reliability (Resiliency): Highlights single points of failure, unbacked-up disks, or missing high-availability configurations. The exam heavily emphasizes business continuity and reliable infrastructure design. [1, 4, 6, 7] 
+
+* Performance Efficiency: Suggests scaling options or hardware upgrades for sluggish or over-taxed compute and storage resources. [1, 4] 
+
+* Operational Excellence: Advises on deployment visibility, tagging strategies, and resource management best practices. [4] 
+
+------------------------------
+## Key Takeaways for AZ-305 Candidates
+
+* Alignment with Frameworks: Understand that Azure Advisor is the operational manifestation of the Azure Well-Architected Framework (Cost, Security, Reliability, Performance Efficiency, and Operational Excellence). [3, 4] 
+
+* Proactive vs. Reactive: Know that Azure Advisor provides proactive configuration advice, whereas Azure Monitor provides reactive/real-time telemetry, logs, and metrics. [1, 8] 
+
+* Exam Scenarios: Questions may present a scenario where an existing deployment suffers from high costs, poor availability, or security gaps, and Azure Advisor is the correct tool to recommend for assessment and remediation planning.
+
+
+[1] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/advisor/advisor-overview)
+[2] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-305/)
+[3] [https://flashgenius.net](https://flashgenius.net/blog-article/how-to-become-an-azure-solutions-architect-expert-az-305-full-step-by-step-guide-2025)
+[4] [https://tutorialsdojo.com](https://tutorialsdojo.com/azure-advisor/)
+[5] [https://crackcerts.com](https://crackcerts.com/exam-guide/az-305)
+[6] [https://k21academy.com](https://k21academy.com/azure-cloud/az-305-certification/)
+[7] [https://www.readynez.com](https://www.readynez.com/en/training/courses/vendors/microsoft/certified-azure-solutions-architect-course-az305/)
+[8] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/mysql/flexible-server/concepts-business-continuity-advisor-monitor)
 
 ---
 

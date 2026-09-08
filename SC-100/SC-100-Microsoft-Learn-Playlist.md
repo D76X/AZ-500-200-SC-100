@@ -67,6 +67,14 @@ that align workloads and governance models directly with MCSB requirements. [3, 
 
 ---
 
+# What are the 3 principles of Zero Trust in the context of the SC-100 Security Architect Exam?
+
+1. Assume Breach (Assume Compromise)
+2. Verify Explicitly
+3. Use least-privilege access
+
+---
+
 # What are the 7 pillars of Zero Trust in the context of the SC-100 Security Architect Exam?
 
 The seven technology pillars of Zero Trust tested on the [SC-100 Microsoft Cybersecurity Architect Exam](https://learn.microsoft.com/en-us/security/zero-trust/deploy/overview) are Identities, Endpoints, Data, Apps, Infrastructure, Network, and SecOps. [1, 2] 
@@ -176,5 +184,73 @@ In relation to the SC-100 Microsoft Cybersecurity Architect exam, the MCRA is a 
 [7] [https://www.youtube.com](https://www.youtube.com/watch?v=6iYxNm3TOiI&t=3)
 [8] [https://www.youtube.com](https://www.youtube.com/watch?v=hRs6VDinIJE&t=702)
 [9] [https://mscertquiz.com](https://mscertquiz.com/blog/sc-100-study-guide)
+
+---
+
+# What are the prerequisite for the Microsoft Cybersecurity Architect Certification in 2026?
+
+To earn the Microsoft Certified: Cybersecurity Architect Expert certification, 
+you must pass exam SC-100 and earn at least one prerequisite associate-level certification. [1, 2] 
+## Required Exam
+
+* Exam SC-100: Microsoft Cybersecurity Architect (Passing score: 700, Price: $165 USD) [3] 
+
+## Prerequisite Certifications (Earn at least one)
+You must hold or earn one of the following associate-level credentials before your expert certification is granted:
+
+* Microsoft Certified: Identity and Access Administrator Associate (Exam SC-300)
+* Microsoft Certified: Security Operations Analyst Associate (Exam SC-200)
+* Microsoft Certified: Azure Security Engineer Associate (Exam AZ-500)
+* Microsoft Certified: Cloud and AI Security Engineer Associate [1, 4, 5, 6, 7] 
+
+## Recommended Experience
+
+* Practical, hands-on experience in identity and access management, platform protection, security operations, data/AI security, application security, and hybrid or multi-cloud infrastructures.
+* Expert-level skills in at least one of these security domains and experience designing solutions using Microsoft security technologies. [3, 8] 
+
+
+[1] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/certifications/cybersecurity-architect-expert/)
+[2] [https://techcommunity.microsoft.com](https://techcommunity.microsoft.com/blog/skills-hub-blog/announcing-the-new-certification-for-cybersecurity-architects/3545160)
+[3] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-100/)
+[4] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/answers/questions/5807443/microsoft-certified-cybersecurity-architect-expert)
+[5] [https://firebrand.training](https://firebrand.training/uk/courses/microsoft/microsoft-security-certifications/certified-cybersecurity-architect-expert-certification)
+[6] [https://learn.microsoft.com](https://learn.microsoft.com/it-it/credentials/certifications/cybersecurity-architect-expert/)
+[7] [https://www.globalknowledge.com](https://www.globalknowledge.com/us-en/training/certification-prep/brands/microsoft/section/security/microsoft-certified-cybersecurity-architect-expert/)
+[8] [https://firebrand.training](https://firebrand.training/en-ch/courses/microsoft/microsoft-security-certifications/cybersecurity-architect-certification)
+
+---
+
+# Exam AZ-500 is retired, does it still count as a prerequisite?
+
+Yes, an active AZ-500 certification still counts as a prerequisite, but only until your specific credential officially expires. [1] 
+Because Microsoft retired Exam AZ-500 and the Azure Security Engineer Associate certification on August 31, 2026, the rules 
+regarding how it impacts your Cybersecurity Architect status depend on your current certification status: [2, 3] 
+
+## If You Already Hold the AZ-500 Certification
+
+* 
+* It remains valid as a prerequisite: If you passed the AZ-500 exam prior to its retirement, the certification remains on your transcript and stays "Active" for exactly one year from the date you earned it. [1, 4] 
+
+* It unlocks the Expert badge: As long as your AZ-500 status is active, passing the SC-100 exam will successfully unlock your Microsoft Certified: Cybersecurity Architect Expert credential. [5] 
+
+* The catch: Once your AZ-500 certification reaches its expiration date, it can no longer be renewed. It will move to the "Historical Certifications" section of your transcript. [1, 3, 4] 
+* 
+
+## If You Do Not Have the AZ-500 Certification Yet
+
+* 
+* You cannot take it: The AZ-500 exam is fully discontinued and no longer bookable.
+* The alternative paths: To fulfill the prerequisite for the SC-100 Expert track, you must achieve one of the other active associate-level certifications, such as SC-200 (Security Operations Analyst) or SC-300 (Identity and Access Administrator).
+* The SC-500 transition: Microsoft launched SC-500 (Cloud and AI Security Engineer Associate) as the official successor to AZ-500. [2, 4, 5, 6] 
+* 
+
+Are you planning to sit for the SC-100 exam soon while your AZ-500 is still active, or are you looking into the newer SC-200/SC-300 paths instead?
+
+[1] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/answers/questions/5852001/question-about-retiring-microsoft-certifications)
+[2] [https://trainingcamp.com](https://trainingcamp.com/articles/az-500-retires-august-31-2026-sc-500-replaces-it-2/)
+[3] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/support/retired-certification-exams)
+[4] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/answers/questions/5994404/i-need-to-renew-my-az-500-however-it-is-showing-as)
+[5] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/answers/questions/5979471/will-sc-500-satisfy-the-prerequisite-for-sc-100-st)
+[6] [https://www.youtube.com](https://www.youtube.com/watch?v=J4DJo6VrtVo)  
 
 ---
