@@ -10,10 +10,140 @@
 [Cloud Adoption Framework for Microsoft](https://aka.ms/caf)
 [Azure Well-Architected Framework](https://aka.ms/waf)
 
+---
+
+# Playlist
+
+[SC-100: Microsoft Cybersecurity Architect Microsoft Learn Playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_)  
 
 ---
 
+# Episode 4
+
+[Use Cases | SC-100 | Episode 4 Microsoft Learn](https://www.youtube.com/watch?v=0O-CbEkZ9TY)   
+
+- Description of the problem or goal
+- Context and stakeholders involved
+- The list of assumptions and contraints that affect the solution
+- The set of requirements and criteria that the solution must meet
+- A propose solution that reaches the goal or solve the problem and how it meets requirements and criteria
+- A diagram or sketch that illustrates the solution and its components
+- A discussion of strngth and weaknesses of teh solutio, and a discussion over the possible improvements
+
+
+---
+
+# Episode 3
+[Security Posture Assessments | SC-100 | Episode 3 Microsoft Learn](https://www.youtube.com/watch?v=Nc-2gsBPl3Q&list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_&index=4)  
+
+1. run a general assesment 
+[Welcome to Microsoft Assessments](https://learn.microsoft.com/en-my/assessments/)
+
+    - who are the stateholders
+    - who owns what
+    - what are the assets. i.e. tenants, identities, apps
+    - what are the risks for each party and for the business
+    - are there previous security incidents?
+    - what is the expected ROI in each case, what was in the case of previos incidents if any?
+
+In this section the tutor highlights the following assesments:
+
+##  Microsoft Defender
+
+[Microsoft Defender for Identity's security posture assessments](https://learn.microsoft.com/en-us/defender-for-identity/security-assessment)  
+[Microsoft Defender Vulnerability Management Security baselines assessment](https://learn.microsoft.com/en-us/defender-vulnerability-management/tvm-security-baselines)  
+
+## Microsoft Defender for Cloud
+Hybrid and Multi-Cloud Deployments
+
+[Manage security posture by using Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/training/modules/microsoft-defender-cloud-security-posture/)  
+[Microsoft Defender for Cloud Regulatory Compliance](https://learn.microsoft.com/en-us/connectors/ascregulatorycomplianceassessment/)  
+[Plan for cloud workload protections using Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/training/modules/what-is-azure-defender/)   
+
+## Compliance Managment Assesments
+
+[Microsoft Purview: Build and manage assessments in Compliance Manager](https://learn.microsoft.com/en-us/purview/compliance-manager-assessments)  
+
+---
+
+# Microsoft Assessments
+
+The assempet are arranged in the following groups
+
+- Define
+- Plan
+- Prepare
+- Adopt
+- Govern
+- Manage
+
+The purpose of each assesment is to **probe and also educate**.
+You get the most out of it if the assement is carried out together as a team effort.
+Each assessment produces an actionable score and actionable items to improve the score.
+
+[Microsoft Assessments Azure Well-Architected Review](https://learn.microsoft.com/en-my/assessments/azure-architecture-review/)  
+[Microsoft Assessments Mission Critical | Well-Architected Review](https://learn.microsoft.com/en-my/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34/)  
+[Microsoft Assessments Cloud Adoption Strategy Evaluator](https://learn.microsoft.com/en-my/assessments/8fefc6d5-97ac-42b3-8e97-d82701e55bab/)  
+[Microsoft Assessments Cloud Journey Tracker](https://learn.microsoft.com/en-my/assessments/cloud-journey-tracker/)
+[Microsoft Assessments DevOps Capability Assessment](https://learn.microsoft.com/en-my/assessments/56ec577c-acb6-4c7b-ad13-e224b0846153/)  
+[Microsoft Assessments Azure Landing Zone Review](https://learn.microsoft.com/en-my/assessments/21765fea-dfe6-4bc4-8bb7-db9df5a6f6c0/)   
+[Microsoft Assessments Cloud Adoption Security Assessment (CASA)](https://learn.microsoft.com/en-my/assessments/31e5d42d-49b2-4892-b7c7-78689f3518f5/)  
+[Microsoft Assessments Cloud Governance](https://learn.microsoft.com/en-my/assessments/b1891add-7646-4d60-a875-32a4ab26327e/)  
+
+[Microsoft Assessments Identity Compete | Microsoft Partner](https://learn.microsoft.com/en-my/assessments/dd10e711-c31d-46bf-aa4e-e14085f6a1ab/)  
+[Microsoft Assessments Information Protection and Governance | Microsoft Partner](https://learn.microsoft.com/en-my/assessments/8399c474-6fa0-4005-978a-20088633f8f6/)  
+[Microsoft Assessments Microsoft Cybersecurity Architect Learner Journey](https://learn.microsoft.com/en-my/assessments/91e16bc4-490a-4eaa-8af9-3e7510a6b146/)  
+[Microsoft Assessments Unpacking Defender | Microsoft Partners](https://learn.microsoft.com/en-my/assessments/ec2529d7-ff05-426e-a0ab-9fa9c2999bf9/)  
+
+All assesment go through the following stages:
+
+1. Start: Choose an assessment that aligns with the business strategies you'd like to evaluate  
+2. About you: Provide answers to fundamental questions, which in return will narrow your content options  
+3. Get a score: Receive curated and personalized guidance that fits your specific scenarios  
+4. Take action: Review recommendations at your convenience to improve your score  
+5. Recheck score: Save your assessment progress through signing in and creating a milestone.  
+6. Improve: Creating milestones will allow you to gradually improve your score and see your progress in real-time  
+
+---
+
+## Popular Microsoft Assessments
+
+[Microsoft Assessments Browse all](https://learn.microsoft.com/en-my/assessments/browse/?searchterm=&page=1&pagesize=30)
+
+[Microsoft Assessments Azure Machine Learning](https://learn.microsoft.com/en-my/assessments/eec33ce4-4ef0-4bd2-9f69-1956e50465d4/)   
+[Microsoft Assessments AI Engineer Skill Assessment](https://learn.microsoft.com/en-my/assessments/33a8d18b-7299-4808-95eb-ec1ac1eca4d9/)  
+[Microsoft Assessments AI Readiness Assessment](https://learn.microsoft.com/en-my/assessments/94f1c697-9ba7-4d47-ad83-7c6bd94b1505/)  
+[Microsoft Assessments Technical Assessment for Generative AI in Azure](https://learn.microsoft.com/en-my/assessments/443670b4-11d1-4dd7-8128-b2bdb7a2bf2f/)  
+
+
+---
+
+## Skills
+
+[Microsoft Assessments Security Engineer Skill Assessment](https://learn.microsoft.com/en-my/assessments/68bdf530-4418-42bb-867d-c631ea1986e1/)  
+
+---
+
+## Popular Microsoft Assessments of Interest  
+
+[Microsoft Assessments Power Platform Adoption Assessment](https://learn.microsoft.com/en-my/assessments/3c62fd23-9d36-491c-8941-26d5553365f8/)   
+[Microsoft Assessments Power Platform Well-Architected](https://learn.microsoft.com/en-my/assessments/689fd8d9-1000-4cbb-8096-a6c8f3294fc7/)  
+[Microsoft Assessments Power Platform Solution Assessment](https://learn.microsoft.com/en-my/assessments/a5c3b65d-bf7e-4743-850a-0437ae692690/)  
+
+[Microsoft Assessments Sustainability | Well-Architected Review](https://learn.microsoft.com/en-my/assessments/f236012a-0070-45db-b94c-fe8de0799f38/)  
+
+[Microsoft Cloud for Healthcare Learner Self-Assessment (Preview)](https://learn.microsoft.com/en-my/assessments/a597e375-3ebd-4dc7-8dd9-6d8f75a7ca70/)  
+[Microsoft Assessments Healthcare Industry | Microsoft Partners](https://learn.microsoft.com/en-my/assessments/6068ed96-65c1-42b5-b870-15d51a379dbf/)  
+
+[Microsoft Assessments SAP on Azure | Well-Architected Review](https://learn.microsoft.com/en-my/assessments/b45998e4-8e92-41b1-a0bd-ab07e665db64/)  
+
+---
+
+# Episode 1
 [Cybersecurity Architect | SC-100 | Episode 2 Microsoft Learn](https://www.youtube.com/watch?v=S1NuiEuQuBQ&list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_&index=3)   
+
+# Episode 2
+[Cybersecurity Architect | SC-100 | Episode 2 Microsoft Learn](https://www.youtube.com/watch?v=S1NuiEuQuBQ&list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_&index=4)
 
 ---
 

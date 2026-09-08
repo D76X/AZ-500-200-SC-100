@@ -16,55 +16,82 @@
 
 ---
 
-# [SC-100: Microsoft Cybersecurity Architect Microsoft Learn Playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_)  
+# Episode 2: 
+[Design a governance solution | AZ-305 | Episode 2 Microsoft Learn](https://www.youtube.com/watch?v=AnWVFNw-Vik)  
 
+How to design for:
 
----
-
-# Episode 3
-[Security Posture Assessments | SC-100 | Episode 3 Microsoft Learn](https://www.youtube.com/watch?v=Nc-2gsBPl3Q&list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_&index=4)  
-
-1. run a general assesment 
-[Welcome to Microsoft Assessments](https://learn.microsoft.com/en-my/assessments/)
-
-    - who are the stateholders
-    - who owns what
-    - what are the assets. i.e. tenants, identities, apps
-    - what are the risks for each party and for the business
-    - are there previous security incidents?
-    - what is the expected ROI in each case, what was in the case of previos incidents if any?
-
-
-[Azure Well-Architected Review](https://learn.microsoft.com/en-my/assessments/azure-architecture-review/)  
-
-[Microsoft Cloud for Healthcare Learner Self-Assessment (Preview)](https://learn.microsoft.com/en-my/assessments/a597e375-3ebd-4dc7-8dd9-6d8f75a7ca70/)  
+- Governance
+- Management Groups
+- Azure Subscriptions
+- Resource Groups
+- Resource Tagging
+- Azure Policy
+- RBAC
+- Azure Landing Zones
 
 ---
 
 # Episode 1
 [Course introduction | Design Microsoft Azure Infrastructure Solutions | AZ-305 | Episode 1](https://www.youtube.com/watch?v=5h_pbmMb7T4&list=PLahhVEj9XNTejs0fgXT6HXaj_a_qsUoKa&index=3)  
 
-# Episode 2
-[Cybersecurity Architect | SC-100 | Episode 2 Microsoft Learn](https://www.youtube.com/watch?v=S1NuiEuQuBQ&list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_&index=4)
-
 ---
 
 # Comparing best practice frameworks (https://aka.ms/xxx)
+
+---
 
 ## MCSB
 
 Includes **a collection of high-impact security recommendations** 
 you can use to help secure cloud services in a single or multicloud environment.
 
+---
+
 ## CAF
 
 - Full life cycle framework
 - Provides best practices, documentation, and tools that help you create and implement business and technology strategies
 
+---
+
 # WAF
 
 - A set multiload of guiding tenets that can be used to improve the quality of a workload
 - The framework consists of five pillars of architectural excellence
+- The framework always targets a specific workload
+
+## When should an architect use the Well-Architected Framework use in the context of the AZ-305 Solution Architect Exam?
+
+1. Every time a new workload needs to be designed 
+2. Every time an existing workload needs to be modernized
+3. Every time an existing workload needs to be troubleshooted because it underperforms, such as it is too expensive, unstable, slow or risky
+
+An architect should use the Microsoft Azure Well-Architected Framework (WAF) throughout the entire lifecycle of 
+designing, evaluating, and evolving cloud solutions when answering scenario-based questions and making design decisions 
+for the AZ-305 exam. [1, 2] 
+
+------------------------------
+## When to Apply the Framework in AZ-305
+
+* Translating Business Requirements: Use WAF when converting client needs—like uptime targets, budget constraints, or compliance rules—into concrete Azure services and structural designs. [3, 4] 
+* Evaluating Trade-offs: Apply the framework when balancing conflicting priorities, such as increasing Reliability (adding redundancy) which impacts Cost Optimization (raising expenses). [1, 2] 
+* Designing Workload Categories: Reference WAF when deciding how to structure specific domains tested in the exam:
+* Infrastructure & Performance Efficiency: Choosing between IaaS, PaaS, or serverless scaling.
+   * Business Continuity & Reliability: Setting Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO) using multi-region or active-passive patterns.
+   * Security & Governance: Implementing identity perimeters, role-based access control (RBAC), and policy guardrails.
+   * Operational Excellence: Incorporating monitoring, automation, and DevOps practices into the deployment lifecycle. [3, 5, 6, 7, 8, 9] 
+* Answering Case Studies: Use the five pillars (Reliability, Security, Cost Optimization, Operational Excellence, Performance Efficiency) as a mental checklist during exam case studies to filter out incorrect multiple-choice options that violate core cloud design principles. [1, 6] 
+
+[1] [https://www.certlibrary.com](https://www.certlibrary.com/info/AZ-305)
+[2] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/well-architected/what-is-well-architected-framework)
+[3] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/credentials/certifications/exams/az-305/)
+[4] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/well-architected/architect-role/fundamentals)
+[5] [https://medium.com](https://medium.com/@christian.dussol/beyond-memorization-how-architectural-thinking-skills-transform-az-305-exam-success-9ed69c14150f)
+[6] [https://techmandan.blog](https://techmandan.blog/posts/my-step-by-step-study-plan-for-passing-the-azure-solutions-architect-expert-az-305-exam/)
+[7] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/well-architected/)
+[8] [https://medium.com](https://medium.com/all-about-microsoft-azure/az-305-learning-series-microsoft-azure-well-architected-framework-reliability-f569a0558479)
+[9] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/well-architected/pillars)
 
 ---
 
