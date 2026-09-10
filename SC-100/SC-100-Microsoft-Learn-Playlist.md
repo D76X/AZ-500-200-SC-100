@@ -5,6 +5,9 @@
 [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)    
 [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)  
 
+[Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/) 
+[Zero Trust Guidance Center](https://aka.ms/ztguide/)  
+
 > With aka.ms/XXX
 [Microsoft cloud security benchmark documentation (MCSB)](https://aka.ms/mcsb)
 [Cloud Adoption Framework for Microsoft](https://aka.ms/caf)
@@ -15,6 +18,77 @@
 # Playlist
 
 [SC-100: Microsoft Cybersecurity Architect Microsoft Learn Playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_)  
+
+---
+
+# Episode 6: How to Secure Cloud Adoption?
+
+[Cloud Adoption Framework (CAF) for Azure | SC-100 | Episode 6](https://www.youtube.com/watch?v=tQDBts92dJI)  
+
+CAF is a methodology that guides organizations through the process of migrating their applications and data to the cloud.
+
+> Learning objectives
+
+- What is the Cloud Adoption Framework (CAF)?
+- What is Cloud Adoption Framework Secure?
+- What are Cloud Adoption Framework Landing Zones?
+
+## What is the Cloud Adoption Framework (CAF) for Azure
+
+The Microsoft Cloud Adoption Framework for Azure is a full lifecycle framework that enables cloud architects, IT professionals, and business decision makers to achieve their cloud adoption goals. It provides best practices, documentation, and tools that help you create and implement business and technology strategies for the cloud.
+Following best practices for the Cloud Adoption Framework allows your organization to better align business and technical strategies and ensure success. Watch the following video to learn more.
+
+---
+
+# Episode 5
+
+[Zero Trust | SC-100 | Episode 5 Microsoft Learn](https://www.youtube.com/watch?v=Fpgo7k91tkQ)   
+
+[Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/)  
+[Zero Trust Guidance Center](https://aka.ms/ztguide/)  
+[Zero Trust Guidance Center](https://aka.ms/zerotrust/)  
+
+- What is ZT?
+    - security must not depend of implicit factors, such as network boundaries, rather on dynamic and explicit factors, such as identiy verification
+
+- Why we need ZT?
+    - to anable a busienss to operate securely and without interruptions
+    - reduce the risks, i.e. of unauthorized access or data leakage, etc.
+
+- What are the ZT principles?
+
+    1. Assume breach: 
+        - apply continuos monitoring and automatic anomalies detection, 
+        - control traffic through NSGs,
+        - use layers fo compartmentalization and segmentation to reduce the blast radius
+    2. Verify explicitly: for example, use Conditional Access, etc.
+    3. Use least-privilege access: for example, use PIM or JIT VM access with Defender for cloud. etc.
+
+- What are the ZT (technology) pillars?
+
+    1. Identity
+    2. Endpoints
+    3. Data
+    4. Apps
+    5. Infrastructure
+    6. Network
+    7. *(Visibility, Automation and Orchestration to oversee the other pillars)
+
+# Identity Zero Trust deployment objectives
+
+> Objectives:
+
+## Initial deployment objectives [Primary Objectives]:
+
+- Federate cloud identities with on-premises identity systems.
+- Gate access and provide remediation with Conditional Access policies.
+- Improve visibility through analytics.
+
+## Additional deployment objectives [Secondary Objectives]:
+
+- Manage identities and access privileges with Identity Governance.
+- Analyze user, device, location, and behavior in real time to determine risk and deliver ongoing protection.
+- Integrate threat signals from other security solutions to improve detection, protection, and response.
 
 ---
 
@@ -30,6 +104,23 @@
 - A diagram or sketch that illustrates the solution and its components
 - A discussion of strngth and weaknesses of teh solutio, and a discussion over the possible improvements
 
+Below you find an example of interactive
+
+[Exams Exam SC-100: Microsoft Cybersecurity Architect](https://learn.microsoft.com/en-us/credentials/certifications/exams/sc-100/)
+>
+[Design security operations, identity, and compliance capabilities](https://learn.microsoft.com/en-us/training/paths/sc-100-design-operations-identity-compliance-capabilities/)  
+>
+[Interactive case study: Modernizing identity and data security](https://learn.microsoft.com/en-us/training/modules/case-study-identity-data-security/)   
+[Interactive case study: Modernizing user access control and threat resilience](https://learn.microsoft.com/en-us/training/modules/case-study-access-control-threat-resilience/)  
+
+## SC-100 Use Cases
+
+https://Aka.ms/sc100casex (replace x with number)
+
+[Interactive case study: Modernizing identity and data security](aka.ms/sc100case1)  
+[Interactive case study: Modernizing user access control and threat resilience](aka.ms/sc100case2)   
+[Interactive case study: Securing apps and data](aka.ms/sc100case3)   
+[Interactive case study: Securing endpoints and infrastructure](aka.ms/sc100case4)   
 
 ---
 

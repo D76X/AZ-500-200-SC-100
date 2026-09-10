@@ -21,18 +21,104 @@
 
 How to design for:
 
-- Governance
-- Management Groups
-- Azure Subscriptions
-- Resource Groups
+- Governance: maintain control over apps and resources in Azure through well defined processes
+- Management Groups: help manage Policies, Access, Compliance and Budgeting accross multiple subscriptions
+- Azure Subscriptions: unit of billing, scale and isolation
+- Resource Groups: lifecycle resources containers, where resources are deployed and managed 
+- Resources
 - Resource Tagging
 - Azure Policy
 - RBAC
 - Azure Landing Zones
 
+## Design for Management Groups
+
+Management Groups are used to manage groups of subscriptions under the same guardrails and 
+to isolate workloads; they allow to apply Policies, and manage Access, Compliance and Budgeting
+accross multiple subscriptions.
+
+An Microsoft Entra ID group representing the IT management will be assigned to the top-level MG
+through RBAC. Nested MGs are then use to represent the different sections of the organization,
+such as departments, branches, operation teams, geographical areas, etc.
+
+A practical example of the use of MGs in a Microsoft Entra ID tenant could be the following:
+
+- Contoso the top-level MG to which the IT management team is assigned with Contributor or Owner role
+  - Sales to which the Sales group is assigned with RBAC with approriate roles assignments
+  - Corporate..
+  - IT..
+    - Development: by splitting the MGs with subgroups for DEV and PRD changes can be safely tested by the IT team before rolling out to PRD
+    - Production
+      - Subscription01: different subs are used for scale or isolation
+      - Subscription02
+  - HR..
+  - US..
+  - Pacific..
+  - Europe..
+
+> Notes
+
+- There can be up to 6 layers of nested MGs
+- Azure Subscriptions can be moved from one MG to another
+
+> Recommendations
+
+- Keep the management group hierarchy reasonably flat because layers make it hard to reason about them and are messy to maintain and debug
+- Consider a top-level management group
+- Consider an organizational or departmental structure
+- Consider a geographical structure
+- Consider a production management group
+- Consider a sandbox management group
+- Consider isolating sensitive information in a separate management group
+
+---
+
+## If the IT team only needs to configure access using Azure RBAC role assignments at the Management Group level.
+
+For this scenario, assign the foillowing Azure RBAC roles at the root Management Group scope:
+
+- the `Resource Policy Contributor` role AND the `Cost Management Contributor` 
+- OR simply the broader `Management Group Contributor` or `Owner` role 
+
+| Role | Permitted Actions | Ideal Use Case |
+| :--- | :--- | :--- |
+| **Management Group Contributor** | Full management of management groups, policy assignments, budget configurations, and compliance rules (excluding RBAC role delegation). | Best practice for the IT team if they do not need to grant access permissions to other users. |
+| **Owner** | Full management of all resources, policies, budgets, plus the ability to grant or revoke RBAC access to others. | Required if the IT team must also manage user/group access permissions at the top-level Management Group. |
+| **Resource Policy Contributor** & **Cost Management Contributor** | Fine-grained privileges dedicated strictly to defining Azure Policies, compliance rules, and managing budgets. | Best applied if enforcing strict Principle of Least Privilege (PoLP). |
+
+---
+
+# Which Microsoft Entra ID role should be assigned to a Microsoft Entra group that represents the IT team in charge of maintaining the top-level Management Group in a tenant? They will set the policies, budgets and define compliance at the top-level Management Group.
+
+To provide the exact Microsoft Entra ID (Azure AD) role, it helps to distinguish between 
+**Microsoft Entra ID roles** (identity management) and **Azure RBAC roles** (resource management):
+
+1. **Azure RBAC Role (Recommended for Management Groups):**
+* **Management Group Contributor** or **Owner**: Assigning this Azure RBAC role at the root/top-level
+Management Group scope allows the IT team to 
+
+- define policies (via Azure Policy), 
+- set budgets (via Azure Cost Management), and 
+- enforce compliance 
+
+across all subscriptions inheriting from that management group.
+
+2. **Microsoft Entra ID Role (Identity/Directory Scoped):**
+
+* If strictly looking for a directory-level role with global scope over tenant configurations, 
+**Global Administrator** provides unrestricted access, though **Privileged Role Administrator** 
+is used to manage role assignments themselves. However, Entra ID roles do not natively grant 
+permission to manage Azure resource policies/budgets without Azure RBAC assignments or elevated 
+access ("Access management for Azure resources" toggle enabled).
+
+Are you looking to configure access purely using **Azure RBAC role assignments** at 
+the Management Group level, or do you need to grant directory-level administrative privileges 
+via **Microsoft Entra ID roles**?
+
 ---
 
 # Episode 1
+
 [Course introduction | Design Microsoft Azure Infrastructure Solutions | AZ-305 | Episode 1](https://www.youtube.com/watch?v=5h_pbmMb7T4&list=PLahhVEj9XNTejs0fgXT6HXaj_a_qsUoKa&index=3)  
 
 ---
