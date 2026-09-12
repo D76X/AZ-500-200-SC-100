@@ -13,6 +13,8 @@
 [Cloud Adoption Framework for Microsoft](https://aka.ms/caf)
 [Azure Well-Architected Framework](https://aka.ms/waf)
 
+[CAF Secure](https://aka.ms/caf)
+
 ---
 
 # Playlist
@@ -36,7 +38,28 @@ CAF is a methodology that guides organizations through the process of migrating 
 ## What is the Cloud Adoption Framework (CAF) for Azure
 
 The Microsoft Cloud Adoption Framework for Azure is a full lifecycle framework that enables cloud architects, IT professionals, and business decision makers to achieve their cloud adoption goals. It provides best practices, documentation, and tools that help you create and implement business and technology strategies for the cloud.
+
 Following best practices for the Cloud Adoption Framework allows your organization to better align business and technical strategies and ensure success. Watch the following video to learn more.
+
+Cloud Adoption Framework consists of nine main activities called "methodologies".
+Each methodology is a process or stage that an organization will need to navigate to adopt the cloud.
+
+## Cloud Adoption Framework methodologies
+
+1. Strategy: Define business justification and expected adoption outcomes
+2. Plan: Align actionable adoption plans to business outcomes
+3. Ready: Prepare your cloud environment for planned changes
+
+4. Migrate: Migrate and modernize existing workloads
+5. Innovate: Develop new cloud-native or hybrid solutions
+6. Secure: Improve security over time **
+
+7. Manage: Manage operations for cloud and hybrid solutions
+8. Govern: Govern your environment and workloads
+9. Organize: Align the teams and roles supporting your organization's cloud adoption efforts
+
+** in SC-100 the focus is on the `Security` methodologies: [CAF Secure](https://aka.ms/caf)
+But in AZ-305 is on any of the others.
 
 ---
 

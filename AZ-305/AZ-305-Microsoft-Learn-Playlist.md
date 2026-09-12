@@ -31,6 +31,58 @@ How to design for:
 - RBAC
 - Azure Landing Zones
 
+## Design for Azure Subscriptions
+
+### Design considerations
+
+- businesss priorities and needs, such as: 
+  - data isolation, 
+  - regualtion compliance, 
+  - required security controls  
+
+- an Azure Subscription act as a security boundary by default
+
+- an Azure Subscription act as a billing unit and is bound to a payment method, regula cost allocation review should be schedule and the size of the workloads reassessed regularly over time to choose the best possible fit.
+
+- what is the required level of support for consumers of teh services provisioned with the Azure Subscription?
+  - a productive Azure Subscription may require a 24/7 proactive service support
+  - a test Azure Subscription may require only limited support, i.e. only during business hours
+
+- **Azure Subscription ARE NOT tied to specific regions**, therefore you DO NOT need a separated subscription for each region, unless it makes sense for the business. This means that the assets and services deployed to an Azure Subscription can cross regional boundaries.
+
+- A legittimate use of Azure Subscription is to isolate classes of workloads such as, for example, a developer sandbox subscription, a productive workloads subscription, and so on. It is also possible to provision per-user or per-tema Azure Subscription to let individuals or teams experiment with them.
+
+- For each Azure Subscription architects have to decide which administrative model administrative model to apply.
+  
+  - Centralized administrative model: there is a central team of adminstrators and services such as Logging, Connectivity and Security Tooling that can be shared by all apps and workloads in other subscriptions
+
+  - Decentralized administrative modelL there is a dedicated group of administrators for the subscription
+
+- Azure Subscriptions have built-in limits! These limits must be considered to make the workloads scale to the required capacity
+
+- **Virtual Network cannot span Azure Subscriptions, although connectivity between network in different subscriptions can be achieved with other techniques, such as the hub-and-spoke architecture, etc.**. This is an important design constraint that must be considered. 
+
+## Designing for multiple subscriptions
+
+Azure subscription are logical containers for management and billing.
+
+- Align your subscriptions with business needs and priorities - consider billing and cost reporting
+- Consider subscription scale limits -specialized workloads, IoT, SAP
+- Consider administrative management -centralized or decentralized
+- Consider a dedicated shared services subscription - common services everyone shares
+- Group subscriptions together under management groups apply common policies and role assignments.
+- Make subscription owners aware of their roles and responsibilities
+
+# When to use subscriptions - Examples
+
+- Secure workloads that require additional policies and role-based access control to achieve compliance
+- Specialized workloads and the need to scale outside the subscription limits
+- Manage and track costs for your organizational structure
+- Identify different environments such as development, test, and production that are often isolated from a management perspective
+
+
+---
+
 ## Design for Management Groups
 
 Management Groups are used to manage groups of subscriptions under the same guardrails and 
@@ -128,6 +180,7 @@ via **Microsoft Entra ID roles**?
 ---
 
 ## MCSB
+[Microsoft cloud security benchmark documentation (MCSB)](https://aka.ms/mcsb)
 
 Includes **a collection of high-impact security recommendations** 
 you can use to help secure cloud services in a single or multicloud environment.
@@ -135,13 +188,32 @@ you can use to help secure cloud services in a single or multicloud environment.
 ---
 
 ## CAF
+[Cloud Adoption Framework for Microsoft](https://aka.ms/caf)
 
 - Full life cycle framework
 - Provides best practices, documentation, and tools that help you create and implement business and technology strategies
 
+## Cloud Adoption Framework methodologies
+
+1. Strategy: Define business justification and expected adoption outcomes
+2. Plan: Align actionable adoption plans to business outcomes
+3. Ready: Prepare your cloud environment for planned changes
+
+4. Migrate: Migrate and modernize existing workloads
+5. Innovate: Develop new cloud-native or hybrid solutions
+6. Secure: Improve security over time **
+
+7. Manage: Manage operations for cloud and hybrid solutions
+8. Govern: Govern your environment and workloads
+9. Organize: Align the teams and roles supporting your organization's cloud adoption efforts
+
+** in SC-100 the focus is on the `Security` methodologies: [CAF Secure](https://aka.ms/caf)
+But in AZ-305 is on any of the others.
+
 ---
 
 # WAF
+[Azure Well-Architected Framework](https://aka.ms/waf)
 
 - A set multiload of guiding tenets that can be used to improve the quality of a workload
 - The framework consists of five pillars of architectural excellence
