@@ -16,6 +16,8 @@
 
 [The Real AI Threat ISN'T Sci-Fi (It’s So Much Worse) Modern Software Engineering](https://www.youtube.com/watch?v=mRF99to28sA)   
 
+[Automating Agentic AI Success Using This SECRET Workflow Modern Software Engineering](https://www.youtube.com/watch?v=hlxeiSzde5A)  
+
 ---
 
 ## Harness Engineering

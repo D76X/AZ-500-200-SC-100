@@ -125,6 +125,13 @@ A practical example of the use of MGs in a Microsoft Entra ID tenant could be th
 
 ---
 
+# Subscription Vending
+
+[Subscription Vending John Savill's Technical Training](https://www.youtube.com/watch?v=aIbtnk2F8Xo&t=836s)   
+[Create and manage application landing zones at scale with subscription vending Microsoft Developer](https://www.youtube.com/watch?v=OoC_0afxACg)   
+
+---
+
 ## If the IT team only needs to configure access using Azure RBAC role assignments at the Management Group level.
 
 For this scenario, assign the foillowing Azure RBAC roles at the root Management Group scope:
