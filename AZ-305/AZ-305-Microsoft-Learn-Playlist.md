@@ -127,8 +127,11 @@ A practical example of the use of MGs in a Microsoft Entra ID tenant could be th
 
 # Subscription Vending
 
+[CAF - Subscription vending](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ready/landing-zone/design-area/subscription-vending)  
 [Subscription Vending John Savill's Technical Training](https://www.youtube.com/watch?v=aIbtnk2F8Xo&t=836s)   
-[Create and manage application landing zones at scale with subscription vending Microsoft Developer](https://www.youtube.com/watch?v=OoC_0afxACg)   
+[Create and manage application landing zones at scale with subscription vending Microsoft Developer](https://www.youtube.com/watch?v=OoC_0afxACg)    
+[Sub-vending Lz/SubVending](https://github.com/Azure/bicep-registry-modules/tree/main/avm/ptn/lz/sub-vending#readme)  
+[avm-ptn-alz-sub-vending](https://registry.terraform.io/modules/Azure/avm-ptn-alz-sub-vending/azure/latest)  
 
 ---
 
