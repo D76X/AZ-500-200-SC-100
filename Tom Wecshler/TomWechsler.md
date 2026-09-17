@@ -10,6 +10,12 @@
 
 ---
 
+# Folge 8
+
+[Cybersecurity Mittendrin - Folge 8 - Mit KI signaturbasierte Sicherheitssysteme umgehen Tom Wechsler](https://www.youtube.com/watch?v=njUI8biJ8D0)  
+
+---
+
 # Folge 7
 
 [Cybersecurity Mittendrin - Folge 7 - KI-Begriffe und deren Bedeutungen! Tom Wechsler](https://www.youtube.com/watch?v=PipF0zmX69Q&t=1s)  
