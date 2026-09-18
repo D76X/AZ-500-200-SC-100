@@ -26,6 +26,7 @@
 # Episode 6: How to Secure Cloud Adoption?
 
 [Cloud Adoption Framework (CAF) for Azure | SC-100 | Episode 6](https://www.youtube.com/watch?v=tQDBts92dJI)  
+[CAF Security teams, roles, and functions](https://aka.ms/securityroles)  
 
 CAF is a methodology that guides organizations through the process of migrating their applications and data to the cloud.
 
@@ -61,6 +62,120 @@ Each methodology is a process or stage that an organization will need to navigat
 ** in SC-100 the focus is on the `Security` methodologies: [CAF Secure](https://aka.ms/caf)
 But in AZ-305 is on any of the others.
 
+---
+
+# CAF Secure methodology
+[CAF Secure methodology](https://aka.ms/caf)
+
+## Business Alignment
+
+- Risk Insights: 
+Integrate security insights into risk management framework and digital initiatives
+
+- Security Integration
+Integrate security insights and practices into business and IT processes, integrate security disciplines together
+
+- Business Resilience
+Ensure organization can operate during attacks and rapidly regain full operational status
+
+## Security disciplines
+
+- Access Control
+Establish Zero Trust access model to modern and legacy assets using identity & network controls
+
+- Security Operations
+Detect, Respond, and Recover from attacks; 
+Hunt for hidden threats; 
+share threat intelligence broadly
+
+- Asset Protection
+Protect sensitive data and systems. 
+Continuously discover, classify & secure assets.
+
+- Security Governance
+Continuously Identify, measure, and manage security posture to reduce risk & maintain compliance.
+
+- Innovation Security
+Integrate Security into DevSecOps processes. 
+Align security, development, and operations practices.
+
+---
+
+# What is DevSecOps in the context of the SC-100 Security Architect Exam?
+
+In the context of the Microsoft SC-100 (Cybersecurity Architect) exam, 
+DevSecOps is the practice of embedding security natively into the application 
+development and cloud infrastructure lifecycle rather than treating it as an 
+afterthought or a final gate before production. [1, 2] 
+
+------------------------------
+
+## Core Concepts Tested in SC-100
+
+* Shift-Left Security: 
+
+Moving security testing, code scanning, and policy validation to the earliest stages 
+of development (IDE, commit, and build) to catch vulnerabilities before deployment. [1, 2] 
+
+* Shift-Right Security: 
+
+Continuing security testing, performance evaluation, and anomaly monitoring in live, 
+post-production and runtime environments. [1] 
+
+* Policy-as-Code & Infrastructure-as-Code (IaC): 
+
+Using automated templates and codified policies to validate cloud resources and prevent 
+misconfigurations in multi-cloud environments (like Azure or GitHub) before they deploy. [3, 4] 
+
+* Software Supply Chain Protection: 
+
+Implementing continuous integration (CI) pipelines that run static analysis, 
+software composition analysis (SCA), and artifact signing. [3] 
+
+* Microsoft Toolchain Integration: 
+
+Leveraging tools like Microsoft Defender for DevOps to scan code repositories, 
+correlate security recommendations directly into developer toolchains 
+(such as GitHub Actions and Azure DevOps), and manage posture across multicloud pipelines. [2, 3] 
+
+------------------------------
+## Key Stages in a DevSecOps Architecture
+
+| Stage | Security Focus | Examples in SC-100 |
+|---|---|---|
+| Build | Secure code and dependencies | Static Application Security Testing (SAST), container image scanning, and managing open-source dependencies. |
+| Test | Automated policy and vulnerability checks | Software Composition Analysis (SCA), validating infrastructure templates, and enforcing compliance gates. |
+| Deploy | Preventing insecure configurations | Policy-as-code validation, least-privilege cloud permissions, and Kubernetes cluster hardening. |
+| Run (Production) | Continuous runtime monitoring | Detecting configuration drift, identity misuse, runtime threats, and integrating with SIEM/XDR solutions. |
+
+
+[1] [https://www.redhat.com](https://www.redhat.com/en/topics/devops/what-is-devsecops)
+[2] [https://www.examlabs.com](https://www.examlabs.com/certification/achieving-success-with-microsoft-sc-100-certification-a-comprehensive-guide/)
+[3] [https://www.microsoft.com](https://www.microsoft.com/en-gb/security/business/security-101/what-is-devsecops)
+[4] [https://www.examcollection.com](https://www.examcollection.com/blog/mastering-sc-100-from-strategy-to-certification-in-cybersecurity-architecture/)
+
+---
+
+# CAF Security teams, roles, and functions 
+
+[CAF Security teams, roles, and functions](https://aka.ms/securityroles)  
+
+Here is a overview of the security roles and functions from the Microsoft Cloud Adoption Framework (CAF), structured specifically for the **SC-100: Microsoft Cybersecurity Architect** exam context.
+
+| Security Role / Function | SC-100 Exam Description |
+| --- | --- |
+| **Policy and standards** | Establishes the organizational security rules, guidelines, and guardrails aligned with business objectives and risk tolerance. Translates compliance requirements into enforceable cloud governance policies. |
+| **Security operations** | Monitors systems continuously, detects anomalies, and responds to active operational threats. Focuses on real-time triage using tools like SIEM (Microsoft Sentinel) and XDR (Microsoft Defender). |
+| **Security architecture** | Translates overall security strategy and business risk into technical designs, reference architectures, and security controls across hybrid and multi-cloud environments using Zero Trust principles. |
+| **Security compliance management** | Ensures the organization continuously satisfies regulatory, industry, and internal compliance mandates. Oversees audit readiness, risk reporting, and policy enforcement tracking. |
+| **People security** | Manages human-centric risks through security awareness training, phishing simulations, insider threat mitigation, and establishing a strong security culture across the workforce. |
+| **Application security and DevSecOps** | Integrates security tools and guardrails directly into modern software development lifecycles (SDLC) and CI/CD pipelines (shift-left security), focusing on code scanning, API security, and container safety. |
+| **Data security** | Focuses on protecting sensitive data throughout its lifecycle (at rest, in transit, and in use). Involves data classification, encryption key management, and data loss prevention (DLP) controls. |
+| **Infrastructure and endpoint security** | Secures foundational compute, network, container, and physical or virtual devices (endpoints). Applies hardened baselines, patch management, network segmentation, and EDR controls. |
+| **Identity and key management** | Manages the primary security perimeter: authentication, authorization, privileged access management (PIM/PAM), Conditional Access, identity life cycles, and cryptographic keys/certificates. |
+| **Threat intelligence** | Collects, analyzes, and applies contextual threat data regarding active adversary tactics, techniques, and procedures (TTPs) to proactively strengthen defenses and inform threat hunting. |
+| **Posture management** | Continuously measures, evaluates, and improves overall security hygiene across cloud assets (e.g., via Microsoft Defender for Cloud / CSPM) by identifying misconfigurations and prioritizing vulnerability remediation. |
+| **Incident preparation** | Focuses on readiness before an attack occurs—developing incident response (IR) plans, business continuity/disaster recovery (BCDR) strategies, table-top exercises, and automated response playbooks. |
 ---
 
 # Episode 5
