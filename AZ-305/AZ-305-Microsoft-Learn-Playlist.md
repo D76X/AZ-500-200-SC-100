@@ -31,6 +31,24 @@ How to design for:
 - RBAC
 - Azure Landing Zones
 
+---
+
+## Design for Azure Resource Groups
+
+## Case 02: there organization has  dedicated teams for each type of resource, such as network, compute, databases, etc or type of task
+-  create RGs that match the type or the team
+  - possibly delegate the management of the RG completely to the specific team
+
+## Case 01: the organization has dedicated application teams 
+- concentrate all the resources necessary to support an application and the corresponding team in a signle RG which helps with
+  - maintain foccus
+  - possibly delegate the management of the RG completely to the application team
+  - easily identify dependencies
+  - protect the reosurces from accidental deletion with RG locks
+  - with secure deletion of all resources at once
+
+---
+
 ## Design for Azure Subscriptions
 
 ### Design considerations
@@ -448,6 +466,5 @@ The framework breaks the cloud journey into distinct, logical phases:
 [6] [https://powerkram.com](https://powerkram.com/exams/microsoft/az-305-azure-architect-expert/)
 [7] [https://www.youtube.com](https://www.youtube.com/watch?v=5h_pbmMb7T4&t=64)
 [8] [https://www.certlibrary.com](https://www.certlibrary.com/info/AZ-305)
-
 
 ---

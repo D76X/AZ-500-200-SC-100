@@ -67,7 +67,12 @@ But in AZ-305 is on any of the others.
 # CAF Secure methodology
 [CAF Secure methodology](https://aka.ms/caf)
 
+## Cloud Security Team
+Establish a team with expertise and experience for security and cloud.
+Include members of the security team, cloud Center of Excellence (cCoE), IT operations and others.
+
 ## Business Alignment
+Establish  cross-org processes to scale cloud security throughout the business.
 
 - Risk Insights: 
 Integrate security insights into risk management framework and digital initiatives
@@ -76,26 +81,37 @@ Integrate security insights into risk management framework and digital initiativ
 Integrate security insights and practices into business and IT processes, integrate security disciplines together
 
 - Business Resilience
-Ensure organization can operate during attacks and rapidly regain full operational status
+Ensure organization can operate during attacks and rapidly regain full operational status.
+It is better to be able to even partially operate during an attack or breach than being unable to operate at all.
 
 ## Security disciplines
+Implement proven security processes build on modern, cloud-based security tools.
 
 - Access Control
 Establish Zero Trust access model to modern and legacy assets using identity & network controls
+Create access boundaries and segmentation to reduce the blast radius of any security breach.
 
 - Security Operations
-Detect, Respond, and Recover from attacks; 
+Monitor Security Operations to Detect, Respond, and Recover from attacks; 
 Hunt for hidden threats; 
-share threat intelligence broadly
+Share threat intelligence broadly
+Use data to continuosly reduce the risk of security braches.
 
 - Asset Protection
-Protect sensitive data and systems. 
+Protect sensitive data, systems, networks, applications, identities, devices, etc. 
+to minimize the risk to the overall environment.
 Continuously discover, classify & secure assets.
 
 - Security Governance
+Delegate decision, acellerate innovation.
+Use data to drive decisions.
 Continuously Identify, measure, and manage security posture to reduce risk & maintain compliance.
+Use data to drive decisions.
 
 - Innovation Security
+Security must become an integral part of DevSecOps; security expertise must be integrated in 
+high-frequency cycles.
+Shift decision-making from centrilized teams to workload-focussed teams.
 Integrate Security into DevSecOps processes. 
 Align security, development, and operations practices.
 
@@ -265,6 +281,8 @@ https://Aka.ms/sc100casex (replace x with number)
 # Episode 3
 [Security Posture Assessments | SC-100 | Episode 3 Microsoft Learn](https://www.youtube.com/watch?v=Nc-2gsBPl3Q&list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_&index=4)  
 
+Use assesments to adopt, gradually improve and track the business security posture, over time.
+
 1. run a general assesment 
 [Welcome to Microsoft Assessments](https://learn.microsoft.com/en-my/assessments/)
 
@@ -297,7 +315,7 @@ Hybrid and Multi-Cloud Deployments
 
 # Microsoft Assessments
 
-The assempet are arranged in the following groups
+The assesment are arranged in the following groups
 
 - Define
 - Plan
@@ -309,6 +327,31 @@ The assempet are arranged in the following groups
 The purpose of each assesment is to **probe and also educate**.
 You get the most out of it if the assement is carried out together as a team effort.
 Each assessment produces an actionable score and actionable items to improve the score.
+
+---
+
+## Microsoft Assessments Cloud Adoption Security Assessment (CASA)
+
+[Microsoft Assessments Cloud Adoption Security Assessment (CASA)](https://learn.microsoft.com/en-us/assessments/31e5d42d-49b2-4892-b7c7-78689f3518f5/)
+[Azure Architecture Blog: What is a Cloud Adoption Security Review?](https://techcommunity.microsoft.com/blog/azurearchitectureblog/what-is-a-cloud-adoption-security-review/3806510)  
+
+The assessment evaluates the organization's cloud security maturity across key domains, 
+including security teams and roles, security posture modernization, incident preparedness 
+and response, confidentiality, integrity, availability, and security sustainment. 
+Each question is designed to assess the implementation of best practices aligned with 
+the Azure Cloud Adoption Framework (CAF) Secure Methodology, emphasizing scalable and secure 
+cloud environments.
+
+---
+
+## Microsoft Assessments Cloud Adoption Security Review
+
+[Microsoft Assessments Cloud Adoption Security Review](https://learn.microsoft.com/en-us/assessments/93dfb79b-71af-404d-897e-3928ecfb92b1/)
+
+Assess your Security Journey for Cloud Adoption. 
+Receive actionable considerations to improve your security posture.
+
+---
 
 [Microsoft Assessments Azure Well-Architected Review](https://learn.microsoft.com/en-my/assessments/azure-architecture-review/)  
 [Microsoft Assessments Mission Critical | Well-Architected Review](https://learn.microsoft.com/en-my/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34/)  
@@ -611,5 +654,113 @@ Are you planning to sit for the SC-100 exam soon while your AZ-500 is still acti
 [4] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/answers/questions/5994404/i-need-to-renew-my-az-500-however-it-is-showing-as)
 [5] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/answers/questions/5979471/will-sc-500-satisfy-the-prerequisite-for-sc-100-st)
 [6] [https://www.youtube.com](https://www.youtube.com/watch?v=J4DJo6VrtVo)  
+
+---
+
+# What is the difference between SIEM and SOAR in the context of of the SC-100 Security Architect Exam?
+
+In the context of the **Microsoft SC-100: Cybersecurity Architect** exam: 
+
+- **SIEM (Security Information and Event Management) focuses on visibility and detection**, while 
+- **SOAR (Security Orchestration, Automation, and Response) focuses on efficiency and remediation**. 
+
+In the Microsoft ecosystem, these capabilities are deeply integrated into **Microsoft Sentinel**, 
+where SIEM acts as the central brain aggregating data, and SOAR acts as the automation engine responding 
+to threats.
+
+### Core Differences
+
+| Feature | **SIEM (Security Information and Event Management)** | **SOAR (Security Orchestration, Automation, and Response)** |
+| :--- | :--- | :--- |
+| **Primary Goal** | **Data aggregation, analysis, and threat detection** | **Incident response orchestration and automation** |
+| **Core Function** | Collects logs and telemetry from across the enterprise, correlates events, and triggers alerts when anomalies are found. | Standardizes incident response workflows, integrates disparate security tools, and automates repetitive tasks. |
+| **Microsoft Sentinel Component** | Data Connectors, Analytics Rules, Watchlists, and Log Analytics Workspaces. | Automation Rules and **Playbooks** (powered by Azure Logic Apps). |
+| **Analyst Impact** | Tells the analyst *what* happened and *where* by compiling the security data. | Tells the system *how* to react automatically to reduce Mean Time to Respond (MTTR). |
+
+### Architectural Roles in the SC-100 Exam
+
+As a Cybersecurity Architect, you must understand how to design solutions using both capabilities to minimize human intervention:
+
+*   **The SIEM Layer (Detection):** You design data ingestion strategies to pull logs from Azure, multi-cloud environments (AWS, GCP), and on-premises systems. You write Analytics Rules (KQL queries) to detect sophisticated, multi-stage attacks across these platforms.
+*   **The SOAR Layer (Response):** You design automated responses to those detections. For example, if the SIEM detects a brute-force attack from a malicious IP address, the SOAR playbook can automatically block that IP at the firewall, disable the targeted user account in Entra ID, and open a ticket in ServiceNow without requiring an analyst to lift a finger.
+
+---
+
+# What are Landing Zones in the context of the SC-100 Security Architect Exam?
+
+[CAF What is an Azure landing zone?](https://aka.ms/caflz)  
+
+In the context of the Microsoft SC-100: Cybersecurity Architect exam, 
+an Azure Landing Zone is a multi-subscription deployment that serves as the strategic blueprint for a secure, scalable cloud environment. 
+It ensures that when workloads are deployed, they automatically inherit the organization's security, governance, networking, and identity controls.
+
+For a Security Architect, a Landing Zone represents the implementation of the Microsoft Cloud Adoption Framework (CAF) 
+and the practical enforcement of Zero Trust architecture at scale.
+
+An Azure Landing Zone is the output of a multisubscription Azure environment that accounts for scale, security governance, networking, and identity.
+Enables application migration, modernization, and innovation at enterprise-scale in Azure.
+Is an environment for hosting your workloads, preprovisioned through code.
+
+## The Architect's Dilemma: Enterprise-Scale Landing Zones (ESLZ)
+The SC-100 exam heavily evaluates your ability to design an Enterprise-Scale Landing Zone, 
+which divides the cloud environment into two major structural components:
+
+                  ┌─────────────────────────────────────┐
+                  │          Tenant Root Group          │
+                  └──────────────────┬──────────────────┘
+                                     │
+                  ┌──────────────────┴──────────────────┐
+                  │       Contoso Management Group      │
+                  └──────┬───────────────────────┬──────┘
+                         │                       │
+      ┌──────────────────┴────────────────┐ ┌────┴─────────────────────────────┐
+      │         Platform Management       │ │         Workload Management      │
+      └──────┬───────────┬───────────┬────┘ └──────┬────────────────────┬──────┘
+             │           │           │             │                    │
+        ┌────┴───┐  ┌────┴───┐  ┌────┴────┐  ┌─────┴──────┐       ┌─────┴──────┐
+        │ Identity│  │Management││ Connectivity│ │Corp Workloads│     │Online Wrklds│
+        └────────┘  └────────┘  └─────────┘  └────────────┘       └────────────┘
+
+## 1. Platform Landing Zones
+These provide shared, centralized capabilities across the entire enterprise. 
+
+As an architect, you secure these core areas:
+
+* Identity: Dedicated subscription for centralized identity management, securing domain controllers or Microsoft Entra ID hybrid connectors.
+* Management: Centralized logging via Log Analytics Workspaces, enabling SIEM (Microsoft Sentinel) auditing across the entire footprint.
+* Connectivity: The network core, typically designed using a Hub-Spoke architecture or Azure Virtual WAN. It houses Azure Firewalls, ExpressRoute/VPN gateways, and Azure DDoS Protection.
+ 
+
+## 2. Application/Workload Landing Zones
+These are decoupled subscriptions where specific business applications or workloads live.
+
+* They inherit policies from the higher-level management groups.
+* They communicate through the platform's Connectivity hub to reach on-premises networks or the internet safely.
+
+------------------------------
+## Core Security Design Pillars for SC-100
+When designing or evaluating Landing Zones on the exam, you must focus on four security control areas:
+
+| Security Pillar | Key Architectural Requirement for SC-100 |
+|---|---|
+| Governance & Policy | Use Azure Policy and Management Groups to enforce guardrails globally (e.g., preventing public IP creation, enforcing encryption at rest, restricting deployment regions). |
+| Network Security | Implement a Hub-and-Spoke topology with isolated virtual networks (VNets). Force all traffic through the hub firewall using User Defined Routes (UDRs) and leverage Azure Bastion for secure management. |
+| Identity & Access | Apply the Principle of Least Privilege using Azure RBAC and Microsoft Entra Privileged Identity Management (PIM). Keep operational roles separated between Platform Admins and Workload Owners. |
+| Security Operations | Ensure all subscriptions automatically stream diagnostics data and security logs to the central Microsoft Sentinel workspace via Azure Policy definitions. |
+
+## SC-100 Exam Tip: "Subscription Democratic" Model
+The SC-100 exam favors an architectural design where subscriptions are used as units of management and scale, rather than trying to cram multiple applications into a single large subscription using complex RBAC rules. A proper Landing Zone architecture automates subscription creation so that new business applications get a clean, isolated environment that is secure by default from day one.
+If you would like, I can provide the markdown code for this Landing Zones breakdown so you can paste it into your study notes, or we can look at a sample scenario question on how this is tested. Which would you prefer?
+
+---
+
+## Azure landing zone types
+
+1. Platform landing zones: 
+
+Subscriptions deployed to provide centralized services, often operated by one or several central teams split by function, for example, 
+networking, identity, which will be used by various workloads and applications.
+
+2. Application landing zones: One or more subscriptions deployed as an environment for an application or workload.
 
 ---
