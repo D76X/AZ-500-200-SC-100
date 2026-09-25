@@ -35,7 +35,13 @@ How to design for:
 
 ## Design for Azure Policy & RBAC
 
-Azure Policy are made by 
+[Azure > Governance > Policy > Azure Policy definitions effect basics](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-basics)  
+
+- Azure Policies are governance guardrails (rules) atht can be evaluated and enforced.  
+- Azure Policies can be combined into a group of plicies called Initiatives that can be applied at once for simpler management.
+- Azure Policies are used to compile a Compliance Report that help the architects to identify and resolve issues faster
+
+Azure Policies have the following parts.
 
 1. Definition
 2. Scope: Management Group, Subscription, Resource Group
@@ -51,9 +57,28 @@ Azure Policy are made by
   - assign them to the highest possible scope to govern centrally
   - assign them to the lowest possible scope to govern granularly
 
-- Azure Policy **located** on a MG can be assigned to all or some of the underlying subscriptions
+- Azure Policy 1 **located** on a MG will be inherited by all underlying subscriptions
+- Azure Policy 2 **located** on a subscription will be inherited by all underlying resource groups and resources 
+- Azure Policy 3 **located** on a resource group will be inherited by all underlying resources 
+- this effect is comulative that means
+  - all resources, RG and subscriptions are subjet to AP1
+  - all resources and RGs in a subscription1 to which AP2 is applied are subject to AP1 AND AP2
+  - all resources in a RG1 and RG1 in subscription1 to which AP3 is applied are subject to AP1 AND AP2 AND AP3
 
-- deny Actions, remediate compliance issues, onboard to monitoring solutions
+- it is important, for an architect, to remeber the order in which policies are evaluated by the Azure Resource Manager
+  1. Disabled: check whether a policy is disabled
+  2. Append / modify: modify the request before evaluation
+  3. Audit: logs compliance status 
+  4. AuditIfNotExists / DeployIfNotExists: evaluate post-deployment and apply corrections or audit deviations
+
+## Considerations for Azure Policy
+
+- Apply policy at the highest scope possible
+- Know when policies are evaluated
+- Decide what to do if a resource is non-compliant
+- Consider when to automatically remediate non-compliant resources
+- Use the Azure policy compliance dashboard for auditing and review
+- Effectively combine Azure policy with RBAC
 
 ---
 
