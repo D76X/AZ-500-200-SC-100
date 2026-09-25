@@ -4,6 +4,7 @@
 [Cloud Adoption Framework for Microsoft](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/)   
 [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)    
 [Azure Well-Architected Framework](https://learn.microsoft.com/en-us/azure/well-architected/)  
+[WAF > Pillars > Security Design Principles](https://learn.microsoft.com/en-us/azure/well-architected/security/principles)   
 
 [Zero Trust Guidance Center](https://learn.microsoft.com/en-us/security/zero-trust/) 
 [Zero Trust Guidance Center](https://aka.ms/ztguide/)  
@@ -12,6 +13,7 @@
 [Microsoft cloud security benchmark documentation (MCSB)](https://aka.ms/mcsb)
 [Cloud Adoption Framework for Microsoft](https://aka.ms/caf)
 [Azure Well-Architected Framework](https://aka.ms/waf)
+[WAF > Pillars > Security quick links](http://aka.ms/wafsecure)
 
 [CAF Secure](https://aka.ms/caf)
 
@@ -27,6 +29,11 @@
 # Understand the Azure Well-Architected Framework (WAF) | SC-100 | Episode 7
 
 [Understand the Azure Well-Architected Framework (WAF) | SC-100 | Episode 7](https://www.youtube.com/watch?v=IaIoGe2IGAA)  
+
+[WAF > Pillars > Security quick links](http://aka.ms/wafsecure)
+[WAF > Pillars > Security Design Principles](https://learn.microsoft.com/en-us/azure/well-architected/security/principles)   
+
+---
 
 WAF is **design framework** used to help to build software architectures 
 in the cloud based on workloads that possess the following properties:

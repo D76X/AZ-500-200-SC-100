@@ -33,9 +33,45 @@ How to design for:
 
 ---
 
+## Design for Azure Policy & RBAC
+
+Azure Policy are made by 
+
+1. Definition
+2. Scope: Management Group, Subscription, Resource Group
+3. Location
+4. Effect: Deny, Audit, AuditIfNotExists, DeployIfNotExists, Modify, Append 
+
+- Azure Policy are JSON Definitions, you can use;
+  - built-in policies
+  - community templates
+  - build custom policy definitions
+
+- Azure Policy have an inheritable scope;
+  - assign them to the highest possible scope to govern centrally
+  - assign them to the lowest possible scope to govern granularly
+
+- Azure Policy **located** on a MG can be assigned to all or some of the underlying subscriptions
+
+- deny Actions, remediate compliance issues, onboard to monitoring solutions
+
+---
+
 ## Design for Resource Tagging
 
+Resource tagging can be business-aligned or IT-aligned
 
+- Consider your organization's taxonomy
+
+- Determine the reason for the tagging 
+  - functional, 
+  - classification, 
+  - accounting, 
+  - partnership, 
+  - purpose
+
+- Start with a few tags (mission-critical resources) and then scale out
+- Policies could be used to apply tags and enforce tagging rules and conventions - mimic inheritance
 
 ---
 
@@ -351,6 +387,66 @@ CAF Manage addresses business continuity, operational baseline creation, and dai
 | **CAF Govern** | Compliance, cost control, organizational hierarchy | Management Groups, Azure Policy, Azure Resource Manager (ARM), Tagging |
 | **CAF Secure** | Risk mitigation, access control, threat defense | Entra ID, Microsoft Defender for Cloud, Key Vault, Private Link, Sentinel |
 | **CAF Manage** | Operations, uptime, monitoring, backup/DR | Azure Monitor, Azure Site Recovery (ASR), Azure Backup, Log Analytics |
+
+---
+
+# What are the most important effects of an Azure Policy in the context of the AZ-305 Solution Architect Exam?
+
+For the AZ-305 exam, Azure Policy questions focus primarily on selecting the correct policy 
+effect to satisfy specific architecture, governance, and compliance requirements.
+
+---
+
+## Key Azure Policy Effects for AZ-305
+
+### 1. `Deny`
+
+* **Mechanism:** Immediately blocks the deployment or update request at the Azure Resource Manager (ARM) layer before it reaches the resource provider.
+* **Exam Scenario:** Used when a requirement strictly **prohibits** non-compliant configurations (e.g., blocking unauthorized VM SKUs, restricting allowed regions, or preventing public IP assignments).
+
+### 2. `DeployIfNotExists` (DINE)
+
+* **Mechanism:** Checks if a related child/extension resource exists; if missing, it deploys that resource using a Managed Identity via a remediation task.
+* **Exam Scenario:** Used for automated, multi-resource deployment governance (e.g., automatically deploying Log Analytics agents, diagnostic settings, or backup configurations when a main resource is created).
+
+### 3. `Modify`
+
+* **Mechanism:** Adds, alters, or removes properties/tags on a resource during creation or update.
+* **Exam Scenario:** Used to enforce metadata standardizations (e.g., ensuring mandatory environment tags like `Env: Prod` are added or updated on resources).
+
+### 4. `Audit` / `AuditIfNotExists`
+
+* **Mechanism:** Allows the deployment to proceed but flags the non-compliant resource in the Azure Policy compliance dashboard.
+* **Exam Scenario:** Used when business logic requires visibility and monitoring without disrupting active pipelines or blocking deployments.
+
+### 5. `Append`
+
+* **Mechanism:** Adds fields to a resource payload during creation (e.g., forcing HTTPS-only on storage accounts or appending IP rules).
+* **Exam Scenario:** Used to enforce default security configurations transparently during resource initialization.
+
+---
+
+## Critical AZ-305 Policy Concepts
+
+### Order of Evaluation
+
+Understanding evaluation order helps answer architectural questions regarding policy interactions:
+
+1. **`Disabled`**
+2. **`Append` / `Modify**` *(Modifies request before evaluation)*
+3. **`Deny`** *(Blocks before execution)*
+4. **`Audit`** *(Logs compliance status)*
+5. **`AuditIfNotExists` / `DeployIfNotExists**` *(Evaluates post-deployment)*
+
+### Quick Decision Matrix for Exam Questions
+
+| Requirement | Correct Effect |
+| --- | --- |
+| Block deployment of non-compliant resources | **`Deny`** |
+| Auto-provision missing dependent resources (agents, diagnostics) | **`DeployIfNotExists`** |
+| Enforce or update resource tags/properties | **`Modify`** |
+| Monitor non-compliance without blocking operations | **`Audit`** |
+| Add required fields to ARM templates during execution | **`Append`** |
 
 ---
 
