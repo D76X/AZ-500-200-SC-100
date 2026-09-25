@@ -30,3 +30,15 @@
 [Qiskit Developer Certification 2.0: How to Prepare](https://www.youtube.com/watch?v=FbSvk2krtSk&t=20s)
 
 ---
+
+# Error suppression and tailoring and Noise
+
+[Noise and errors](https://quantum.cloud.ibm.com/learning/en/courses/tools-for-quantum-advantage/noise-and-errors)   
+
+[Error suppression and tailoring](https://quantum.cloud.ibm.com/learning/en/courses/tools-for-quantum-advantage/error-suppression)  
+
+[Quantum Computing is here | Tools for Quantum Advantage | Ep1 Qiskit](https://www.youtube.com/watch?v=VUKaBVEC6TM)  
+
+[The Truth behind noise | Tools for Quantum Advantage | Ep2 Qiskit](https://www.youtube.com/watch?v=-oCAu9g2nKk&t=3s)  
+
+---

@@ -21,11 +21,57 @@
 
 [SC-100: Microsoft Cybersecurity Architect Microsoft Learn Playlist](https://www.youtube.com/playlist?list=PLahhVEj9XNTfRZMathQ5fn1akTwV7R3w_)  
 
+
+---
+
+# Understand the Azure Well-Architected Framework (WAF) | SC-100 | Episode 7
+
+[Understand the Azure Well-Architected Framework (WAF) | SC-100 | Episode 7](https://www.youtube.com/watch?v=IaIoGe2IGAA)  
+
+WAF is **design framework** used to help to build software architectures 
+in the cloud based on workloads that possess the following properties:
+
+- resiliency
+- recoverability
+- availablility
+- can deliver a sufficient Return Of Investment (ROI)
+- can accomplish their purpuse within an acceptable timeframe
+- be secure as they need to be
+- can scale with the demand
+- can be orderly ans safely developed, deployed and maintained over their lifecycle
+
+## The Five Pillars of the WAF Framework
+
+* Reliability: Designing systems to recover from failures and continue functioning. This involves defining RTO/RPO (Recovery Time/Point Objectives), implementing redundancy (multi-region or availability zones), and ensuring high availability. [1, 6] 
+
+* Security: Protecting applications and data through identity management (e.g., Microsoft Entra ID), role-based access control (RBAC), encryption, and threat protection. [1, 6, 7] 
+
+* Cost Optimization: Managing and minimizing unnecessary cloud spend. You must know how to use budgets, alerts, tagging, reservations, and savings plans to align architecture with financial constraints. [2, 6, 7] 
+
+* Operational Excellence: Streamlining deployment and maintenance through automation, continuous monitoring, and infrastructure-as-code (IaC). [1, 6, 8] 
+
+* Performance Efficiency: Ensuring workloads can scale dynamically (horizontally or vertically) to meet fluctuating user demand and load testing requirements. [1, 2, 6] 
+
+The AZ-305 exam tests your ability to balance and apply these five key pillars 
+in architectural scenarios. [1, 5]
+
+Each pillar provides:
+- recommended practices
+- risk considerations
+- tradeoffs
+
+The design decisions must be lalance accross all 5 pillars given the business requirements. 
+Workload acrhictecture is NOT the same as its implementation!
+
+The Security architect and the Soulution architect use WAF to set up the application for 
+success; by applying the principles present in WAF it is more likely that the implementation will lead to success. However, its implementation details will depend on the given specific business  requirements.
+
 ---
 
 # Episode 6: How to Secure Cloud Adoption?
 
 [Cloud Adoption Framework (CAF) for Azure | SC-100 | Episode 6](https://www.youtube.com/watch?v=tQDBts92dJI)  
+
 [CAF Security teams, roles, and functions](https://aka.ms/securityroles)  
 
 CAF is a methodology that guides organizations through the process of migrating their applications and data to the cloud.

@@ -33,6 +33,12 @@ How to design for:
 
 ---
 
+## Design for Resource Tagging
+
+
+
+---
+
 ## Design for Azure Resource Groups
 
 ## Case 02: there organization has  dedicated teams for each type of resource, such as network, compute, databases, etc or type of task
@@ -46,6 +52,14 @@ How to design for:
   - easily identify dependencies
   - protect the reosurces from accidental deletion with RG locks
   - with secure deletion of all resources at once
+
+## Locks
+
+- locks can only be removed by high priviledged roles, such as Onwer
+- there are delete locks and read-only locks
+- read-only locks do not allow any changes, including deletion to be applied to a resource
+- delete locks allow changes but no deletions
+
 
 ---
 
@@ -350,7 +364,7 @@ translates complex business requirements into robust technical infrastructure de
 
 ------------------------------
 
-## The Five Pillars of the Framework
+## The Five Pillars of the WAF Framework
 
 The AZ-305 exam tests your ability to balance and apply these five key pillars in architectural scenarios: [1, 5] 
 

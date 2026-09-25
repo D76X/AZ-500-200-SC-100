@@ -2,9 +2,13 @@
 
 [Let’s catch up with C#! Exciting new features in C# 9, 10, 11, 12 and 13! - Filip Ekberg - NDC Conferences](https://www.youtube.com/watch?v=WGwjGfiEAAs&t=392s)  
 
+--
+
 ## C# 9.0
 
 [Roslyn - Language Feature Status - GitHub](https://github.com/dotnet/roslyn/blob/master/docs/Language%20Feature%20Status.md)  
+
+---
 
 [C# 9 - Roslyn - Language Feature Status - GitHub](https://github.com/dotnet/roslyn/blob/main/docs/Language%20Feature%20Status.md#c-9)  
 Records
@@ -23,3 +27,7 @@ Lambda discard parameters
 Attributes on local functions
 Module initializers
 New features for partial methods
+
+---
+
+

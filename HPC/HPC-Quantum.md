@@ -46,12 +46,6 @@
 
 ---
 
-# EuroHPC
-
-[EuroHPC USER DAYS 25 \- Day 1](https://www.youtube.com/watch?v=w8DNYR4tO3M)
-
----
-
 # Sabine Hossenfelder on Quantum Computing
 
 [Quantum Computing Failure Now Obvious - Sabine Hossenfelder](https://www.youtube.com/watch?v=DX_oIQ-tA6M)  
