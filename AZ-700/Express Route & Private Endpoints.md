@@ -1,6 +1,61 @@
 
 [Design and implement Azure ExpressRoute](https://learn.microsoft.com/en-us/training/modules/design-implement-azure-expressroute/)   
 
+[ExpressRoute circuits and peering](https://learn.microsoft.com/en-us/azure/expressroute/expressroute-circuit-peerings)  
+
+---
+
+# Can ExpressRoute be used for customers located within China? Will setting up ExpressRoute for customers in China require special attention?
+
+Yes, Azure ExpressRoute can be used for customers located within [China](https://www.google.com/search?kgmid=/m/0d05w3), but setting it up requires significant special attention compared to standard global deployments. [1, 2] 
+Because [Azure in China](https://learn.microsoft.com/en-us/azure/china/overview-checklist) is a physically separated sovereign cloud operated independently by 21Vianet (rather than directly by Microsoft), it is governed by strict local regulatory and architectural constraints. [2, 3] 
+You cannot use a standard global Azure account to configure or link to Azure in China. The environments have separate portals, credentials, management URLs (.azure.cn), and active directories. An ExpressRoute circuit provisioned in global Azure (e.g., Europe or US) cannot naturally peer or cross-connect with a Virtual Network (VNet) inside mainland China. [2, 4] 
+Under Chinese law, cross-border data transmission and telecom connections are strictly regulated. To establish an ExpressRoute circuit inside mainland China, you must:
+
+* 
+* Maintain a legal business entity registered in Mainland China or partner with a proxy vendor.
+* Sign an Onshore Services Purchase Agreement (OSPA).
+* Obtain necessary telecom approvals—any data traffic crossing the Chinese border must comply with Ministry of Industry and Information Technology (MIIT) regulations. [3, 5] 
+* 
+
+Unlike global regions where you can use hundreds of different providers, you must exclusively use specific, government-authorized carriers to provision ExpressRoute locations (primarily in Beijing and Shanghai). Approved partners include: [1, 6] 
+
+* 
+* China Telecom
+* China Unicom
+* China Mobile
+* GDS
+* 
+
+If your global WAN relies on a different international carrier (e.g., AT&T, Verizon, BT), they will be legally required to subcontract the mainland China leg of the circuit to one of these authorized local providers. [1] 
+If your customers are in China but need to connect to resources in a global Azure region (or vice versa), standard ExpressRoute Global Reach is not supported. Standard public internet VPNs between global regions and China frequently suffer from extreme packet loss and latency spikes due to the Great Firewall. [1, 7, 8, 9] 
+To bypass this natively, you must architect one of the following official cross-border setups: [10] 
+
+* 
+* Dual-Circuit Model: You provision one ExpressRoute circuit from your on-premises China facility to Azure China, and a second individual ExpressRoute circuit from an international facility to a nearby global Azure PoP (like [Hong Kong](https://www.google.com/search?kgmid=/m/03h64) or [Singapore](https://www.google.com/search?kgmid=/m/06t2t)). You then rely on an authorized telecommunications operator to physically bridge the two circuits outside of Microsoft's control. [1, 10] 
+* China Express Model: A specialized "one-stop" IaaS-only private link offered via partnerships with specific local telecom operators that handles the border-crossing regulatory compliance on a single carrier contract. [10] 
+* 
+
+To help tailor the next steps, could you tell me:
+
+* 
+* Are you connecting an on-premises office inside China to Azure China data centres, or are you trying to link a China office to a Global Azure region (like Europe or the US)?
+* Do you already have a registered legal entity in Mainland China to sign local telecom agreements?
+* 
+
+
+[1] [https://www.youtube.com](https://www.youtube.com/watch?v=gwislqW2BXM&t=206)
+[2] [https://appinchina.co](https://appinchina.co/a-guide-to-microsoft-azure-in-china/)
+[3] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/china/overview-checklist)
+[4] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/china/concepts-service-availability)
+[5] [https://www.jetservices.com.cn](https://www.jetservices.com.cn/blogs/microsoft-azure-china-guide/)
+[6] [https://docs.azure.cn](https://docs.azure.cn/en-us/expressroute/expressroute-locations)
+[7] [https://learn.microsoft.com](https://learn.microsoft.com/en-gb/answers/questions/1510582/i-want-to-make-my-web-app-available-in-china)
+[8] [https://www.megaport.com](https://www.megaport.com/blog/use-expressroute-local-for-azure-private-peering/)
+[9] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/answers/questions/5527790/azure-vpn-from-europe-to-china)
+[10] [https://learn.microsoft.com](https://learn.microsoft.com/en-us/azure/china/overview-connectivity-and-interoperability)
+
+
 ---
 
 # How does Azure Private Endpoint compare and contrast with MicrosoftExpress Route?

@@ -10,6 +10,12 @@
 
 ---
 
+# Folge 9
+
+[Cybersecurity Mittendrin - Folge 9 - Den Netzwerkdatenverkehr mit Wireshark und KI analysieren! Tom Wechsler](https://www.youtube.com/watch?v=nOIcTzPxmX0)    
+
+---
+
 # Folge 8
 
 [Cybersecurity Mittendrin - Folge 8 - Mit KI signaturbasierte Sicherheitssysteme umgehen Tom Wechsler](https://www.youtube.com/watch?v=njUI8biJ8D0)  
