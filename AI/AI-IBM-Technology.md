@@ -16,4 +16,10 @@
 
 [AI Is Exposing Your Data: An AI Security Problem You Can't See](https://www.youtube.com/watch?v=kyJ1vd7yEPc)  
 
+[What Is Jev? The AI Model That Doesn't Generate Text IBM Technology](https://www.youtube.com/watch?v=YGgNBcIgI4s)    
+
+[Prompt to Production: The Future of AI Code Workflows IBM Technology and IBM Developer](https://www.youtube.com/watch?v=bs1qPy_CWkM)   
+
 ---
+
+[5 Podman Features You Should Know: Kubernetes & Containers Simplified IBM Technology and IBM Developer](https://www.youtube.com/watch?v=dEy3pQKhE8k)  
