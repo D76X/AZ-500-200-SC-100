@@ -33,6 +33,82 @@ How to design for:
 
 ---
 
+# RBAC
+
+RBAC has thre parts:
+
+1. Who:   the identity to which the roles are applied
+2. What:  the definition, that is the permissions
+3. Where: the scope at which these permissions are applied to the given identity
+
+## RBAC recommendations
+
+- Only grant users the access they need
+- Assign at the highest scope level that meets the requirements
+- Assign roles to groups, not users
+- Know when to create a custom role
+- Consider what happens if you have overlapping role assignments
+
+---
+
+# Would you able to expand on this statement that I have taken from a course on AZ-305: Designing Microsoft Azure Infrastructure Solutions Microsoft?
+
+There are roles with different focuss, i.e. operation focuss, such as `Backup Operator`,
+this kind of role can be granted to the identity of someone, who must perform backups
+of different types pf respources but must not have any further access to them.
+
+## RBAC categorizations
+
+There are roles with different focuss, i.e. operation focuss, such as `Backup Operator`,
+this kind of role can be granted to the identity of someone, who must perform backups
+of different types pf respources but must not have any further access to them.
+
+In Azure RBAC (Role-Based Access Control), **role definition** centers on the principle of least privilege—giving a security principal (a user, group, or service principal) *only* the minimum permissions required to perform their designated duties, and nothing more.
+
+The statement highlights how Azure separates **operational management duties** (like running backup jobs or restoring data) from **administrative or content-level access** (like reading sensitive files inside a storage account, modifying virtual machine configurations, or deleting databases).
+
+---
+
+### Key Concepts Behind Operational Roles
+
+1. **Principle of Least Privilege & Separation of Duties**
+* Operational roles allow an organization to assign routine maintenance tasks (backups, monitoring, network peering, patching) without handing out high-level privileges like `Contributor` or `Owner`.
+* A dedicated backup operator can initiate and monitor backup or restore operations across the enterprise, but they cannot view confidential business data stored inside those workloads or alter core infrastructure settings.
+
+
+2. **Control Plane vs. Data Plane Operations**
+* **Control Plane (Management):** Azure Resource Manager (ARM) operations used to create, update, or delete resources or trigger operations (e.g., `Microsoft.RecoveryServices/vaults/backupJobs/action`).
+* **Data Plane:** Accessing the actual data contained within the resource (e.g., reading blobs in a storage account, running queries inside a database, or logging into an Azure VM).
+* Roles like `Backup Operator` grant specific **control plane actions** to manage backup workloads, without granting **data plane access** to read or inspect the underlying workload content.
+
+
+
+---
+
+### Built-in Azure Operational Roles Compared
+
+Azure provides several built-in roles tailored to operational specializations:
+
+| Role Name | Scope of Access | What They CAN Do | What They CANNOT Do |
+| --- | --- | --- | --- |
+| **Backup Operator** | Azure Backup / Recovery Services | Trigger, manage, monitor, and restore backups; configure backup policies. | Access data inside VMs/databases, modify underlying workload configurations, or create new infrastructure. |
+| **Network Contributor** | Azure Networking Resources | Manage VNet settings, subnets, NSGs, and load balancers. | Modify VMs, read storage accounts, or grant permissions to other users. |
+| **Virtual Machine Contributor** | Compute Resources | Start, stop, restart, and resize VMs; manage disks. | Access the internal OS files directly without credentials, or manage network/storage permissions. |
+| **Monitoring Reader / Contributor** | Azure Monitor & Log Analytics | Read or configure monitoring metrics, alerts, and log workspaces. | Alter the monitored workloads or view resource data outside telemetry. |
+
+---
+
+### Practical Example Scenario
+
+Consider a financial services company storing sensitive customer databases in Azure SQL and file shares in Azure Storage Accounts:
+
+* **The Problem:** The IT Operations team needs to perform nightly backup triggers and handle disaster recovery drills. However, compliance frameworks (like GDPR, HIPAA, or PCI-DSS) strictly forbid IT ops staff from viewing sensitive financial records.
+* **The Solution:** Assign the **Backup Operator** role to the IT Operations team at the Resource Group or Subscription level.
+* Operations staff can log into Azure, monitor Recovery Services Vaults, trigger backup jobs, and ensure restore points exist.
+* If they attempt to open an Azure Storage container or query the SQL database directly, Azure RBAC blocks the request because the role lacks data-plane permissions (`Microsoft.Storage/storageAccounts/blobServices/containers/blobs/read` or SQL data actions).
+
+---
+
 ## Design for Azure Policy & RBAC
 
 [Azure > Governance > Policy > Azure Policy definitions effect basics](https://learn.microsoft.com/en-us/azure/governance/policy/concepts/effect-basics)  

@@ -20,6 +20,10 @@
 
 [Prompt to Production: The Future of AI Code Workflows IBM Technology and IBM Developer](https://www.youtube.com/watch?v=bs1qPy_CWkM)   
 
+[AI Inference: The Secret to AI's Superpowers IBM Technology](https://www.youtube.com/watch?v=XtT5i0ZeHHE)  
+
+[How AI Models Scale Beyond a Single GPU Across LLM Workloads IBM Technology](https://www.youtube.com/watch?v=qZBibWYcKH4)   
+
 ---
 
 [5 Podman Features You Should Know: Kubernetes & Containers Simplified IBM Technology and IBM Developer](https://www.youtube.com/watch?v=dEy3pQKhE8k)  

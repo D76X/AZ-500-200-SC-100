@@ -33,6 +33,45 @@
 
 ---
 
+# Solutions with CAF and WAF
+
+# CAF
+
+Consider the following broad security areas:
+
+- Envision a security end state and ensure role and responsibility mapping  
+- Consider business alignment in risk insights, security integration and operational resiliency  
+- Consider security disciplines such as Access control, security operations and so on  
+- Consider guiding principles of business enablement and security assurances in mind  
+
+Consider the following governance areas:
+
+- Follow the standard enterprise or complex enterprise governance guide  
+- Evaluate corporate policy  
+- Ensure corporate policy is cloud ready and compliant  
+- Implement disciplines of cloud governance such as cost management, security and identity baseline, resource consistency and so on
+
+---
+
+# WAF
+
+Consider the following broad security areas:
+
+- Identity management
+- Protect your infrastructure
+- Application security
+- Data sovereignty and encryption
+- Security resources
+
+Consider the following governance areas:
+
+- Follow organizational policies that define cost boundaries
+- Enforce resource tagging
+- Security
+- Governance
+
+---
+
 WAF is **design framework** used to help to build software architectures 
 in the cloud based on workloads that possess the following properties:
 
