@@ -28,7 +28,8 @@
 
 [A Deep Dive Into Sample-Based Quantum Diagonalisation Methods: Javier Robledo Moreno | QGSS 2025](https://www.youtube.com/watch?v=VZadH9L9ZIM)
 
-[SQD for Chemistry | Designing New Algorithms with Qiskit](https://www.youtube.com/watch?v=4QAjIACBt1k)   
+[SQD for Chemistry | Designing New Algorithms with Qiskit](https://www.youtube.com/watch?v=4QAjIACBt1k)    
+
 [AQC \- Tensor (Approximate Quantum Compilation) | Designing New Algorithms with Qiskit](https://www.youtube.com/watch?v=WAhokQRvnWY) 
 
 ---
