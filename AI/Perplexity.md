@@ -13,6 +13,37 @@
 
 ---
 
+# I want to cancel the subscription to Perplexity, which is due to renewal through PayPal. How do I do this right without running the risk that I might be charged for a yearly renewal?
+
+Cancel it **in Perplexity’s own account settings first**, then verify in PayPal that no active automatic payment remains. Do **not** rely on removing the card or cancelling PayPal itself—Perplexity says subscriptions must be cancelled before the renewal date to avoid future charges. [perplexity](https://www.perplexity.ai/help-center/en/articles/10354283-canceling-a-subscription)
+
+## Cancel in Perplexity
+
+1. Sign in to **perplexity.ai** using the same account/email used for the subscription.
+2. Click your profile icon → **Account** (or **Settings**).
+3. Under **Subscription**, choose **Manage Plan** / **Manage Subscription**.
+4. Select **Cancel Subscription** and complete every confirmation screen until it explicitly says the plan will be cancelled on a specific date. [perplexity](https://www.perplexity.ai/help-center/en/articles/10354283-canceling-a-subscription)
+
+You should keep Pro access until the end of the already-paid billing period; after that, the account reverts to the free tier. [perplexity](https://www.perplexity.ai/help-center/en/articles/10354283-canceling-a-subscription)
+
+## Verify in PayPal
+
+1. Log into PayPal → **Settings** (gear icon) → **Payments** → **Automatic Payments** / **Manage Automatic Payments**.
+2. Find the Perplexity merchant entry.
+3. Confirm its status is **Inactive** or **Cancelled**. If it is still active, cancel the automatic payment there as a second safeguard.
+4. Take a screenshot of both Perplexity’s cancellation confirmation and PayPal’s inactive automatic-payment status.
+
+## Avoid the renewal charge
+
+- Cancel **well before** the renewal date—ideally at least 24–48 hours ahead—rather than waiting until the final hours. Perplexity’s terms state that the payment method is charged automatically at the start of each new subscription period unless cancelled beforehand. [perplexity](https://www.perplexity.ai/hub/legal/terms-of-service)
+- Check the exact renewal date shown in Perplexity’s subscription page and save the cancellation confirmation email.
+- Do **not** delete your Perplexity account before confirming cancellation; account deletion does not reliably stop an existing billing arrangement. [recurdash](https://recurdash.com/guides/how-to-cancel-perplexity)
+- If the subscription page still shows an upcoming renewal after cancelling, contact Perplexity via **Help → Contact Support** immediately and retain the screenshots. [perplexity](https://www.perplexity.ai/help-center/en/articles/10354283-canceling-a-subscription)
+
+If you subscribed through a PayPal promotion or “Buy with PayPal” flow, the authoritative cancellation point is still the Perplexity subscription management page; PayPal is the payment method, while Perplexity controls the subscription. [perplexity](https://www.perplexity.ai/hub/legal/terms-of-service)
+
+---
+
 > Use Cases for Comet Browser
 
 1. instant article summary.
