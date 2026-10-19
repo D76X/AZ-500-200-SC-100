@@ -38,6 +38,28 @@ range (e.g., 10.0.1.4, 10.0.2.5).
 
 - CIDR Notation: /16, /24 notation showing network size and available IP addresses.
 
+- Not all IP addresses are available for assignment.
+
+- The first four and the last IP address in every subnet is reserved for internal platform use (network/broadcast, default gateway, Azure DNS).
+
+- Multicast, Broadcast, Loopback, Link-Local, and Internal DNS IP address ranges are not available for assignment.
+
+- `RFC 1918` defines specific `IPv4 address ranges for private networks`. These addresses are not routed on the public internet: `10.`, `172.`, `192.`
+
+## Plan for Azure IP aggressing
+
+- Ensure address spaces don't overlap  
+
+- Use a few large virtual networks instead of multiple smaller ones  
+
+- Decide if your IP addresses should be private or public  
+
+- Decide if the IP addresses should be statically or dynamically allocated - consider using separate subnets  
+
+- Subnets shouldn't cover the entire address space of the virtual network  
+
+- Never manage IP addresses from within the virtual machine  
+
 ---
 
 # Episode 1
