@@ -9,6 +9,31 @@ Evaluate your mission critical workloads by assessing the technical design areas
 - Format: Multiple choice and multiple response questions.
 - Results: Receive curated and personalized guidance that fits your specific scenarios.
 
+> Ref:
+
+[Understand the Azure Well-Architected Framework (WAF) | SC-100 | Episode 7 Microsoft Learn](https://www.youtube.com/watch?v=IaIoGe2IGAA&t=679s)
+
+---
+
+# Q02
+
+## Mission Critical: Application Design
+
+# Have you distributed the application globally across multiple Azure regions and availability zones?
+
+Failure is impossible to avoid in any highly distributed multi-tenant cloud environment. 
+It's critical to plan for failure and maximize reliability by distributing application components
+across availability zones and Azure regions.
+
+---
+
+# Answer A01-Q01
+
+##  Options 07
+Each environment type, such as development, test, and production, uses at least one dedicated subscription.
+This practice ensures that lower environments don't contribute toward scale limits, and it reduces the risk 
+of lower-environment updates polluting production, by providing a clear management and identity boundary.
+
 ---
 
 # Q01
@@ -16,6 +41,8 @@ Evaluate your mission critical workloads by assessing the technical design areas
 ## Mission Critical: Application Design
 
 # Can you scale the solution independently as logical scale-units?
+
+[Mission Critical: Application Design - Can you scale the solution independently as logical scale-units?](https://learn.microsoft.com/en-us/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34/sessions/8bac99a8-3d43-45dc-a393-a2f2bc623cb6?mode=questionnaire&id=23513bdb-e8a2-4f0b-8b6b-191ee1f52d34&session=8bac99a8-3d43-45dc-a393-a2f2bc623cb6&question=7a76b41c-6f7e-423d-a0ad-709eee052bcc&category=437b295b-90d3-4190-812e-34f7ebb05df2)  
 
 To achieve a highly available application design, all functional aspects of the solution must be capable of scaling to meet changes in demand. A scale-unit architecture helps achieve this by allowing related components to be scaled independently as a logical unit or function. 
 

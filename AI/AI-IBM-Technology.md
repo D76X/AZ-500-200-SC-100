@@ -14,6 +14,8 @@
 
 # AI Foundamentals
 
+[The AI Memory Wall: Why LLMs & AI Accelerators Hit a Bottleneck IBM Technology](https://www.youtube.com/watch?v=4b6KpFN7Rio)    
+
 [AI Is Exposing Your Data: An AI Security Problem You Can't See](https://www.youtube.com/watch?v=kyJ1vd7yEPc)  
 
 [AI Inference: The Secret to AI's Superpowers IBM Technology](https://www.youtube.com/watch?v=XtT5i0ZeHHE)  

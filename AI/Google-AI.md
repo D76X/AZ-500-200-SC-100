@@ -1,3 +1,13 @@
+# Argon 4
+
+[Gemini 4 Argon Is Here (Fully Tested) Paul J Lipsky](https://www.youtube.com/watch?v=3MMbWDF4xYI)  
+
+[Gemini 4 Argon Is Here: 12 Jaw Dropping Demos Skill Leap AI](https://www.youtube.com/watch?v=b5D80OWst78)   
+
+[Gemini 4 Argon Sam Witteveen](https://www.youtube.com/watch?v=5XTJRU9na3Y)  
+
+---
+
 # Google Antigravity - Antigravity CLI (former Gemini CLI)
 
 [Antigravity CLI](https://antigravity.google/product/antigravity-cli?hl=sq)   
