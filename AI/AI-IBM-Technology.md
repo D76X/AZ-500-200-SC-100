@@ -24,11 +24,15 @@
 
 [Context Engineering for AI Agents: 4 Failure Modes to Avoid IBM Technology](https://www.youtube.com/watch?v=BwXremQ-i6I)   
 
-[What Is Jev? The AI Model That Doesn't Generate Text IBM Technology](https://www.youtube.com/watch?v=YGgNBcIgI4s)    
-
 [Prompt to Production: The Future of AI Code Workflows IBM Technology and IBM Developer](https://www.youtube.com/watch?v=bs1qPy_CWkM)   
 
+---
 
+# Jev
+
+[What Is Jev? The AI Model That Doesn't Generate Text IBM Technology](https://www.youtube.com/watch?v=YGgNBcIgI4s)  
+
+[The Problem with Jev: Can You Trust AI Decisions? IBM Technology](https://www.youtube.com/watch?v=_yO_Q7qo0HQ&t=18s)    
 
 ---
 

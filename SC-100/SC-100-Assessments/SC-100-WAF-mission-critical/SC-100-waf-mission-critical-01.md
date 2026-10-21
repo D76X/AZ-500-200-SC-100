@@ -1,33 +1,4 @@
-# Mission Critical | Well-Architected Review - Oct 7, 2026 - 11:16:49 AM
-
-[Assesment FAQs](https://learn.microsoft.com/en-us/assessments/support/)  
-
-Mission Critical | Well-Architected Review
-Evaluate your mission critical workloads by assessing the technical design areas and overall operational effectiveness.
-
-- Length of assessment: 60 minutes
-- Format: Multiple choice and multiple response questions.
-- Results: Receive curated and personalized guidance that fits your specific scenarios.
-
-> Ref:
-
-[Understand the Azure Well-Architected Framework (WAF) | SC-100 | Episode 7 Microsoft Learn](https://www.youtube.com/watch?v=IaIoGe2IGAA&t=679s)
-
----
-
-# Q02
-
-## Mission Critical: Application Design
-
-# Have you distributed the application globally across multiple Azure regions and availability zones?
-
-Failure is impossible to avoid in any highly distributed multi-tenant cloud environment. 
-It's critical to plan for failure and maximize reliability by distributing application components
-across availability zones and Azure regions.
-
----
-
-# Answer A01-Q01
+# Answer Q01-A01
 
 ##  Options 07
 Each environment type, such as development, test, and production, uses at least one dedicated subscription.
