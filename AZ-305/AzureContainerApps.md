@@ -9,7 +9,9 @@
 
 # Authentication and authorization in Azure Container Apps (Easy Auth)
 
-[Authentication and authorization in Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/authentication)   
+[Authentication and authorization in Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/authentication)    
+
+[Authentication and authorization in Azure App Service and Azure Functions](https://learn.microsoft.com/en-us/azure/app-service/overview-authentication-authorization)  
 
 [Authentication for Container Apps | Easy Auth Explained Kamal Rathnayake - MVP](https://www.youtube.com/watch?v=_N8RSyrFAt0&list=PLBmBUIbhAfd-eLB-XGxxhC68MNVl3I-Gi&index=12)  
 

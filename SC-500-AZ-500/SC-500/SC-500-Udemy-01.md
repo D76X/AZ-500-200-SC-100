@@ -6,3 +6,7 @@
 ---
 
 [Understanding Microsoft Cloud Licenses and the Microsoft 365 Admin Center](https://www.udemy.com/course/exam-azure-2/learn/lecture/57247771#overview)  
+
+[Accessing Microsoft 365 Admin Center](https://www.udemy.com/course/exam-azure-2/learn/lecture/57247773#overview)
+
+---
