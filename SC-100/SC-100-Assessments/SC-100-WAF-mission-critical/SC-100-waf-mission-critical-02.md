@@ -1,6 +1,12 @@
 # Answer Q02-A01
 
-##  Options 0?
+## Selected Options
+
+##  Option 06
+The selected deployment regions colocate Azure resources near end-users or dependent systems.
+
+##  Option 07
+The selected Azure regions consider any relevant compliance requirements for where data must reside.
 
 ---
 
@@ -10,9 +16,10 @@
 
 # Have you distributed the application globally across multiple Azure regions and availability zones?
 
-Failure is impossible to avoid in any highly distributed multi-tenant cloud environment. 
-It's critical to plan for failure and maximize reliability by distributing application 
-components across availability zones and Azure regions.
+Failure is impossible to avoid in any highly distributed multi-tenant cloud environment. It's critical to plan for failure and maximize reliability by 
+distributing application components across availability zones and Azure regions.
+
+[Mission Critical: Application Design - Have you distributed the application globally across multiple Azure regions and availability zones?](https://learn.microsoft.com/en-us/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34/sessions/8bac99a8-3d43-45dc-a393-a2f2bc623cb6?mode=questionnaire&id=23513bdb-e8a2-4f0b-8b6b-191ee1f52d34&session=8bac99a8-3d43-45dc-a393-a2f2bc623cb6&question=4fc8ba09-25a2-4b3e-9225-3a84a0afc863&category=437b295b-90d3-4190-812e-34f7ebb05df2)  
 
 ---
 
@@ -51,10 +58,8 @@ datacenter outages within a region.
 
 All selected deployment regions support availability zones and all other services or capabilities required by the application.
 
-Not all services or capabilities are available in every Azure region, so the selected deployment regions 
-can have service availability implications. For example, availability zones are not available in every Azure region. 
-Different Azure regions also have slightly different cost profiles for some services. There may be further cost 
 implications depending on the precise deployment regions chosen.
+Not all services or capabilities are available in every Azure region, so the selected deployment regions can have service availability implications. For example, availability zones are not available in every Azure region. Different Azure regions also have slightly different cost profiles for some services. There may be further cost 
 
 ##  Options 06
 
@@ -68,31 +73,27 @@ also be used to drive optimal network latency for distributed user bases.
 
 The selected Azure regions consider any relevant compliance requirements for where data must reside.
 
-Compliance requirements around geographical data residency, data protection, and data retention 
-can have a significant bearing on appropriate geographical distribution.
+Compliance requirements around geographical data residency, data protection, and data retention can have a significant bearing on appropriate geographical distribution.
 
 ##  Options 08
 
 The application is deployed across multiple cloud providers in an active-active configuration.
 
-An active-active deployment across Azure and other cloud providers can further mitigate reliance 
-on global dependencies within a single cloud provider. However, a multi-cloud active-active deployment strategy 
-introduces a significant amount of complexity around CI/CD and operations by introducing significant variance 
-in resource specification and capabilities between cloud providers.
+An active-active deployment across Azure and other cloud providers can further mitigate reliance on global dependencies within a single cloud provider. However, a multi-cloud active-active deployment strategy introduces a significant amount of complexity around CI/CD and operations by introducing significant variance in resource specification and capabilities between cloud providers.
 
 ##  Options 09
 
 The `composite SLA target` has been defined and validated for all user flows.
 
-Reliability is a relative concept. For any workload to be appropriately reliable, it should reflect 
-the business requirements surrounding it. However, an availability `SLO` should be seen as more than 
-simple uptime, but rather a consistent level of application service relative to a known healthy application state.
+Reliability is a relative concept. For any workload to be appropriately reliable, it should reflect the business requirements surrounding it. However, an availability `SLO` should be seen as more than simple uptime, but rather a consistent level of application service relative to a known healthy application state.
 
 ##  Options 10
 
 The `recovery point objective (RPO)` and `recovery time objective (RTO)` have been defined and validated.
 
 Recovery Time Objective (RTO) and Recovery Point Objective (RPO) are critical aspects when determining an appropriate global distribution strategy. For instance, if you strive to achieve an application RTO of less than a minute, then back-up based recovery strategies or an active-passive deployment strategy are likely to be insufficient.
+
+##  Options 11
 
 None of the above.
 

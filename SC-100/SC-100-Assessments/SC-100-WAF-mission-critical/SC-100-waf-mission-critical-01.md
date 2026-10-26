@@ -1,6 +1,8 @@
 # Answer Q01-A01
 
-##  Options 07
+## Selected Options
+
+##  Option 07
 Each environment type, such as development, test, and production, uses at least one dedicated subscription.
 This practice ensures that lower environments don't contribute toward scale limits, and it reduces the risk 
 of lower-environment updates polluting production, by providing a clear management and identity boundary.

@@ -14,4 +14,8 @@
 
 [Code samples for "Neural Networks and Deep Learning"](https://github.com/mnielsen/neural-networks-and-deep-learning)  
 
+[Chris Olah's blog](https://colah.github.io/)  
+
+[Distill](https://distill.pub/)
+
 ---

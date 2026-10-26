@@ -274,3 +274,14 @@ Dapr Components in Container Apps
 [Azure Container Apps Secrets Explained Kamal Rathnayake - MVP](https://www.youtube.com/watch?v=_VQ9mMRxYss&list=PLBmBUIbhAfd-eLB-XGxxhC68MNVl3I-Gi&index=14)  
 
 ---
+
+# Workload Profiles
+
+[Workload profiles in Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/workload-profiles-overview)  
+
+[Working with Workload Profiles in Azure Container Apps Kamal Rathnayake - MVP](https://www.youtube.com/watch?v=XvF89MIVvvM&list=PLBmBUIbhAfd-eLB-XGxxhC68MNVl3I-Gi&index=16)  
+
+This is similar to the `Kubernetes` feature of `Taints and Tolerations`. `Workload Profiles` is a managed version of this for ACA.
+
+
+---
