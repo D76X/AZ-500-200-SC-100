@@ -2,6 +2,9 @@
 
 ## Selected Options
 
+##  Options 06
+None of the above.
+
 ---
 
 # Q03
@@ -26,16 +29,20 @@ In a microservice architecture, each service can be developed to scale independe
 
 ##  Options 03
 The application implements end-to-end instrumentation and tracing that spans service boundaries.
+
 In a loosely coupled microservice architecture, end-to-end tracing requires more complex orchestration since it must traverse service boundaries that likely encompass different technology stacks.
 
 ##  Options 04
 Failures can be handled separately and don't affect client transactions.
+
 A loosely coupled microservice application should be designed such that failures within a single service don't take the full application down and can be handled independently.
 
 ##  Options 05
 The solution is designed to manage transactional integrity across different services.
+
 Transactional integrity ensures that when the application attempts to commit a transaction, if part of the transaction fails, none of the transaction will be committed. Transactional integrity can be harder to manage in a distributed microservice environment because data creation and persistence might happen within separate services.
 
 ##  Options 06
 None of the above.
+
 ---

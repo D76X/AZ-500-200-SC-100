@@ -28,6 +28,10 @@
 
 [Agentic Engineering: 5 Terms Every AI Developer Should Know IBM Technology and IBM Developer](https://www.youtube.com/watch?v=SIZsFGvtClM)  
 
+[What Is Loop Engineering? Building Better AI Agents IBM Technology](https://www.youtube.com/watch?v=DQBqh6gcx7U)   
+
+[AI Model vs Agentic Harness: What Actually Drives AI IBM Technology](https://www.youtube.com/watch?v=ZELPNFXJ4_o)  
+
 ---
 
 # Jev

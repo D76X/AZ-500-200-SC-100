@@ -5,6 +5,9 @@
 
 [Azure Container Apps Tutorial - Step by Step by Kamal Rathnayake - MVP](https://www.youtube.com/playlist?list=PLBmBUIbhAfd-eLB-XGxxhC68MNVl3I-Gi)  
 
+[KEDA Docs](https://keda.sh/docs/2.21/) 
+[KEDA Trigger Specification Azure Storage Queue](https://keda.sh/docs/2.21/scalers/azure-storage-queue/)  
+
 ---
 
 # Authentication and authorization in Azure Container Apps (Easy Auth)
@@ -283,5 +286,34 @@ Dapr Components in Container Apps
 
 This is similar to the `Kubernetes` feature of `Taints and Tolerations`. `Workload Profiles` is a managed version of this for ACA.
 
+---
+
+# Background Processing | KEDA | Queue Based
+
+[Azure Container Apps - Background Processing | KEDA | Queue Based Scale Out Kamal Rathnayake - MVP](https://www.youtube.com/watch?v=GuT238s_wGM&list=PLBmBUIbhAfd-eLB-XGxxhC68MNVl3I-Gi&index=10)  
+
+[Scaling Azure Container Apps: Maximize Performance and Minimize Costs Microsoft Azure Developers](https://www.youtube.com/watch?v=9egK2113l1Q)  
+
+[Set scaling rules in Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/scale-app?pivots=azure-cli)  
+
+[KEDA Docs](https://keda.sh/docs/2.21/) 
+
+[KEDA Trigger Specification Azure Storage Queue](https://keda.sh/docs/2.21/scalers/azure-storage-queue/)  
+
+---
+
+# Managed Identities
+
+[Azure Container Apps - Managed Identities | System vs. User Assigned | Step by Step Kamal Rathnayake - MVP](https://www.youtube.com/watch?v=qA5pfPWYKJ0&list=PLBmBUIbhAfd-eLB-XGxxhC68MNVl3I-Gi&index=9)  
+
+[Managed identities in Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/managed-identity?tabs=portal%2Cdotnet)  
+
+---
+
+# Dynamic Sessions
+
+[Dynamic Sessions in Azure Container Apps Kamal Rathnayake - MVP](https://www.youtube.com/watch?v=yaI8JkwoVR8&list=PLBmBUIbhAfd-eLB-XGxxhC68MNVl3I-Gi&index=18)  
+
+[Dynamic sessions in Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/sessions)  
 
 ---
