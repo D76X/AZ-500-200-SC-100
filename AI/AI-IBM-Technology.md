@@ -20,6 +20,10 @@
 
 [AI Inference: The Secret to AI's Superpowers IBM Technology](https://www.youtube.com/watch?v=XtT5i0ZeHHE)  
 
+[What Is LLM Inference? How AI Models Generate Responses IBM Technology](https://www.youtube.com/watch?v=615-yWyS1n0)  
+
+[What is LLM inference? By Nivetha Suruliraj](https://www.ibm.com/think/topics/llm-inference?utm_medium=OSocial&utm_source=Youtube&utm_content=WAIWW&utm_id=YT-101-What-is-LLM-Inference)  
+
 [How AI Models Scale Beyond a Single GPU Across LLM Workloads IBM Technology](https://www.youtube.com/watch?v=qZBibWYcKH4)   
 
 [Context Engineering for AI Agents: 4 Failure Modes to Avoid IBM Technology](https://www.youtube.com/watch?v=BwXremQ-i6I)   
@@ -31,6 +35,8 @@
 [What Is Loop Engineering? Building Better AI Agents IBM Technology](https://www.youtube.com/watch?v=DQBqh6gcx7U)   
 
 [AI Model vs Agentic Harness: What Actually Drives AI IBM Technology](https://www.youtube.com/watch?v=ZELPNFXJ4_o)  
+
+[What Is Quantization? How AI Models Get Smaller & Faster IBM Technology](https://www.youtube.com/watch?v=mmns33BsBcY)   
 
 ---
 

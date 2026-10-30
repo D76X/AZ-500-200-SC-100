@@ -317,3 +317,62 @@ This is similar to the `Kubernetes` feature of `Taints and Tolerations`. `Worklo
 [Dynamic sessions in Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/sessions)  
 
 ---
+
+# Azure Container Apps - Internal Deployments | Networking
+
+[Azure Container Apps - Internal Deployments | Networking Kamal Rathnayake - MVP](https://www.youtube.com/watch?v=ccDzgfVslR0&list=PLBmBUIbhAfd-eLB-XGxxhC68MNVl3I-Gi&index=9&t=18s)  
+
+---
+
+# Azure Container Apps - Volumes and Storage Mounts + Azure File Shares
+
+[Azure Container Apps - Volumes and Storage Mounts + Azure File Shares Kamal Rathnayake - MVP](https://www.youtube.com/watch?v=2xCrYkWgHKc&list=PLBmBUIbhAfd-eLB-XGxxhC68MNVl3I-Gi&index=10)  
+
+---
+
+# Azure Container Apps - Health Probes
+
+[Azure Container Apps - Health Probes Explained | Step by Step Kamal Rathnayake - MVP](https://www.youtube.com/watch?v=KxqmN-9Dl5c&list=PLBmBUIbhAfd-eLB-XGxxhC68MNVl3I-Gi&index=6)
+
+There are 3 types of Health Probes
+
+1. Liveliness: 
+The app in your container is healthy as it responds to HTTP probes.
+This probe is used to determine whether a container has become irresponsive and needs to be restarted. 
+For example, when an app is in a deadlock scenario if fails the Liveliness probe and the deadlock is resolved by restarting teh conatiner.
+
+2. Readiness: 
+the replica is ready to receive HTTP traffic; before this no HTTP traffic will be directed to the app 
+on the container by the Load Balancer.
+
+3. Startup:
+test the time that an app in a container takes; Liveliness and Readiness probes are enforced only after 
+the Startup probe passes. This probe is used in slow-starting containers to prevent the orchestrator
+from removing them before even getting a chance to run. In practice, the Startup probe informs the 
+orchestrator that a particular container takes some defined amount time to start so that the orchestrator
+let it churn at least that long before taking any actions.
+
+There are two types of Health Probes based on the protocol.
+
+## HTTP
+HTTP probes allow you to implement custom logic to check the status of application dependencies before reporting a healthy status.
+
+These are use to develop custom logic to determine the health of an application within a 
+Liveliness probe. In this you can implement all kinds of checks, such as acess of the app
+to a DB, or the existance of files, etc.
+
+## TCP
+TCP probes wait for a connection to be established with the server to indicate success. 
+A probe failure is registered if no connection is made.
+
+This is used by the orchestrator, which consider a container ready if it can successfully
+establish a TCP connection to it.
+
+## Restriction to Health Probes in Azure Container Apps
+
+- you can eah only one probe type for container
+- `exec` probes are NOT supported: these are supported in Kubernetes / AKS 
+- gRPC is NOT supported
+- named ports are not supported, integer port numbers must be used instead
+
+---

@@ -1,5 +1,7 @@
 # Argon 4
 
+[Scientific Discovery and Autonomous Engineering with Gemini 4 Argon Google Cloud Advanced Computing Community](https://www.youtube.com/watch?v=Cb0Og6FKpHs)  
+
 [Gemini 4 Argon Is Here (Fully Tested) Paul J Lipsky](https://www.youtube.com/watch?v=3MMbWDF4xYI)  
 
 [Gemini 4 Argon Is Here: 12 Jaw Dropping Demos Skill Leap AI](https://www.youtube.com/watch?v=b5D80OWst78)   
