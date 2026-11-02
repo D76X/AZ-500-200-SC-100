@@ -2,11 +2,16 @@
 
 ## Selected Options
 
+##  Options 01
+##  Options 02
+##  Options 05
+##  Options 06
+
 ---
 
 # Q10
 
-## Mission Critical: Application Design
+## Mission Critical: Data Platform
 
 [How is the volume of data and growth factored into the application design?](https://learn.microsoft.com/en-us/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34/sessions/8bac99a8-3d43-45dc-a393-a2f2bc623cb6?mode=questionnaire&id=23513bdb-e8a2-4f0b-8b6b-191ee1f52d34&session=8bac99a8-3d43-45dc-a393-a2f2bc623cb6&question=b00a3eee-44e4-4179-bcfd-d3aba71ed6a0&category=29cd0819-ea59-4039-bc04-f46ee79cc22d)   
 

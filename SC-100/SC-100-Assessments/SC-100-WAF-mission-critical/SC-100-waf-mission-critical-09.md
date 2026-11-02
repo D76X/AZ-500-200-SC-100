@@ -8,7 +8,7 @@
 
 # Q09
 
-## Mission Critical: Application Design
+## Mission Critical: Application Platform
 
 [How are individual application components decoupled?](https://learn.microsoft.com/en-us/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34/sessions/8bac99a8-3d43-45dc-a393-a2f2bc623cb6?mode=questionnaire&id=23513bdb-e8a2-4f0b-8b6b-191ee1f52d34&session=8bac99a8-3d43-45dc-a393-a2f2bc623cb6&question=b3dd6b56-94eb-4947-8c93-220c8a28f4a0&category=3b978c5b-050a-4758-91ce-15c48a3800e1)  
 

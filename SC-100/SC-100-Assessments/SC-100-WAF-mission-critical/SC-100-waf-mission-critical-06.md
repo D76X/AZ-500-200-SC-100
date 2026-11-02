@@ -10,7 +10,7 @@
 
 # Q06
 
-## Mission Critical: Application Design
+## Mission Critical: Application Platform
 
 [Have you designed the application to use containers as the unit of deployment?](https://learn.microsoft.com/en-us/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34/sessions/8bac99a8-3d43-45dc-a393-a2f2bc623cb6?mode=questionnaire&id=23513bdb-e8a2-4f0b-8b6b-191ee1f52d34&session=8bac99a8-3d43-45dc-a393-a2f2bc623cb6&question=d3674e7f-9583-4174-981f-e350af768b89&category=3b978c5b-050a-4758-91ce-15c48a3800e1)  
 

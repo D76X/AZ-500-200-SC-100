@@ -2,6 +2,12 @@
 
 [Attention in transformers, step-by-step | Deep Learning Chapter 6 3Blue1Brown](https://www.youtube.com/watch?v=eMlx5fFNoYc)  
 
+[Transformers, the tech behind LLMs | Deep Learning Chapter 5 3Blue1Brown](https://www.youtube.com/watch?v=wjZofJX0v4M&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=7)  
+
+[Backpropagation calculus | Deep Learning Chapter 4 3Blue1Brown](https://www.youtube.com/watch?v=tIeHLnjs5U8&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=5)   
+
+[Backpropagation, intuitively | Deep Learning Chapter 3 3Blue1Brown](https://www.youtube.com/watch?v=Ilg3gGewQ5U&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=4)  
+
 [Gradient descent, how neural networks learn | Deep Learning Chapter 2 3Blue1Brown](https://www.youtube.com/watch?v=IHZwWFHWa-w&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=2)  
 
 [But what is a neural network? | Deep learning chapter 1 3Blue1Brown](https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=1)  

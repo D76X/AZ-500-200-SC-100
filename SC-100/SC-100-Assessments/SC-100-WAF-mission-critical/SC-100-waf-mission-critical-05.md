@@ -18,7 +18,7 @@ There can be a delay in feature availability for other supported languages.
 
 # Q05
 
-## Mission Critical: Application Design
+## Mission Critical: Application Platform
 
 [Have you evaluated the reliability and performance characteristics of utilized programming languages and frameworks?](https://learn.microsoft.com/en-us/assessments/23513bdb-e8a2-4f0b-8b6b-191ee1f52d34/sessions/8bac99a8-3d43-45dc-a393-a2f2bc623cb6?mode=questionnaire&id=23513bdb-e8a2-4f0b-8b6b-191ee1f52d34&session=8bac99a8-3d43-45dc-a393-a2f2bc623cb6&question=139ae0f7-a607-46de-bcf8-c036d37ad4f9&category=3b978c5b-050a-4758-91ce-15c48a3800e1)  
 

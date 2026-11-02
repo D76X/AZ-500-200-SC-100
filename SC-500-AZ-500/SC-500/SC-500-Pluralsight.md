@@ -11,7 +11,7 @@ You have 14 days to complete each attempt before it expires.
 
 Contoso is onboarding an external contractor, `judy@vendor.com`, for a 30-day security review. 
 Judy has a `B2B collaboration guest account` in Contoso and will receive `Security Copilot Contributor` access. 
-`Vendor.com` manages Judy's device and can issue a Microsoft Entra compliant-device claim, but Contoso does not 
+`Vendor.com` manages Judy's device and can issue a `Microsoft Entra compliant-device claim`, but Contoso does not 
 currently trust device-compliance claims from `vendor.com`.
 
 Contoso requires Judy to satisfy multifactor authentication and use a compliant device when accessing Security Copilot. 
@@ -30,10 +30,12 @@ Rely on Judy's home tenant to enforce MFA and device compliance, since cross-ten
 settings automatically apply the resource tenant's requirements to guests
 
 ## OPTION 03
-Assign Judy the Copilot Owner role instead of Contributor, since Owner-level access automatically enforces stronger sign-in requirements for guest accounts
+Assign Judy the `Copilot Owner role` instead of `Contributor`, since Owner-level access 
+automatically enforces stronger sign-in requirements for guest accounts
 
 ## OPTION 04
-Configure a Microsoft Entra ID Protection user risk policy requiring MFA whenever Judy's calculated sign-in risk level is high or medium
+Configure a `Microsoft Entra ID Protection user risk policy` requiring MFA whenever Judy's 
+calculated sign-in risk level is high or medium
 
 ---
 
@@ -42,6 +44,64 @@ Configure a Microsoft Entra ID Protection user risk policy requiring MFA wheneve
 [Microsoft Entra External ID B2C & External Identities- Deployment Architectures Formula5 ](https://www.youtube.com/watch?v=AJS1qGkAvmg&t=434s)  
 
 ---
+
+# Gemini Argon 4
+
+Correct Answer
+
+## OPTION 01: 
+In Contoso, require MFA and a compliant device with Conditional Access for Security Copilot, and 
+configure inbound cross-tenant trust for vendor.com's compliant-device claim.
+
+## Why OPTION 01 is Correct
+
+- Resource-Tenant Enforcement: 
+Contoso, the resource tenant, must create a Conditional Access policy targeting Microsoft Security Copilot 
+and external/guest users ( judy@vendor.com ) with Grant controls set to Require multifactor authentication 
+and Require device to be marked as compliant.
+
+- Cross-Tenant Device Claim Trust: 
+External B2B guest devices can only be managed/Intune-enrolled in their home tenant ( vendor.com ), 
+not in the resource tenant ( Contoso ). Without configuring `Inbound Cross-Tenant Access Trust Settings` 
+to trust  vendor.com 's compliant-device claims, Contoso's Conditional Access policy requiring a compliant 
+device will always block Judy's sign-in.
+
+- MFA Enforcement: 
+Even if Contoso does not trust  vendor.com 's MFA claim, a B2B collaboration guest can satisfy MFA directly 
+in Contoso (or in  vendor.com  if MFA trust is also enabled).
+
+────────────────────
+
+Why the Other Options Should Not Be Selected
+
+> OPTION 02: Rely on Judy's home tenant to enforce MFA and device compliance, since cross-tenant access settings automatically apply the resource tenant's requirements to guests
+
+- Why it's wrong: Cross-tenant access settings do not automatically push or enforce a resource tenant's security requirements onto a home tenant, nor do they create Conditional Access policies. You must explicitly configure a Conditional Access policy in Contoso to enforce access controls, and explicitly enable inbound trust settings (trusting MFA/device claims is disabled by default). Furthermore, the prompt explicitly states Contoso cannot rely solely on  vendor.com 's policies.
+
+> OPTION 03: Assign Judy the  Copilot Owner role instead of  Contributor, since Owner-level access automatically enforces stronger sign-in requirements for guest accounts
+
+- Why it's wrong: Security Copilot roles ( `Security Copilot Owner`  and  `Security Copilot Contributor` ) are `platform-level RBAC roles` 
+that control access to Security Copilot capabilities (such as managing settings vs. using prompts). They are not Microsoft Entra ID roles 
+and do not enforce MFA or device compliance, plus elevating a contractor to Owner violates the principle of least privilege.
+
+> OPTION 04: Configure a Microsoft Entra ID Protection user risk policy requiring MFA whenever Judy's calculated sign-in risk level is high or medium
+- Why it's wrong:
+1. It fails to enforce always-on MFA (only triggering on medium/high risk) and completely ignores the compliant device requirement.
+2. It confuses `User risk` (which evaluates compromised credentials in the B2B user's home directory and uses password reset for remediation) with `Sign-in` risk.
+
+---
+
+References
+
+- [Authentication and Conditional Access for B2B users - Microsoft Entra External ID](https://learn.microsoft.com/en-us/entra/external-id/authentication-conditional-access#device-compliance-and-microsoft-entra-hybrid-joined-device-policies)
+- [Cross-tenant access overview - Microsoft Entra External ID](https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview)  
+- [Configure B2B collaboration cross-tenant access - Inbound trust settings](https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-settings-b2b-collaboration#to-change-inbound-trust-settings-for-mfa-and-device-claims)
+- [Understand authentication and roles in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/authentication#security-copilot-roles)
+- [Microsoft Entra ID Protection and B2B users](https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-b2b)  
+
+---
+
+# Gemini Flash
 
 # Microsoft Entra ID Self-Service Sign-Up
 
@@ -109,9 +169,12 @@ to your apps without any intervention on your part.
 
 # What are the differences between the Microsoft Entra ID B2C feature and Microsoft Entra ID External identities?
 
-**Microsoft Entra External ID** is Microsoft’s next-generation platform for Customer Identity and Access Management (CIAM), built directly on the modern **Microsoft Entra ID** architecture.
+**Microsoft Entra External ID** is Microsoft’s next-generation platform for Customer Identity and Access Management (CIAM), 
+built directly on the modern **Microsoft Entra ID** architecture.
 
-While both **Azure AD B2C** (legacy name for Microsoft Entra ID B2C) and **Microsoft Entra External ID** manage external identities (customers, partners, and citizens), **Entra External ID is the active replacement for Azure AD B2C**. Azure AD B2C was retired to new customers as of `May 1, 2025`, and existing tenants will be supported until 2030.
+While both **Azure AD B2C** (legacy name for Microsoft Entra ID B2C) and **Microsoft Entra External ID** manage external identities 
+(customers, partners, and citizens), **Entra External ID is the active replacement for Azure AD B2C**. Azure AD B2C was retired to 
+new customers as of `May 1, 2025`, and existing tenants will be supported until 2030.
 
 ---
 
