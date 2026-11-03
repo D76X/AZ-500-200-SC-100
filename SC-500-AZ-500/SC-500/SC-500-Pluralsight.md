@@ -91,12 +91,38 @@ and do not enforce MFA or device compliance, plus elevating a contractor to Owne
 
 ---
 
-References
+# References
 
-- [Authentication and Conditional Access for B2B users - Microsoft Entra External ID](https://learn.microsoft.com/en-us/entra/external-id/authentication-conditional-access#device-compliance-and-microsoft-entra-hybrid-joined-device-policies)
+## Understand authentication in Microsoft Security Copilot
+
+- [Understand authentication and roles in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/authentication#security-copilot-roles)  
+
+Security Copilot introduces two roles that function like access groups but aren't Microsoft Entra ID roles. 
+Instead, they only control access to the capabilities of the Security Copilot platform and provide no access
+by themselves to security data.
+
+1. Security Copilot owner
+2. Security Copilot contributor
+
+# Quick Summary of Content
+
+- Security Copilot uses `on-behalf-of authentication` and requires specific roles for access.
+- Security Copilot roles (`owner` and `contributor`) are distinct from Microsoft Entra roles and control access to platform features.
+- Microsoft Entra and Azure RBAC roles manage broader access across Microsoft services.
+- Steps to configure Security Copilot RBAC and implement conditional access policies.
+- Recommendations for assigning roles to ensure proper access without unnecessary permissions.
+- Guidelines for managing shared sessions and cross-tenant access for security analysts.
+- Information on managing promptbooks and preinstalled plugin authentication.
+
+---
+
+- [Authentication and Conditional Access for B2B users - Microsoft Entra External ID](https://learn.microsoft.com/en-us/entra/external-id/authentication-conditional-access#device-compliance-and-microsoft-entra-hybrid-joined-device-policies)  
+
 - [Cross-tenant access overview - Microsoft Entra External ID](https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-overview)  
-- [Configure B2B collaboration cross-tenant access - Inbound trust settings](https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-settings-b2b-collaboration#to-change-inbound-trust-settings-for-mfa-and-device-claims)
-- [Understand authentication and roles in Microsoft Security Copilot](https://learn.microsoft.com/en-us/copilot/security/authentication#security-copilot-roles)
+
+- [Configure B2B collaboration cross-tenant access - Inbound trust settings](https://learn.microsoft.com/en-us/entra/external-id/cross-tenant-access-settings-b2b-collaboration#to-change-inbound-trust-settings-for-mfa-and-device-claims)  
+
+
 - [Microsoft Entra ID Protection and B2B users](https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-b2b)  
 
 ---

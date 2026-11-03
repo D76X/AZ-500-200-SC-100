@@ -73,6 +73,7 @@ The Client Directed Flow is a 3-step process
 # Azure Container Jobs
 
 [Jobs in Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/jobs?tabs=azure-cli) 
+
 [Run Containerized Tasks with Jobs in Azure Container Apps Microsoft Azure Developers](https://www.youtube.com/watch?v=keg6C3WcJEw)  
 
 ---
