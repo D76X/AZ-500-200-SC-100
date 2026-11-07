@@ -38,6 +38,8 @@
 
 [What Is Quantization? How AI Models Get Smaller & Faster IBM Technology](https://www.youtube.com/watch?v=mmns33BsBcY)   
 
+[Can Your AI Use Sensitive Data Safely? 5 Capabilities You Need IBM Technology](https://www.youtube.com/watch?v=jnP9AgtX0qo)  
+
 ---
 
 # Jev

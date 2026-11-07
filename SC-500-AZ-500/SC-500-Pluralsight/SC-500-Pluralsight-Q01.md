@@ -246,4 +246,243 @@ For organizations currently using Azure AD B2C, Microsoft recommends planning a 
 
 ---
 
+# What is the Security Copilot Platform?
 
+[What is Microsoft Security Copilot?](https://learn.microsoft.com/en-us/copilot/security/microsoft-security-copilot)  
+
+## Videos
+
+[Microsoft Security Copilot by Microsoft Security - Playlist](https://www.youtube.com/playlist?list=PL3ZTgFEc7LyuQRLD61q9YqPKEDlZj4j5u)  
+
+[Microsoft Entra and Copilot for Security | Microsoft Security](https://www.youtube.com/watch?v=yW7EAShfkRQ&list=PL3ZTgFEc7LyuQRLD61q9YqPKEDlZj4j5u&index=17)  
+
+---
+
+`Microsoft Security Copilot` is a generative AI-powered security and IT platform 
+designed to help defenders analyze threats, investigate incidents, and manage 
+security posture at machine speed and scale. 
+
+[1] (https://learn.microsoft.com/en-us/copilot/security/microsoft-security-copilot), 
+[2] (https://learn.microsoft.com/en-us/copilot/security/get-started-security-copilot)
+
+## Core Capabilities
+
+- Natural Language Processing: 
+Translates plain-language prompts into complex queries, KQL scripts, and diagnostic steps.
+
+- Automated Triage & Response: 
+Handles repetitive tasks like phishing analysis, alert summarization, and anomaly detection.
+
+- Threat Intelligence Integration: 
+Pulls from massive daily signal feeds, threat analytics reports, and vulnerability disclosures.
+
+- Security Agents: 
+Utilizes embedded, partner-built, and custom AI agents (such as phishing triage and conditional 
+access optimization agents) to automate workflows. 
+
+[1] (https://www.microsoft.com/en-gb/security/business/ai-machine-learning/microsoft-security-copilot), 
+[2] (https://www.quorumcyber.com/insights/what-is-microsoft-security-copilot/), 
+[3] (https://www.bluevoyant.com/blog/an-introduction-to-microsoft-security-copilot), 
+[4] (https://learn.microsoft.com/en-us/copilot/security/agents-overview), 
+[5] (https://learn.microsoft.com/en-us/copilot/security/microsoft-security-copilot)
+
+## Integrations & Ecosystem
+
+Security Copilot works as a standalone portal or embedded directly inside the 
+Microsoft Security portfolio, including: 
+
+[1] (https://learn.microsoft.com/en-us/copilot/security/microsoft-security-copilot), 
+[2] (https://www.microsoft.com/en-gb/security/business/ai-machine-learning/microsoft-security-copilot)
+
+1. Microsoft Defender XDR & Sentinel
+2. Microsoft Entra (for identity risk and access intelligence)
+3. Microsoft Purview (for data security and compliance)
+4. Third-party services and plugins like ServiceNow and Jamf. 
+
+[1] (https://learn.microsoft.com/en-us/entra/security-copilot/security-copilot-in-entra), 
+[2] (https://learn.microsoft.com/en-us/purview/copilot-in-purview-overview), 
+[3] (https://learn.microsoft.com/en-us/copilot/security/microsoft-security-copilot)
+
+## Access & Licensing
+
+- `Microsoft 365 E5/E7 Customers`: 
+Security Copilot capabilities and agents are built into daily workflows for eligible tiers 
+once provisioned in the tenant. 
+
+[1] (https://www.microsoft.com/en-us/security/security-copilot-in-microsoft-365-e5), 
+[2] (https://learn.microsoft.com/en-us/copilot/security/get-started-security-copilot)
+
+- Other Commercial Customers: 
+Access is provisioned using Security Compute Units (SCUs) billed hourly. 
+(Note: Not currently designed for US government clouds). 
+
+[1] (https://www.microsoft.com/en-us/security/pricing/microsoft-security-copilot), 
+[2] (https://learn.microsoft.com/en-us/copilot/security/get-started-security-copilot)
+
+---
+
+# Notes
+
+> Microsoft Security Copilot makes use of the concept of plugins
+
+Copilot uses on-behalf-of authentication to access security-related data through active Microsoft plugins.
+After you're authenticated to the platform, your Microsoft Entra and Azure Role Based Access Control (RBAC) determines what plugins are available in prompts.
+If a Microsoft plugin requires a different role to access its security data, you need to ensure that the appropriate service role is assigned as well. For example, the bundle works well for an analyst assigned the Compliance Administrator role. This role is one of the Microsoft Purview recommended roles and gives them 
+access to Microsoft Purview plugin data. That same analyst needs additional role assignments to 
+access security data like Microsoft Sentinel though. 
+
+For more examples, see access the capabilities of Microsoft plugins.
+
+[Access the capabilities of Microsoft plugins](https://learn.microsoft.com/en-us/copilot/security/authentication#access-the-capabilities-of-microsoft-plugins)  
+
+Security Copilot doesn't go beyond the access you have, aligning with Microsoft's 
+`Security and privacy RAI principle`.  Each Microsoft plugin has its own role requirements 
+that remain in effect to access the plugin's service and its data. 
+
+> Consider these examples:
+
+1. Copilot contributor
+
+As an analyst, you're assigned the Copilot contributor role for access to the Copilot platform
+and the ability to create sessions. This assignment by itself doesn't give you access to your 
+organization's security data. Following the least privilege model, you don't have any sensitive 
+Microsoft Entra roles like Security Administrator. In order to use Copilot to access security data 
+like the Microsoft Sentinel plugin, you still need an appropriate Azure RBAC role like 
+Microsoft Sentinel Reader. This role gives you access to incidents in your Microsoft Sentinel workspace 
+from Copilot. For your Copilot session to access the devices, policies, and postures available through 
+the Intune plugin, you need an Intune role like the Endpoint Security Manager. The same pattern is true 
+for access to Microsoft Defender XDR data through your Copilot session or the embedded 
+Security Copilot experiences.
+
+2. Security Administrator: Microsoft Entra security role
+
+**Don't assign users this role purely for Copilot access.** Although the Security Administrator role 
+inherits access to Copilot and certain plugin capabilities, **this role includes PRIVILEGED permissions**.  Instead, create a security group and add that group to the appropriate Copilot role (Owner or Contributor).
+
+3. Recommended Microsoft Security roles
+
+
+
+---
+
+# Security and privacy RAI principle
+
+Privacy and Security is a core pillar of `Responsible AI (RAI)` frameworks. 
+It dictates that artificial intelligence systems must be built to 
+
+- protect personal data rights, 
+- ensure data confidentiality, and 
+- resist cyber threats. 
+
+[1] (https://www.lumenova.ai/blog/responsible-ai-principles/), 
+[2] (https://www.microsoft.com/en-gb/ai/principles-and-approach), 
+[3] (https://casrai.org/guides/what-is-responsible-ai), 
+[4] (https://www.russellreynolds.com/en/about/who-we-are/responsible-ai-principles)
+
+## Key Focus Areas
+
+- `Data Protection & Rights`: 
+
+AI models must 
+
+    - respect user privacy, 
+    - comply with data protection regulations (such as the `GDPR or NIST` frameworks), and 
+    - handle personal or sensitive data lawfully
+
+[1] (https://www.responsible.ai/news/uk-outlines-5-core-principles-for-responsible-ai-regulation/), 
+[2] (https://casrai.org/guides/what-is-responsible-ai)
+
+- User Control & Consent: 
+Individuals should have transparency and meaningful control over how their data is collected, 
+stored, and used by AI algorithms. 
+
+[1] (https://www.lumenova.ai/blog/responsible-ai-principles/)
+
+- Cybersecurity & Resilience: 
+Systems must feature robust access controls, encryption, vulnerability assessments, and protection 
+against adversarial attacks or data poisoning. 
+
+[1] (https://www.allianz.com/en/about-us/strategy-values/responsible-use-of-artificial-intelligence.html), 
+[2] (https://www.lumenova.ai/blog/responsible-ai-principles/)
+
+- Privacy-by-Design: 
+Privacy and security measures are integrated directly into the architecture of the AI lifecycle 
+rather than added as an afterthought. 
+
+[1] (https://www.allianz.com/en/about-us/strategy-values/responsible-use-of-artificial-intelligence.html)
+
+Learn more about operationalizing these standards through the Microsoft Responsible AI Overview or international guidelines like the OECD AI Principles via CASRAI. 
+
+[1] (https://www.microsoft.com/en-gb/ai/responsible-ai), 
+[2] (https://casrai.org/guides/what-is-responsible-ai)
+
+---
+
+# Is Security Administrator a Microsoft Entra security role?
+
+Yes, Security Administrator is a built-in directory role in Microsoft Entra ID. 
+
+[1] (https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/concept-understand-roles), 
+[2] (https://techcommunity.microsoft.com/discussions/microsoftthreatprotection/security-admin-role-replacement-with-defender-xdr/4471330), 
+[3] (https://www.azadvertizer.net/azentraidroles/194ae4cb-b126-40b2-bd5b-6091b380977d.html)
+
+## Key Details
+
+- Scope: 
+It grants broad, organization-wide security configuration permissions across Microsoft Entra ID and 
+Microsoft 365 services such as: 
+
+    - managing Conditional Access policies, 
+    - Identity Protection, 
+    - Privileged Identity Management settings, and 
+    - Microsoft Defender for Cloud Apps 
+
+[1] (https://rbacmap.com/roles/entra-security-admin/), 
+[2] (https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/concept-understand-roles), 
+[3] (https://www.azadvertizer.net/azentraidroles/194ae4cb-b126-40b2-bd5b-6091b380977d.html)
+
+- Permissions: 
+It includes all read-only permissions of the `Security Reader` role while adding capabilities to configure and remediate security settings. 
+
+[1] (https://rbacmap.com/roles/entra-security-admin/)
+
+- `Privileged Status`: 
+It is classified as a privileged, high-impact administrative role in Microsoft Entra ID. 
+
+[1] (https://www.azadvertizer.net/azentraidroles/194ae4cb-b126-40b2-bd5b-6091b380977d.html)
+
+You can review the full set of permissions and role details on the Microsoft Entra Built-in Roles Reference. 
+[1] (https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference)
+
+---
+
+# Microsoft Copilot For Security
+
+![Microsoft Copilot For Security](./Q01-MicrosoftCopilotForSecurity.png)
+
+The diagram details the **Data flow for Microsoft Copilot for Security**, 
+illustrating how user requests travel through security solutions, 
+context-grounding plugins, and language models within a secure enterprise boundary.
+
+### **Summary of the Diagram**
+
+* **Security Input Sources**: Prompts originate from solutions such as **Microsoft Defender**, **Microsoft Sentinel**, **Microsoft Intune**, **Microsoft Copilot for Security**, and **Microsoft Entra**.
+
+* **Context & Plugins**: Grounding draws context (event logs, alerts, incidents, policies) from Microsoft plugins as well as third-party products like **Splunk** and **ServiceNow**.
+
+* **Trust Boundary & Privacy**: All operations reside within the **Microsoft Security trust boundary**. Customer data is never stored outside the compliance boundary or used to train foundational models. Additionally, the **Azure OpenAI** instance is managed by Microsoft, ensuring OpenAI has no access to the data or model.
+
+* **Encryption**: All requests across the workflow are encrypted using **HTTPS**.
+
+---
+
+### **Step-by-Step Copilot for Security Data Flow**
+
+1. **User Prompt**: A user issues a prompt from a supported Microsoft Security product, sending it to Copilot.
+2. **Pre-processing (Grounding)**: Copilot accesses connected security plugins to gather relevant logs, alerts, and context for initial pre-processing.
+3. **Prompt Sent to LLM**: Copilot sends the enriched, modified prompt to the **Large Language Model (LLM)**.
+4. **LLM Response & Responsible AI**: The LLM produces a response. **Responsible AI checks** are executed on both the input prompt and output results.
+5. **Post-processing (Grounding)**: Copilot accesses plugins once more to perform post-processing grounding.
+6. **Delivery**: Copilot delivers the final response along with any relevant application commands back to the security product.
+
+---
