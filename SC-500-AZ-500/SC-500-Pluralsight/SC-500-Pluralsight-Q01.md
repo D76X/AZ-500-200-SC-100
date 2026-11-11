@@ -1,4 +1,4 @@
-# Eaxm Practice Cloud and AI Security Engineer Associate (SC-500)
+# Exam Practice Cloud and AI Security Engineer Associate (SC-500)
 
 [Eaxm Practice: Cloud and AI Security Engineer Associate (SC-500)](https://app.pluralsight.com/assessment-pe/cloud-and-ai-security-engineer-associate-sc-500/intro)  
 
@@ -356,12 +356,65 @@ Security Copilot experiences.
 
 2. Security Administrator: Microsoft Entra security role
 
-**Don't assign users this role purely for Copilot access.** Although the Security Administrator role 
-inherits access to Copilot and certain plugin capabilities, **this role includes PRIVILEGED permissions**.  Instead, create a security group and add that group to the appropriate Copilot role (Owner or Contributor).
+**Don't assign users this role purely for Copilot access.** 
+
+Although the Security Administrator role inherits access to Copilot and 
+certain plugin capabilities, **this role includes PRIVILEGED permissions**.  
+Instead, create a security group and add that group to the appropriate 
+Copilot role (Owner or Contributor).
 
 3. Recommended Microsoft Security roles
 
+Provision access to Security Copilot with the `Recommended Microsoft Security roles group`, 
+which uses a balanced approach to security and administrative efficiency.
 
+Users who already have security permission through Microsoft Entra roles are given 
+contributor access to the Security Copilot platform with this bundle. 
+
+If the `Everyone group` is assigned, you must remove it before you add the recommended security roles.
+
+The `default` group `Recommended Security Copilot contributor roles` is a `role-assignable Entra group`.
+This means that its property `isAssignableToRole` is set to `true` and cannot be changed. 
+There are also other important restrictions of `role-assignable Entra group` such as that there 
+cannot be subgroups and some others which are discusse in more details in other parts of the documentation. 
+
+Microsoft says that using the `default` group `Recommended Security Copilot contributor roles` is the quick
+and secure way to give users in your organization who already have access to security data the access they 
+need to the Copilot platform. More roles, users and groups can still be added, if needed.
+
+However, the group is `all or nothing`. If there's a role in the recommended group you don't want to 
+have access, the entire group must be removed.
+
+---
+
+## Hinherited Copilot owner access
+
+The following 
+
+- Microsoft Entra, 
+- Microsoft Intune, and 
+- Microsoft Purview 
+
+roles automatically inherit Copilot owner access, 
+ensuring Security Copilot always has at least two owners.
+
+> Microsoft Entra roles:
+
+- Billing Administrator
+- Entra Compliance Administrator
+- Global Administrator
+- Intune Administrator
+- Security Administrator
+
+> Microsoft Intune role:
+
+- The Microsoft Entra ID Intune Administrator
+
+> Microsoft Purview roles:
+
+- Purview Compliance Administrator
+- Purview Data Governance Administrator
+- Purview Organization Management
 
 ---
 
@@ -411,7 +464,8 @@ rather than added as an afterthought.
 
 [1] (https://www.allianz.com/en/about-us/strategy-values/responsible-use-of-artificial-intelligence.html)
 
-Learn more about operationalizing these standards through the Microsoft Responsible AI Overview or international guidelines like the OECD AI Principles via CASRAI. 
+Learn more about operationalizing these standards through the Microsoft Responsible AI Overview or 
+international guidelines like the OECD AI Principles via CASRAI. 
 
 [1] (https://www.microsoft.com/en-gb/ai/responsible-ai), 
 [2] (https://casrai.org/guides/what-is-responsible-ai)
@@ -484,5 +538,187 @@ context-grounding plugins, and language models within a secure enterprise bounda
 4. **LLM Response & Responsible AI**: The LLM produces a response. **Responsible AI checks** are executed on both the input prompt and output results.
 5. **Post-processing (Grounding)**: Copilot accesses plugins once more to perform post-processing grounding.
 6. **Delivery**: Copilot delivers the final response along with any relevant application commands back to the security product.
+
+---
+
+# Role-assignable groups
+
+[Use Microsoft Entra groups to manage role assignments](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/groups-concept)  
+
+[Create a role-assignable group in Microsoft Entra ID](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/groups-create-eligible?tabs=admin-center)  
+
+## IMPORTANT: Priviledge Excalation with Role-assignable groups
+
+If a group is assigned a role, `any IT administrator who can manage dynamic membership groups could also indirectly manage the membership of that role`. For example, assume that a group named Contoso_User_Administrators is assigned the User Administrator role. An Exchange administrator who can modify dynamic membership groups could add themselves to the Contoso_User_Administrators group and in that way become a User Administrator. As you can see, an administrator could elevate their privilege in a way you didn't intend.
+
+Role-assignable groups are designed to help prevent potential breaches by having the following restrictions:
+
+- You must be assigned at least the `Privileged Role Administrator` role to create a role-assignable group.
+
+- The membership type for role-assignable groups `must be Assigned and can't be a Microsoft Entra dynamic group`. Automated population of dynamic membership groups could lead to an unwanted account being added to the group and thus assigned to the role.
+
+- By default, `Privileged Role Administrators` can manage the membership of a role-assignable group, 
+but you can delegate the management of role-assignable groups by adding `group owners`.
+
+- For `Microsoft Graph`, the `RoleManagement.ReadWrite.Directory` permission is required to be able to manage the membership of role-assignable groups. The `Group.ReadWrite.All` permission won't work.
+
+- `To prevent elevation of privilege`, you must be assigned at least the `Privileged Authentication Administrator` role to change the credentials, reset MFA, or modify sensitive attributes for members and owners of a role-assignable group.
+
+- Group nesting isn't supported. A group can't be added as a member of a role-assignable group.
+
+---
+
+# Differences Between "Copilot Owner" and "Copilot Contributor" Roles
+
+[Understand authentication in Microsoft Security Copilot - Assign roles](https://learn.microsoft.com/en-us/copilot/security/authentication#assign-roles)  
+[Recommended Security Copilot owner roles](https://learn.microsoft.com/en-us/copilot/security/authentication#recommended-security-copilot-owner-roles)
+
+In Microsoft Security Copilot, **Copilot owner** and **Copilot contributor** are platform-specific RBAC roles (not Microsoft Entra ID roles). They act like access groups that control what administrative or operational actions a user can take *inside* the Security Copilot platform, while **on-behalf-of authentication** (via Microsoft Entra RBAC, Azure RBAC, Intune RBAC, or Defender XDR Unified RBAC) still dictates what underlying security data and plugins a user can query.
+
+---
+
+## 1. Key Differences Overview
+
+### **Copilot Owner (Platform Administrator & Governance Role)**
+- **Purpose:** Full administrative control over the Security Copilot workspace, tenant-wide settings, plugin governance, capacity, and role assignments.
+- **Safety Requirement:** Security Copilot enforces the retention of at least **two owners** at all times to prevent accidental lockout.
+- **Automatic Inheritance:** Users holding certain privileged roles automatically inherit `Copilot owner` access:
+  - **Microsoft Entra roles:** Global Administrator, Security Administrator, Billing Administrator, Entra Compliance Administrator, Intune Administrator.
+  - **Microsoft Purview roles:** Purview Compliance Administrator, Purview Data Governance Administrator, Purview Organization Management.
+- **Exclusive Capabilities:**
+  - Assigning `Copilot owner` and `Copilot contributor` roles to users or role-assignable groups.
+  - Enabling/disabling preinstalled plugins for the tenant and governing whether contributors can add personal or tenant-wide custom plugins.
+  - Configuring file upload policies, data sharing, and feedback settings.
+  - Managing Security Compute Unit (SCU) capacity (when paired with Azure Contributor/Owner on the resource group) and viewing the SCU usage monitoring dashboard.
+
+### **Copilot Contributor (SOC Analyst & Operational User Role)**
+- **Purpose:** Day-to-day operational usage of Security Copilot (creating prompts, investigating incidents, running/creating promptbooks, and sharing sessions) without administrative access to tenant settings.
+- **Default Provisioning:** By default on new instances, the **Recommended Microsoft Security roles** bundle is assigned to `Copilot contributor` so users with existing security roles automatically get platform access.
+- **Capabilities & Restrictions:**
+  - Can create sessions, select language, upload files (by default), and create/run/share promptbooks and read-only session links.
+  - **Cannot** manage workspace roles, monitor SCU usage dashboards, alter tenant-wide plugin availability, or manage custom plugins (unless explicitly permitted by a Copilot owner).
+
+---
+
+## 2. Clear Examples: When to Use Which Role
+
+### **When to Use `Copilot Owner`**
+* **Example 1 — SOC Lead / Security Architect Onboarding Plugins & Governing AI Settings:**
+  * *Scenario:* Contoso wants to enable the ServiceNow custom plugin across the entire tenant, block analysts from uploading custom unverified plugins, and configure tenant data-sharing settings.
+  * *Why `Copilot owner`:* Only a `Copilot owner` can change preinstalled plugin availability for the tenant, toggle whether contributors can publish custom plugins, and update workspace owner settings.
+* **Example 2 — FinOps / Security Operations Manager Monitoring SCU Consumption:**
+  * *Scenario:* A manager needs to track daily Security Compute Unit (SCU) burn rates on the usage dashboard and scale provisioned capacity during a major incident.
+  * *Why `Copilot owner`:* Viewing the usage dashboard and managing capacity settings in Security Copilot are restricted to `Copilot owner` (alongside Azure RBAC Owner/Contributor on the SCU resource for provisioning).
+
+### **When to Use `Copilot Contributor`**
+* **Example 1 — Tier 1/Tier 2 SOC Analyst Investigating Sentinel & Defender Incidents:**
+  * *Scenario:* An internal SOC analyst investigates phishing and endpoint alerts using the standalone Security Copilot portal and embedded Defender XDR Copilot experience.
+  * *Why `Copilot contributor`:* The analyst needs to run prompts, execute promptbooks, and share investigation sessions with teammates, but must **not** modify tenant-wide plugin policies or SCU settings. (They are paired with `Microsoft Sentinel Reader` and Defender XDR roles to access the underlying plugin data).
+* **Example 2 — External Contractor / Guest Reviewer (like `judy@vendor.com` in Q01):**
+  * *Scenario:* A B2B guest contractor is onboarded for a 30-day security review to run prompts and analyze shared sessions.
+  * *Why `Copilot contributor`:* Follows the **Principle of Least Privilege**. Giving a contractor `Copilot owner` would allow them to alter tenant-wide AI governance settings, add unauthorized plugins, or modify role assignments.
+
+---
+
+## 3. Summary Comparison Table
+
+| Feature / Capability | Copilot Owner | Copilot Contributor |
+| :--- | :--- | :--- |
+| **Primary Persona** | Security Admins, SOC Leads, Governance Owners | SOC Analysts, Incident Responders, Threat Hunters, Guest Reviewers |
+| **Create sessions, run prompts & select language** | ✅ Yes | ✅ Yes |
+| **Run, manage personal, & share promptbooks with tenant** | ✅ Yes | ✅ Yes |
+| **Share read-only session links** | ✅ Yes | ✅ Yes |
+| **Upload files in sessions** | ✅ Yes | ✅ Default Yes *(configurable by Owner)* |
+| **Manage file upload usage policy** | ✅ Yes | ❌ No |
+| **Manage personal custom plugins** | ✅ Yes | ❌ Default No *(Owner can enable)* |
+| **Allow contributors to manage/publish custom plugins** | ✅ Yes | ❌ No |
+| **Change availability of preinstalled plugins for tenant** | ✅ Yes | ❌ No |
+| **Manage role assignments (Owners & Contributors)** | ✅ Yes *(min. 2 Owners enforced)* | ❌ No |
+| **Update data sharing & feedback options** | ✅ Yes | ❌ No |
+| **Capacity management (SCUs)** | ✅ Yes *(requires Azure RBAC on SCU)* | ❌ No |
+| **View SCU usage dashboard** | ✅ Yes | ❌ No |
+| **Default / Inherited Assignment** | Auto-inherited by Global Admin, Security Admin, Intune Admin, Billing Admin, Compliance/Purview Admins | Default assigned to **Recommended Microsoft Security roles** bundle (or custom role-assignable security groups) |
+| **Grants direct access to underlying security data?** | ❌ No *(uses On-Behalf-Of auth via Entra/Azure/Defender/Intune RBAC)* | ❌ No *(uses On-Behalf-Of auth via Entra/Azure/Defender/Intune RBAC)* |
+
+---
+
+# What are the Security Compute Unit (SCU)?
+
+A Security Compute Unit (SCU) is the unit of measure and consumption metric 
+used by Microsoft to meter, price, and allocate the computational resources 
+required to run Microsoft Security Copilot workloads. 
+
+[1] (https://learn.microsoft.com/en-us/copilot/security/security-compute-units-capacity), 
+[2] (https://www.linkedin.com/posts/rajkumar-nagaraj-a9525872_what-is-an-scu-scu-stands-for-security-activity-7416364401865228288-cZIz)
+
+Instead of traditional per-user software licensing, Security Copilot relies on SCUs 
+to power AI-driven security capabilities across standalone and embedded experiences 
+(such as Microsoft Defender XDR, Purview, Entra, and Intune). 
+
+[1] (https://www.anoopcnair.com/what-is-the-security-compute-unit-in-ms-copilot/), 
+[2] (https://www.youtube.com/watch?v=DKEWR44M87A), 
+[3] (https://www.linkedin.com/posts/rajkumar-nagaraj-a9525872_what-is-an-scu-scu-stands-for-security-activity-7416364401865228288-cZIz)
+
+## What SCUs Do
+
+- Power AI Workloads: 
+They provide the compute power needed for generative AI tasks, such as threat investigations, 
+incident summarization, promptbook execution, and security policy analysis. 
+
+[1] (https://www.youtube.com/watch?v=DKEWR44M87A), 
+[2] (https://www.linkedin.com/posts/rajkumar-nagaraj-a9525872_what-is-an-scu-scu-stands-for-security-activity-7416364401865228288-cZIz)
+
+- Meter Consumption: 
+Different operations consume fractional or whole SCUs depending on their complexity 
+(for example, running a general prompt, summarizing an incident, or executing a multi-step promptbook). 
+
+[1] (https://www.scucalculator.com/faq), 
+[2] (https://www.youtube.com/watch?v=DKEWR44M87A)
+
+## How SCU Capacity Works
+
+Organizations obtain and manage SCUs through a few primary models outlined on 
+`the Microsoft Security Copilot Pricing Page`: 
+
+[1] (https://learn.microsoft.com/en-us/copilot/security/security-compute-units-capacity)
+
+- Provisioned Capacity (Baseline): 
+You pre-allocate a set number of SCUs per hour for regular, expected workloads 
+(billed hourly, typically around $4 USD per SCU/hour). Provisioned units refresh every full 
+billing hour and do not roll over. 
+
+[1] (https://www.microsoft.com/en-gb/security/pricing/microsoft-security-copilot), 
+[2] (https://learn.microsoft.com/en-us/copilot/security/security-compute-units-capacity)
+
+- Overage Capacity: 
+You can configure an overage limit to handle unexpected spikes in demand or 
+heavy investigation periods. Overage SCUs are billed on-demand (typically around $6 USD per SCU/hour) 
+only for what you consume beyond your provisioned baseline. 
+
+[1] (https://learn.microsoft.com/en-us/copilot/security/security-compute-units-capacity), 
+[2] (https://www.microsoft.com/en-gb/security/pricing/microsoft-security-copilot)
+
+- `Microsoft 365 E5 / E7 Inclusion Benefit`: 
+Eligible and onboarded Microsoft 365 E5 and E7 customers receive a default, auto-provisioned 
+monthly inclusion capacity (calculated based on seat count, up to a specified monthly cap) without 
+needing immediate standalone purchases. 
+
+[1] (https://learn.microsoft.com/en-us/copilot/security/security-compute-units-capacity), 
+[2] (https://www.microsoft.com/en-gb/security/pricing/microsoft-security-copilot)
+
+## Community and User Insights
+
+- Opinions and usage experiences vary on Reddit's r/DefenderATP Forum, where users note that 
+SCUs can function as an active pacing or capacity cap during intense querying, and that real-world 
+consumption depends heavily on prompt types and incident size rather than a flat fixed number of 
+prompts per hour. 
+
+[1] (https://www.reddit.com/r/DefenderATP/comments/1bvdp1v/what_is_a_scu_for_copilot/)
+
+- You can estimate your organization's required capacity using the official Microsoft SCU sizing 
+tools available via the Microsoft Learn Security Copilot Guide. 
+
+[1] (https://learn.microsoft.com/en-us/copilot/security/security-compute-units-capacity), 
+[2] (https://www.microsoft.com/en-gb/security/pricing/microsoft-security-copilot)
 
 ---

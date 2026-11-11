@@ -6,8 +6,6 @@
 
 ---
 
-[How KV Cache Speeds Up LLMs for Faster AI Models on GPUs IBM Technology and Red Hat](https://www.youtube.com/watch?v=o0gkdZBtwEg)  
-
 [Goodbye Tokenmaxxing: From AI Usage to Agentic AI Outcomes IBM Technology and IBM Developer](https://www.youtube.com/watch?v=FheRqx7DjbU)  
 
 ---
@@ -39,6 +37,26 @@
 [What Is Quantization? How AI Models Get Smaller & Faster IBM Technology](https://www.youtube.com/watch?v=mmns33BsBcY)   
 
 [Can Your AI Use Sensitive Data Safely? 5 Capabilities You Need IBM Technology](https://www.youtube.com/watch?v=jnP9AgtX0qo)  
+
+[Is Fine-Tuning Still Needed? LLMs, RAG, & LoRA IBM Technology](https://www.youtube.com/watch?v=-W2JdSl1v48)  
+
+---
+
+# Vector Databases
+
+[Are Vector Databases Still Needed? RAG, AI Agents & Search IBM Technology](https://www.youtube.com/watch?v=rXFV1ivDe6c&t=4s)  
+
+[What is a Vector Database? IBM Technology AI backbone](https://www.youtube.com/watch?v=t9IDoenf-lo)  
+
+[What is a Vector Database? Powering Semantic Search & AI Applications IBM Technology](https://www.youtube.com/watch?v=gl1r1XV0SLw&t=14s)  0
+
+--
+
+# KV Cache
+
+[Why AI Models Run Faster on Some Chips: The KV Cache Effect IBM Technology](https://www.youtube.com/watch?v=H_GJapsoLyU)  
+
+[How KV Cache Speeds Up LLMs for Faster AI Models on GPUs IBM Technology and Red Hat](https://www.youtube.com/watch?v=o0gkdZBtwEg)  
 
 ---
 

@@ -25,3 +25,9 @@
 [Distill](https://distill.pub/)
 
 ---
+
+[Reinventing Entropy | Compression is Intelligence Part 1 3Blue1Brown](https://www.youtube.com/watch?v=l6DKRf-fAAM&t=1s)  
+
+[But what is cross-entropy? | Compression is Intelligence Part 2 3Blue1Brown](https://youtu.be/GlYgs6v2YfU?si=H7YiFAkK6W0Bjz4m)  
+
+---
