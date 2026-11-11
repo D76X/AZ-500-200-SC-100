@@ -1,6 +1,10 @@
 # Answer Q14-A01
 
 ## Selected Options
+Options 01
+Options 04
+Options 05
+Options 06
 
 ---
 
@@ -13,20 +17,23 @@
 
 # How is the global distributed data store configured and used?
 
-To fully accommodate the globally distributed active-active aspirations of an application design, a distributed multi-write data platform is used, where changes to separate writeable replicas are synchronized and merged between all replicas, with conflict resolution where required.
-
+To fully accommodate the globally distributed active-active aspirations of an application design, 
+a distributed multi-write data platform is used, where changes to separate writeable replicas are 
+synchronized and merged between all replicas, with conflict resolution where required.
 
 ##  Options 01
-Native APIs are preferred, such as SQL API for Cosmos DB.
+Native APIs are preferred, such as `SQL API for Cosmos DB`.
 Some databases, such as Cosmos DB, support different APIs so that developers can pick the most suitable one for their use case.
 
 ##  Options 02
 Direct connection mode is used without additional network overhead.
-Data stores such as Cosmos DB can offer multiple connection modes. Some access data directly with persistent TCP connection, while others may utilize HTTP proxy.
+Data stores such as Cosmos DB can offer multiple connection modes. 
+Some access data directly with persistent TCP connection, while others may utilize HTTP proxy.
 
 ##  Options 03
 Partitioning strategy is designed for optimal use of logical and physical partitions.
-High-scale globally distributed platforms utilize partitioning to achieve better performance and scale. Picking the right partitioning strategy is in the hands of the developer.
+High-scale globally distributed platforms utilize partitioning to achieve better performance and scale. 
+Picking the right partitioning strategy is in the hands of the developer.
 
 ##  Options 04
 Indexing is configured properly.
@@ -34,7 +41,8 @@ Data indexing is crucial for performance, and applications often don't need to i
 
 ##  Options 05
 Retry logic is implemented on the client side.
-Native SDKs provide default error handling and automated retries for selected database errors, but the application should handle additional edge cases with custom code.
+Native SDKs provide default error handling and automated retries for selected database errors, 
+but the application should handle additional edge cases with custom code.
 
 ##  Options 06
 Provisioned throughput is based on application traffic patterns.
