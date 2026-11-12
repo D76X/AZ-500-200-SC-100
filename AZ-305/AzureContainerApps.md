@@ -317,6 +317,8 @@ This is similar to the `Kubernetes` feature of `Taints and Tolerations`. `Worklo
 
 [Dynamic sessions in Azure Container Apps](https://learn.microsoft.com/en-us/azure/container-apps/sessions)  
 
+[Fast Focus: Run Untrusted Code Safely with Azure Container Apps Dynamic Sessions Microsoft Azure Developers](https://www.youtube.com/watch?v=NtdxajLu9Ek)   
+
 ---
 
 # Azure Container Apps - Internal Deployments | Networking

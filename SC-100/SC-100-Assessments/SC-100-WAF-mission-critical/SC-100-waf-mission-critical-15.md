@@ -12,12 +12,15 @@
 
 # How are the relational data technologies configured and used?
 
-For scenarios with a highly relational data model or dependencies on existing relational technologies, the use of Azure Cosmos DB in a multi-write configuration might not be directly applicable. In such cases, it's vital that used relational technologies are designed and configured to uphold the multi-region active-active aspirations of an application design.
-
+For scenarios with a highly relational data model or dependencies on existing relational technologies, 
+the use of Azure Cosmos DB in a multi-write configuration might not be directly applicable. 
+In such cases, it's vital that used relational technologies are designed and configured to uphold 
+the multi-region active-active aspirations of an application design.
 
 ##  Options 01
 Database tiers that support availability zones are used.
-There are various tiers and variants available for relational databases in Azure. Availability zone support is not always given.
+There are various tiers and variants available for relational databases in Azure. 
+Availability zone support is not always given.
 
 ##  Options 02
 (Azure SQL) Business-critical tier is used when possible.
