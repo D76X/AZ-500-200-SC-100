@@ -42,6 +42,10 @@
 
 [What Is Model Distillation? How Smaller AI Models Learn IBM Technology](https://www.youtube.com/watch?v=4uvq8Cz3A7Y)  
 
+[RAG vs Fine-Tuning vs Prompt Engineering: Optimizing AI Models IBM Technology](https://www.youtube.com/watch?v=zYGDpG-pTho)   
+
+[What Is MLflow? Tracing AI Agents & LLM Workflows IBM Technology](https://www.youtube.com/watch?v=iZX6d0OdZys)  
+
 ---
 
 # Vector Databases

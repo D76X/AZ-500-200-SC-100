@@ -293,15 +293,41 @@ You can follow the step-by-step instructions in the Enterprise CA Deployment Gui
 
 # What is the difference between the managed, signature-based IDPS and the TLS inspection feature of Azure Firewall?
 
-The managed signature-based Intrusion Detection and Prevention System (IDPS) and the Transport Layer Security (TLS) inspection feature in Azure Firewall serve two distinct yet complementary roles in network security (available in Azure Firewall Premium). [1] (https://learn.microsoft.com/en-us/azure/networking/design-guide/azure-firewall)
+The following features in Azure Firewall:
 
-TLS Inspection
+1. managed signature-based Intrusion Detection and Prevention System (IDPS) and 
+2. the Transport Layer Security (TLS) inspection feature  
 
-• What it does: Decrypts, inspects, re-encrypts, and forwards encrypted HTTPS/TLS traffic. [1] (https://learn.microsoft.com/en-us/azure/firewall/premium-features), [2] (https://learn.microsoft.com/en-us/azure/firewall/features-by-sku)
-• How it works: It acts as a man-in-the-middle proxy. It terminates the incoming TLS connection (using a custom Certificate Authority you provide), inspects the plaintext payload, establishes a second TLS connection with the target web server, and then re-encrypts the data. [1] (https://learn.microsoft.com/en-us/azure/firewall/secure-firewall), [2] (https://learn.microsoft.com/en-us/azure/firewall/features-by-sku)
-• Scope: Applies to outbound and East-West (inter-VNet/on-premises) traffic. It allows the firewall to look inside encrypted web traffic to enforce full URL path filtering (e.g., ://contoso.com rather than just the domain) and web category rules. [1] (https://learn.microsoft.com/en-us/azure/firewall/features-by-sku)
+serve two distinct yet complementary roles in network security (available in Azure Firewall Premium). 
 
-Signature-Based IDPS
+[1] (https://learn.microsoft.com/en-us/azure/networking/design-guide/azure-firewall)
+
+## TLS Inspection
+
+- What it does: 
+Decrypts, inspects, re-encrypts, and forwards encrypted HTTPS/TLS traffic. 
+
+[1] (https://learn.microsoft.com/en-us/azure/firewall/premium-features), 
+[2] (https://learn.microsoft.com/en-us/azure/firewall/features-by-sku)
+
+- How it works: 
+It acts as a `man-in-the-middle proxy`. It terminates the incoming TLS connection 
+(using a custom Certificate Authority you provide), inspects the plaintext payload, 
+establishes a second TLS connection with the target web server, and then re-encrypts the data. 
+
+[1] (https://learn.microsoft.com/en-us/azure/firewall/secure-firewall), 
+[2] (https://learn.microsoft.com/en-us/azure/firewall/features-by-sku)
+
+- Scope: 
+Applies to `outbound and East-West (inter-VNet/on-premises) traffic`. 
+It allows the firewall to look inside encrypted web traffic to enforce full URL path filtering 
+(e.g., ://contoso.com rather than just the domain) and web category rules. 
+
+[1] (https://learn.microsoft.com/en-us/azure/firewall/features-by-sku)
+
+---
+
+## Signature-Based IDPS
 
 • What it does: Monitors network traffic across layers 3 through 7 to detect and optionally block known cyber threats, exploits, malware, and command-and-control activity. [1] (https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/intrusion-detection-and-prevention-system-idps-based-on-signatures/3921330), [2] (https://learn.microsoft.com/en-us/azure/firewall/premium-features), [3] (https://intercept.cloud/en-gb/blogs/the-evolution-of-azure-firewall)
 • How it works: It uses a massive, continuously updated database of over 67,000 signature rules (spanning 50+ categories) to match byte sequences or malicious instruction patterns in network packets. It can be configured in modes such as Disabled, Alert, or Alert and Deny. [1] (https://azure.microsoft.com/en-us/blog/azure-firewall-premium-now-in-preview-2/), [2] (https://learn.microsoft.com/en-us/azure/firewall/premium-features), [3] (https://learn.microsoft.com/en-us/azure/firewall/features-by-sku), [4] (https://techcommunity.microsoft.com/blog/azurenetworksecurityblog/intrusion-detection-and-prevention-system-idps-based-on-signatures/3921330)
