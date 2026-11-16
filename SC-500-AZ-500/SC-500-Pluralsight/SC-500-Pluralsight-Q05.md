@@ -98,4 +98,6 @@ recreating groups is unnecessary and conflicts with the requirement not to provi
 
 4. [Assign share-level permissions for Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-assign-share-level-permissions) — Azure RBAC roles grant share-level permissions to users or groups.
 
+5. [Configure a cloud trust between on-premises AD DS and Microsoft Entra ID for accessing Azure Files](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-identity-auth-hybrid-cloud-trust?tabs=azure-portal)  
+
 ---
