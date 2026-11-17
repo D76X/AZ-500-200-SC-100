@@ -35,17 +35,29 @@ Configure the GCP connector using **Workload Identity Federation**, which exchan
 
 ## Why OPTION 03 Is Correct
 
-Defender for Cloud's GCP connector uses workload identity federation to establish trust between Microsoft Entra ID and Google Cloud. During authentication, Defender for Cloud exchanges a short-lived Entra token with Google Cloud Security Token Service (STS), then impersonates a GCP service account whose permissions are scoped to the connected project or organization. The onboarding process creates the workload identity pool and provider, service accounts, and policy bindings needed for this trust. This meets Fabrikam's requirement because it avoids storing a long-lived service account key while still allowing Defender for Cloud to access GCP APIs for discovery and security posture assessment.
+Defender for Cloud's GCP connector uses workload identity federation to establish trust between Microsoft Entra ID and Google Cloud. 
+During authentication, Defender for Cloud exchanges a short-lived Entra token with Google Cloud Security Token Service (STS), 
+then impersonates a GCP service account whose permissions are scoped to the connected project or organization. 
+The onboarding process creates the workload identity pool and provider, service accounts, and policy bindings needed for this trust. 
+This meets Fabrikam's requirement because it avoids storing a long-lived service account key while still allowing Defender for Cloud 
+to access GCP APIs for discovery and security posture assessment.
+
+---
 
 ## Why the Other Options Are Incorrect
 
 - **OPTION 01 — AWS CloudFormation-based cross-account role:** This is the AWS connector's onboarding mechanism and creates AWS-side resources and trust relationships. It does not configure GCP authentication. The GCP connector has its own onboarding flow, which establishes federated trust with Google Cloud.
+
 - **OPTION 02 — Azure managed identity assigned to the Defender for Cloud resource:** An Azure managed identity alone does not establish the required trust or permissions in GCP. The GCP side must be configured with a workload identity provider and service-account impersonation policy so Google STS can validate the Entra token. Merely assigning an Azure managed identity does not replace that GCP configuration.
+
 - **OPTION 04 — Downloaded JSON service account key rotated every 90 days:** A downloaded service account key is a long-lived credential unless separately disabled or deleted. Periodic rotation still creates and stores such a key, so it violates the stated prohibition. Workload Identity Federation avoids the need to create or manage service account keys.
 
 ## References
 
 - [Connect your GCP Project to Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-gcp) — Describes GCP connector onboarding, configuring access, and the GCP resources created by the generated onboarding script.
+
 - [Authentication architecture for GCP connectors](https://learn.microsoft.com/en-us/azure/defender-for-cloud/authentication-architecture-google-cloud) — Documents workload identity federation, short-lived token exchange, Google STS, service-account impersonation, and scoped access.
+
 - [Connect your AWS Account to Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/quickstart-onboard-aws) — Describes the separate native AWS connector and its AWS-specific authentication architecture.
+
 - [Workload Identity Federation](https://cloud.google.com/iam/docs/workload-identity-federation) — Google Cloud documentation explaining how federation provides access without service account keys and reduces the security and maintenance risks associated with those keys.
