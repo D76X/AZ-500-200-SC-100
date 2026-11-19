@@ -1,3 +1,24 @@
+
+---
+
+# Gemini 4 Carbon
+
+[Gemini 4 Carbon Is Here (Fully Tested) Paul J Lipsky](https://www.youtube.com/watch?v=YTA_DsiYwAc&t=452s)  
+
+---
+
+# Gemini 4 Hydrogen
+
+[Gemini Neon Is Here (Personally Tested) Paul J Lipsky](https://www.youtube.com/watch?v=AbfheTIO2Ec)
+
+---
+
+# Gemini 4 Hydrogen
+
+[Gemini 4 Hydrogen Just Dropped (Personally Tested) Paul J Lipsky](https://www.youtube.com/watch?v=bm8x0hopWTU)  
+
+---
+
 # Argon 4
 
 [ Gemini 4 Argon Scientific Discovery and Autonomous Engineering with Gemini 4 Argon Google Cloud Advanced Computing Community](https://www.youtube.com/watch?v=Cb0Og6FKpHs)  

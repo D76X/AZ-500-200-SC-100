@@ -278,3 +278,81 @@ review pricing details on the Azure Enclave Pricing Page.
 [2] (https://learn.microsoft.com/en-us/azure/enclave/what-azure-enclave)
 
 ---
+
+# What is the difference between "Confidential VM" and "Azure Enclave"?
+
+A Confidential VM is a virtual machine that uses hardware-based encryption to 
+protect data while in use (in memory) from the underlying host and hypervisor. 
+Azure Enclave is a managed service that creates isolated network boundaries, 
+governance policies, and landing zones for sensitive workloads. 
+
+[1] (https://azure.microsoft.com/en-us/products/enclave), 
+[2] (https://www.linkedin.com/posts/dorian-boucher_confidentialai-ai-security-activity-7381266635489411072-9dce), 
+[3] (https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview), 
+[4] (https://learn.microsoft.com/en-us/azure/enclave/what-azure-enclave), 
+[5] (https://azure.microsoft.com/en-ca/solutions/government)
+
+## Core Differences
+
+- Security Boundary: 
+
+Confidential VMs protect data at the compute and memory level inside a hardware 
+`Trusted Execution Environment (TEE)`. 
+
+Azure Enclave protects at the network, environment, and policy level using isolated 
+virtual networks and hub-and-spoke governance. 
+
+[1] (https://learn.microsoft.com/en-us/azure/enclave/azure-enclave-faq), 
+[2] (https://www.linkedin.com/posts/dorian-boucher_confidentialai-ai-security-activity-7381266635489411072-9dce), 
+[3] (https://learn.microsoft.com/en-us/azure/enclave/what-azure-enclave)
+
+- What They Are: 
+
+A Confidential VM is a compute instance (such as DC-series or EC-series VMs). 
+
+Azure Enclave is a managed service/resource provider that orchestrates isolated environments hosting various Azure workloads. 
+
+[1] (https://www.youtube.com/watch?v=pVlM5ScV5OA), 
+[2] (https://www.azurepro.ae/dcsv2-series-azure-vms-retirement-what-you-need-to-know-and-how-to-migrate/), 
+[3] (https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/overview), 
+[4] (https://azure.microsoft.com/en-us/products/enclave), 
+[5] (https://learn.microsoft.com/en-us/azure/enclave/what-azure-enclave)
+
+- Primary Threat Model: 
+
+Confidential VMs shield workloads and data in memory from unauthorized access 
+by cloud operators, host OSs, or hypervisors. 
+
+Azure Enclave enforces strict network isolation, explicit connection rules, 
+compliance guardrails, and centralized monitoring for regulated or multi-party workloads. 
+
+[1] (https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/10/13/azure-enclave-is-now-generally-available-managed-workload-isolation-for-government-and-regulated-industries/), 
+[2] (https://www.linkedin.com/posts/dorian-boucher_confidentialai-ai-security-activity-7381266635489411072-9dce), 
+[3] (https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview), [4] (https://azure.microsoft.com/en-us/products/enclave), 
+[5] (https://learn.microsoft.com/en-us/azure/enclave/what-azure-enclave)
+
+## How They Work Together
+
+They are complementary rather than mutually exclusive. 
+You can run a Confidential VM inside an Azure Enclave when a workload needs both 
+strict network/policy isolation and hardware-enforced memory protection for data in use. 
+
+[1] (https://learn.microsoft.com/en-us/azure/enclave/azure-enclave-faq), 
+[2] (https://azure.microsoft.com/en-us/products/enclave)
+
+## Common Use Cases
+
+- Confidential VM: 
+Sensitive AI training or inference (protecting model weights and prompts in memory), 
+financial or healthcare processing requiring hardware memory encryption. 
+
+[1] (https://www.linkedin.com/posts/dorian-boucher_confidentialai-ai-security-activity-7381266635489411072-9dce), 
+[2] (https://docs.cloud.google.com/confidential-computing/confidential-vm/docs/confidential-vm-overview)
+
+- Azure Enclave: 
+Government, defense, research, and regulated collaboration environments needing preconfigured isolated networks, explicit connectivity, and policy governance across multiple workloads. 
+
+[1] (https://azure.microsoft.com/en-us/products/enclave), 
+[2] (https://www.microsoft.com/en-us/microsoft-cloud/blog/us-government/2026/10/13/azure-enclave-is-now-generally-available-managed-workload-isolation-for-government-and-regulated-industries/)
+
+---
