@@ -107,9 +107,7 @@ For full architectural details and resource limits, see the Microsoft Learn Azur
 ## NotebookLM Summary
 [Azure Arc-Enabled Servers Walkthrough John Savill's Technical Training](https://www.youtube.com/watch?v=OHs1txVKPHw)  
 
-The management of enterprise computing environments has grown increasingly complex as workloads expand across on-premises data centers, 
-edge locations, and multiple public cloud providers. Organizations frequently face operational fragmentation when managing infrastructure 
-outside native cloud environments, resulting in disparate management portals, inconsistent governance models, and fractured security visibility. Azure Arc-enabled servers addresses this challenge by extending the Azure Resource Manager control plane directly into operating systems running anywhere outside native Azure regions. As detailed in John Savill's technical walkthrough, this architecture allows enterprise IT organizations to project external physical and virtual servers into Azure as native resources, establishing a unified operational plane without requiring hypervisor-level integration or infrastructure migration.
+The management of enterprise computing environments has grown increasingly complex as workloads expand across on-premises data centers, edge locations, and multiple public cloud providers. Organizations frequently face operational fragmentation when managing infrastructure outside native cloud environments, resulting in disparate management portals, inconsistent governance models, and fractured security visibility. Azure Arc-enabled servers addresses this challenge by extending the Azure Resource Manager control plane directly into operating systems running anywhere outside native Azure regions. As detailed in John Savill's technical walkthrough, this architecture allows enterprise IT organizations to project external physical and virtual servers into Azure as native resources, establishing a unified operational plane without requiring hypervisor-level integration or infrastructure migration.
 
 1. Architectural Foundation & Control Plane Extension
 
@@ -128,11 +126,17 @@ Azure Arc-enabled servers is engineered to support a broad spectrum of enterpris
 The platform provides extensive coverage across both Windows and Linux distributions, focusing specifically on server-class operating systems:
 
 * Windows Server Operating Systems: Supports Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, and Windows Server 2022.
+
 * Specialized Windows Client Usage: While Windows 10 and Windows 11 are listed as supported operating systems, they are evaluated strictly as server-like instances dedicated to specialized application hosting or monitoring scenarios rather than end-user desktop environments.
+
 * Linux Operating Systems: Broad support across major enterprise distributions, including Red Hat Enterprise Linux (RHEL), SUSE Linux Enterprise Server (SLES), Ubuntu, Debian, CentOS, Rocky Linux, Azure Linux (formerly code-named Mariner), Oracle Linux, and Amazon Linux.
+
 * Hardware and Virtualization Support: Functions across physical bare-metal servers, hypervisor virtual machines (such as VMware vSphere or Microsoft Hyper-V), and virtual instances running in alternative public clouds.
 
-Before deploying the Azure Connected Machine Agent, target operating systems must meet baseline software prerequisites. On Windows systems, the agent requires the .NET Framework to be present. On Linux distributions, PowerShell 4.0 or higher is required to facilitate agent operations and script execution.
+Before deploying the `Azure Connected Machine Agent`, target operating systems must meet baseline software prerequisites. 
+
+- On Windows systems, the agent requires the .NET Framework to be present. 
+- On Linux distributions, PowerShell 4.0 or higher is required to facilitate agent operations and script execution.
 
 3. Network Connectivity & Security Topologies
 

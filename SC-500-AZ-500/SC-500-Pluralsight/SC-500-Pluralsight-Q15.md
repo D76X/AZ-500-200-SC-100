@@ -7,7 +7,11 @@ You have 14 days to complete each attempt before it expires.
 
 # Q15
 
-A security team wants to reduce the exposure of VM management ports by ensuring that RDP and SSH are only accessible for a limited time window after an administrator submits an approved request. Which Defender for Servers feature provides this capability?
+A security team wants to reduce the exposure of VM management ports 
+by ensuring that RDP and SSH are only accessible for a limited time 
+window after an administrator submits an approved request. 
+
+Which Defender for Servers feature provides this capability?
 
 Select one answer option below.
 
@@ -29,7 +33,17 @@ Azure Network Watcher packet capture
 
 **Correct answer: OPTION 03 — Just-in-Time (JIT) VM access.**
 
-JIT VM access is a Defender for Servers feature in Microsoft Defender for Cloud. It keeps selected management ports—such as SSH (22) and RDP (3389)—closed to inbound traffic by default, then permits access when an authorized user requests it. The request specifies the ports, source IP address, and access duration; the JIT policy limits when and from where those ports are open. This directly meets the requirement to allow management access only for a limited time after a request. [1]
+JIT VM access is a Defender for Servers feature in Microsoft Defender for Cloud. 
+It keeps selected management ports—such as `SSH (22)` and `RDP (3389)`—closed to inbound traffic by default, 
+then permits access when an authorized user requests it. The request specifies the ports, source IP address, 
+and access duration; the JIT policy limits when and from where those ports are open. 
+
+This directly meets the requirement to allow management access only for a limited time after a request. [1]
+
+> Microsoft training learning path and Applied Skills credential titled Secure Azure services and workloads with Microsoft Defender for Cloud regulatory compliance controls.
+[Explore just-in-time VM access SC-5002 Microsoft Learn](https://www.youtube.com/watch?v=ZD-7eCWxD_k)   
+
+---
 
 ### Why the other options are incorrect
 
