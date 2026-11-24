@@ -7,7 +7,9 @@ You have 14 days to complete each attempt before it expires.
 
 # Q16
 
-A security administrator wants to view the overall security health of Azure subscriptions, including a prioritized list of recommendations to reduce attack surface. Which Defender for Cloud feature provides this consolidated view?
+A security administrator wants to view the overall security health of Azure subscriptions, 
+including a prioritized list of recommendations to reduce attack surface. 
+Which Defender for Cloud feature provides this consolidated view?
 
 Select one answer option below.
 
@@ -34,7 +36,9 @@ Microsoft Defender for Cloud's Secure Score aggregates security findings into a 
 ### Why the other options are incorrect
 
 - **OPTION 01 — Inventory Page:** Inventory is for viewing and investigating connected cloud resources, including their security state, recommendations, and alerts. It is an asset-focused view, not the consolidated score and prioritization view described in the question. [3]
+
 - **OPTION 02 — Regulatory Compliance dashboard:** This dashboard assesses resources against selected regulatory standards and shows compliance status for their controls. It is focused on compliance requirements, not an overall security-health score across subscriptions. [4]
+
 - **OPTION 03 — Workload Protection page:** Workload protection focuses on defending workloads—such as VMs, containers, and databases—from threats. It is not the consolidated cloud security-posture score and recommendation view. [5]
 
 ### References

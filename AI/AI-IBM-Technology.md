@@ -4,7 +4,7 @@
 
 [AI in the SDLC: Rethinking AI Coding Tools & AI Agents IBM Technology and IBM Developer](https://www.youtube.com/watch?v=4wMRXmLpdA8)
 
----
+[Vibe Coding vs. Agentic Coding: Which Should You Use? IBM Technology](https://www.youtube.com/watch?v=h4tHDFCPmQE)   
 
 [Goodbye Tokenmaxxing: From AI Usage to Agentic AI Outcomes IBM Technology and IBM Developer](https://www.youtube.com/watch?v=FheRqx7DjbU)  
 
