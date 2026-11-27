@@ -8,6 +8,16 @@
 
 ---
 
+[Build your own self evolving dev tools an make yourself unique - Steve Sanderson - NDC Oslo 2026 NDC Conferences](https://www.youtube.com/watch?v=yDLnn9OAHbE)  
+
+---
+
+# IoC
+
+[From stateless to stateful: adopting actor model for ... - Mikhail Aksenov & Maxim Tkachenko NDC Conferences](https://www.youtube.com/watch?v=eJ_lv8mAZ1U)  
+
+---
+
 # Functional Programming
 
 [Lambda Calculus - Foundation of Functional Programming - Mark Volkmann - NDC Oslo 2026 NDC Conferences](https://www.youtube.com/watch?v=nnOB71VnbSE&t=56s)  

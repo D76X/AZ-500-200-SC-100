@@ -7,6 +7,10 @@ You have 14 days to complete each attempt before it expires.
 
 ---
 
+[Configure and manage threat protection by using Microsoft Defender for Cloud AZ-500 Microsoft Learn](https://www.youtube.com/watch?v=4J-OKy4n0dk)  
+
+---
+
 # Q01
 
 Contoso is onboarding an external contractor, `judy@vendor.com`, for a 30-day security review. 
